@@ -28,9 +28,10 @@ gulp.task('clean:sprites', () => {
   ]);
 });
 
-gulp.task('replace:sprite_url', () =>{
+gulp.task('replace:sprite_url', () => {
   gulp.src(['./public/images/sprites/sprite.js'])
-    .pipe(replace(/\.\.\/images/g, 'http://' + config.get('ipaddress') + ':' + config.get('port') + '/images/sprites'))
+    // .pipe(replace(/\.\.\/images/g, 'http://' + config.get('ipaddress') + ':' + config.get('port') + '/images/sprites'))
+    .pipe(replace(/\.\.\/images/g, '/images'))
     .pipe(gulp.dest('./src/shared'));
 });
 
