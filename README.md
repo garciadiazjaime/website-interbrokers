@@ -1,4 +1,4 @@
-Kolbe Website
+Interbrokers Website
 ----
 
 [![Build Status](https://travis-ci.org/garciadiazjaime/website-interbrokers.svg)](https://travis-ci.org/garciadiazjaime/website-interbrokers)
