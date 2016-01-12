@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from 'react-router';
+import React from 'react';
+
 
 export default class AboutUsSection extends React.Component {
   render() {
