@@ -1,17 +1,27 @@
-import express from "express";
-import React from "react";
-// import Router from "react-router";
-
+import express from 'express';
+import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
+import bodyParser from 'body-parser';
+
+import config from '../../config';
+import apiRoutes from './helpers/api';
 import routes from '../shared/routes';
 
 const app = express();
 
 app.set('views', './views');
 app.set('view engine', 'jade');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: false,
+}));
+
 app.use(express.static('bower_components'));
 app.use(express.static('public'));
+
+app.use('/api/', apiRoutes);
 
 app.get('/*', function (req, res) {
   match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {
@@ -20,8 +30,8 @@ app.get('/*', function (req, res) {
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search);
     } else if (renderProps) {
-      let content = renderToString(<RoutingContext {...renderProps} />);
-      res.render('index', { content: content });
+      const content = renderToString(<RoutingContext {...renderProps} />);
+      res.render('index', { content });
       // res.status(200).send(renderToString(<RoutingContext {...renderProps} />))
     } else {
       res.status(404).send('Not found');
@@ -29,9 +39,15 @@ app.get('/*', function (req, res) {
   });
 });
 
-var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
+app.set('ipaddress', config.get('ipaddress'));
+app.set('port', config.get('port'));
 
+const server = app.listen(app.get('port'), app.get('ipaddress'), (err) => {
+  if (err) {
+    console.log(err);
+  }
+
+  const host = server.address().address;
+  const port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
 });

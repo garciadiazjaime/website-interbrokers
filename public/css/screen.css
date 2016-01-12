@@ -1,0 +1,18 @@
+@font-face {
+  font-family: noto-sans-bold;
+  src: url(/fonts/notosans-bold.ttf);
+}
+@font-face {
+  font-family: noto-sans-regular;
+  src: url(/fonts/notosans-regular.ttf);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+*:focus {outline:0px none transparent;}
+
+div{
+  /*border: 1px solid black;*/
+}
