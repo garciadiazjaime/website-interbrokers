@@ -27,10 +27,9 @@ export default class MainMenu extends React.Component {
     /*eslint-disable */
     // Sprites.General.Logo
     const logo = null;
-    return (<div className="container">
+    return (<div className="container-fluid">
         <nav className={style.navbarDefault + ' navbar navbar-default'}>
-          <div className="container-fluid">
-
+          
             <div className={style.navbarHeader + ' navbar-header'}>
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
                 <span className="sr-only">Toggle navigation</span>
@@ -50,7 +49,6 @@ export default class MainMenu extends React.Component {
               </div>
             </div>
 
-          </div>
         </nav>
       </div>
     );
