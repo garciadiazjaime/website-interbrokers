@@ -50,7 +50,7 @@ export default class FooterAAA extends React.Component {
 
     return (<div id={style.footer}>
 
-        <div className="container">
+        <div className="container-fluid">
           <div className={style.footerWrapper}>
 
             <div className="row">

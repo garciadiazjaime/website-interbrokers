@@ -1,5 +1,5 @@
 
-export default function autoScroll(location) {
+export default (location) => {
   const elementID = location.pathname ? location.pathname.split('/').pop() || 'home' : 'home';
   const scrollTo = $('#' + elementID).offset().top - 43;
   const srolltime = 400;
