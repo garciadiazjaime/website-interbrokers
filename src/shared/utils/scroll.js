@@ -6,4 +6,4 @@ export default (location) => {
   $('html, body').animate({
     scrollTop: scrollTo,
   }, srolltime);
-}
+};
