@@ -1,6 +1,5 @@
 import React from 'react';
-
-import ElBuilder from '../../../utils/elementBuilder';
+import { Link } from 'react-router';
 
 
 export default class BlockD extends React.Component {
@@ -12,12 +11,12 @@ export default class BlockD extends React.Component {
         <div className="col-md-6 col-sm-6">
           <h2>{texts.text1}</h2>
           <p>{texts.text2}</p>
-          <ElBuilder type="link" data={links.link1} />
+          <Link to={links.link1.href} title={links.link1.title}>{links.link1.title}</Link>
         </div>
 
         <div className="col-md-6 col-sm-6 col-xs-12">
           <p>{texts.text3}</p>
-          <ElBuilder type="link" data={links.link2} />
+          <Link to={links.link2.href} title={links.link2.title}>{links.link2.title}</Link>
         </div>
 
       </div>);

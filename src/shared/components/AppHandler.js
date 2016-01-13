@@ -11,10 +11,10 @@ export default class AppHandler extends React.Component {
   render() {
     return (
       <div>
-        <Menu items={menuData.items} icons={menuData.icons} />
+        <Menu items={menuData.items.children} icons={menuData.icons} />
         <Intro />
         {this.props.children}
-        <FooterAAA />
+        <FooterAAA items={menuData.items.children} addresses={menuData.addresses}/>
       </div>
     );
   }

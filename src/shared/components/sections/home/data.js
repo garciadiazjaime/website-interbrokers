@@ -1,11 +1,13 @@
 /* eslint max-len: [2, 500, 4] */
 
 export default {
-  blockA: {
+  // **** Banner con slider ****
+  block1: {
 
   },
 
-  blockB: {
+  // **** 2 Cartas: Servicio Integral - img ****
+  block2: {
     texts: {
       text1: 'Servicio Integral',
       text2: '360',
@@ -26,7 +28,8 @@ export default {
     },
   },
 
-  blockC: {
+  // **** 2 Cartas: texto - Nuevo entrante ****
+  block3: {
     texts: {
       text1: 'Impulsemos el crecimiento de tu empresa transportista.',
       text2: 'Nuevo Entrante',
@@ -50,7 +53,8 @@ export default {
     },
   },
 
-  blockD: {
+  // **** 2 cartas: texto - Solicita tu certificado ****
+  block4: {
     texts: {
       text1: 'Seguros para Vehiculos Comerciales',
       text2: 'Contamos con seguros para vehículos comerciales con cobertura en México y en Estados Unidos, para que siempre estés protegido.',
@@ -74,7 +78,8 @@ export default {
     },
   },
 
-  blockE: {
+  // **** Fondo morado ****
+  block5: {
     texts: {
       text1: 'Siente la libertad de Vivir tranquilo.',
       text2: 'Seguros',

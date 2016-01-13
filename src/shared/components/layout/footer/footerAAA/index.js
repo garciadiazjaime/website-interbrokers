@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
-import menuData from '../../../../menuData';
 // import Sprites from '../../../../sprite';
 
 
@@ -38,6 +37,7 @@ export default class FooterAAA extends React.Component {
   }
 
   render() {
+    const { items, addresses } = this.props;
     const data = [{
       name: 'POOL',
       url: 'http://somospool.com',
@@ -68,9 +68,9 @@ export default class FooterAAA extends React.Component {
 
             <div className="row">
               <div className={style.footerMenu}>
-                {this.getMenu(menuData.items, style.menuParent)}
+                {this.getMenu(items, style.menuParent)}
 
-                {this.getAddress(menuData.addresses)}
+                {this.getAddress(addresses)}
               </div>
             </div>
 
@@ -98,3 +98,8 @@ export default class FooterAAA extends React.Component {
     );
   }
 }
+
+FooterAAA.propTypes = {
+  items: React.PropTypes.array.isRequired,
+  addresses: React.PropTypes.array,
+};
