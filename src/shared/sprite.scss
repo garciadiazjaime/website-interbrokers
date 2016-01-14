@@ -1,0 +1,100 @@
+$aboutus-carouselLeftArrow: -0px -0px 8px 13px;
+$aboutus-carouselRightArrow: -8px -0px 8px 13px;
+$general-agent: -462px -47px 27px 18px;
+$general-arrow_big_yellow: -356px -47px 42px 42px;
+$general-arrow_small_yellow: -506px -47px 10px 10px;
+$general-banner-lines: -0px -0px 356px 275px;
+$general-check_red: -489px -47px 17px 17px;
+$general-facebook: -398px -47px 32px 32px;
+$general-location: -356px -89px 23px 38px;
+$general-logo-anti: -0px -275px 300px 47px;
+$general-logo: -356px -0px 282px 47px;
+$general-office: -430px -47px 32px 32px;
+$home-camion_servicios: -0px -0px 500px 500px;
+$home-nuevo_entrante: -500px -0px 580px 410px;
+$home-seguro-certificado: -113px -500px 72px 84px;
+$home-seguros-IBK: -500px -410px 115px 59px;
+$home-seguros-camion: -0px -500px 113px 113px;
+$procedures-back-to-menu: -147px -450px 32px 19px;
+$procedures-banner-usa: -0px -0px 1024px 450px;
+$procedures-procedure-usa: -0px -450px 147px 73px;
+$seguros-Seguros-mx-servicio: -115px -0px 142px 81px;
+$seguros-Seguros-servicio: -0px -0px 115px 115px;
+$seguros-Seguros-usa-servicio: -0px -115px 142px 81px;
+$seguros-seguros-carros: -142px -115px 51px 51px;
+$seguros-seguros-casas: -193px -115px 51px 51px;
+$seguros-seguros-empresas: -0px -196px 51px 51px;
+$seguros-seguros-motos: -51px -196px 51px 51px;
+$seguros-seguros-personas: -102px -196px 51px 51px;
+$services-bullet: -501px -146px 12px 12px;
+$services-consultoria-mxusa: -372px -146px 62px 89px;
+$services-consultoria: -0px -115px 115px 115px;
+$services-icon-consultoria: -434px -178px 25px 36px;
+$services-icon-permisos: -473px -146px 28px 27px;
+$services-icon-seguros: -434px -146px 39px 32px;
+$services-icon-tramites: -459px -178px 24px 30px;
+$services-permisos-entrante: -147px -230px 147px 73px;
+$services-permisos-usa: -372px -0px 147px 73px;
+$services-permisos: -0px -0px 115px 115px;
+$services-placas-mx: -230px -162px 91px 52px;
+$services-placas-usa: -372px -235px 91px 52px;
+$services-seguros-mx: -230px -81px 142px 81px;
+$services-seguros-usa: -230px -0px 142px 81px;
+$services-seguros: -115px -115px 115px 115px;
+$services-tramites-mx: -0px -230px 147px 73px;
+$services-tramites-usa: -372px -73px 147px 73px;
+$services-tramites: -115px -0px 115px 115px;
+$aboutus-members-memberAvatar: -0px -0px 112px 112px;
+$home-banner-insurance: -512px -0px 256px 256px;
+$home-banner-integral_service: -0px -0px 512px 512px;
+$home-banner-permits: -512px -256px 256px 256px;
+$home-banner-procedures: -0px -512px 256px 256px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+  @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+  @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+.icon-aboutus {
+  background-image: url(/images/sprite-aboutus.png);
+}
+.icon-general {
+  background-image: url(/images/sprite-general.png);
+}
+.icon-home {
+  background-image: url(/images/sprite-home.png);
+}
+.icon-procedures {
+  background-image: url(/images/sprite-procedures.png);
+}
+.icon-seguros {
+  background-image: url(/images/sprite-seguros.png);
+}
+.icon-services {
+  background-image: url(/images/sprite-services.png);
+}
+.icon-aboutus-members {
+  background-image: url(/images/sprite-aboutus-members.png);
+}
+.icon-home-banner {
+  background-image: url(/images/sprite-home-banner.png);
+}
