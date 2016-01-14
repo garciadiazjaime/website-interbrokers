@@ -30,7 +30,7 @@ gulp.task('clean:sprites', () => {
 
 gulp.task('replace:sprite_url', () => {
   gulp.src(['./src/shared/sprite.scss'])
-    .pipe(replace(/\.\.\/images/g, '/images'))
+    .pipe(replace(/\.\.\/images/g, '/images/sprites'))
     .pipe(gulp.dest('./src/shared'));
 });
 

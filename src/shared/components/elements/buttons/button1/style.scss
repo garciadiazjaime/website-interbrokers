@@ -13,13 +13,10 @@
   }
   &::before{
     @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue);  
   	display: block;
   	content: '';
-  	background-image: url('/images/sprites/sprite-elements.png');
-  	background-Position: -0px -13px;
-	width: 6px;
-	height: 8px;
-	background-size: 23px 21px;
   }
 }
 .b{
@@ -35,13 +32,10 @@
   }
   &::before{
     @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);  
   	display: block;
   	content: '';
-  	background-image: url('/images/sprites/sprite-elements.png');
-  	background-Position: -8px -0px;
-	width: 8px;
-	height: 13px;
-	background-size: 23px 21px;
   }
 }
 .c{
@@ -57,13 +51,10 @@
   }
   &::before{
     @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-left_arrow_blue_big);  
   	display: block;
   	content: '';
-  	background-image: url('/images/sprites/sprite-elements.png');
-  	background-Position: -0px -0px;
-	width: 8px;
-	height: 13px;
-	background-size: 23px 21px;
   }
 }
 .d{
@@ -71,7 +62,7 @@
   background: $yellow;
   width: 175px;
   color: $blue;
-  font: $fontABold;
+  font-family: $fontABold;
   font-size: 12px;
   height: 30px;
   margin-bottom: 20px;
@@ -85,14 +76,11 @@
   }
   &::before{
     @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);  
     right: 15px;
   	display: block;
   	content: '';
-  	background-image: url('/images/sprites/sprite-elements.png');
-  	background-Position: -8px -0px;
-	width: 8px;
-	height: 13px;
-	background-size: 23px 21px;
   }
   .title{
   	@extend .vCenter;
@@ -104,7 +92,7 @@
   width: 225px;
   font-size: 12px;
   color: $yellow;
-  font: $fontABold;
+  font-family: $fontABold;
   height: 30px;
   margin-bottom: 20px;
   padding-left: 25px;
@@ -117,14 +105,11 @@
   }
   &::before{
     @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_yellow_big);  
     right: 15px;
   	display: block;
   	content: '';
-  	background-image: url('/images/sprites/sprite-elements.png');
-  	background-Position: -16px -0px;
-	width: 7px;
-	height: 13px;
-	background-size: 23px 21px;
   }
   .title{
   	@extend .vCenter;
@@ -135,7 +120,7 @@
   background: $red;
   width: 225px;
   color: $yellow;
-  font: $fontABold;
+  font-family: $fontABold;
   font-size: 12px;
   height: 30px;
   margin-bottom: 20px;
@@ -149,14 +134,11 @@
   }
   &::before{
     @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_yellow_big);  
     right: 15px;
   	display: block;
   	content: '';
-  	background-image: url('/images/sprites/sprite-elements.png');
-  	background-Position: -16px -0px;
-	width: 7px;
-	height: 13px;
-	background-size: 23px 21px;
   }
   .title{
   	@extend .vCenter;
@@ -167,7 +149,7 @@
   background: $yellow;
   width: 225px;
   color: $blue;
-  font: $fontABold;
+  font-family: $fontABold;
   font-size: 12px;
   height: 30px;
   margin-bottom: 20px;
@@ -181,14 +163,11 @@
   }
   &::before{
     @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);  
     right: 15px;
     display: block;
     content: '';
-    background-image: url('/images/sprites/sprite-elements.png');
-    background-Position: -8px -0px;
-  width: 8px;
-  height: 13px;
-  background-size: 23px 21px;
   }
   .title{
     @extend .vCenter;
@@ -199,7 +178,7 @@
   background: $lightGray;
   width: 185px;
   color: $red;
-  font: $fontABold;
+  font-family: $fontABold;
   height: 55px;
   margin-bottom: 20px;
   padding-left: 65px;
@@ -211,16 +190,37 @@
   }
   &::before{
     @extend .vCenter;
+    @extend .icon-elements;
   	display: block;
   	content: '';
-  	background-image: url('/images/sprites/sprite-elements.png');
-  	background-Position: -16px -0px;
-	width: 7px;
-	height: 13px;
-	background-size: 23px 21px;
+    left: 20px;
   }
   .title{
   	@extend .vCenter;
+  }
+}
+.h1{
+  @extend .h;
+  &::before{
+    @include sprite($elements-tramit);  
+  }
+}
+.h2{
+  @extend .h;
+  &::before{
+    @include sprite($elements-permit);  
+  }
+}
+.h3{
+  @extend .h;
+  &::before{
+    @include sprite($elements-insurance);  
+  }
+}
+.h4{
+  @extend .h;
+  &::before{
+    @include sprite($elements-consultoria);  
   }
 }
 @media screen and (max-width: 400px){

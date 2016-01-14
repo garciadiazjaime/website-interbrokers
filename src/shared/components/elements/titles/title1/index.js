@@ -5,12 +5,10 @@ const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 export default class Title1 extends React.Component {
 
   render() {
-    // todo: let's use className and href instead of classTitle/refs
     return (
       <h2 className={style[this.props.className]}>
         {this.props.children}
       </h2>
-
     );
   }
 }

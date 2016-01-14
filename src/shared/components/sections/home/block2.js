@@ -14,7 +14,6 @@ export default class Block2 extends React.Component {
     const { texts, links } = this.props.data;
     return (<div className="container-fluid">
         <Row1 className="a">
-          <div className="row">
             <div className="col-sm-6">
               <Wrapper1 className="a">
                 <Title className="a">
@@ -23,18 +22,16 @@ export default class Block2 extends React.Component {
                 </Title>
                 <Paragraph1 className="b">{texts.text3}</Paragraph1>
                 <Paragraph1 className="a">{texts.text4}</Paragraph1>
-                <Button1 className="g" refs={links.link1.href}>
+                <Button1 className="g" href={links.link1.href}>
                   {links.link1.title}
                 </Button1>
               </Wrapper1>
             </div>
-
             <div className="col-sm-6">
               <div className="row">
                 <Image1 className="a" src="/images/home360.png" />
               </div>
             </div>
-          </div>
         </Row1>
       </div>);
   }
@@ -42,4 +39,8 @@ export default class Block2 extends React.Component {
 
 Block2.propTypes = {
   data: React.PropTypes.object.isRequired,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.array,
+    React.PropTypes.string,
+  ]),
 };

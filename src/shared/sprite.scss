@@ -1,54 +1,18 @@
-$aboutus-carouselLeftArrow: -0px -0px 8px 13px;
-$aboutus-carouselRightArrow: -8px -0px 8px 13px;
-$general-agent: -462px -47px 27px 18px;
-$general-arrow_big_yellow: -356px -47px 42px 42px;
-$general-arrow_small_yellow: -506px -47px 10px 10px;
-$general-banner-lines: -0px -0px 356px 275px;
-$general-check_red: -489px -47px 17px 17px;
-$general-facebook: -398px -47px 32px 32px;
-$general-location: -356px -89px 23px 38px;
-$general-logo-anti: -0px -275px 300px 47px;
-$general-logo: -356px -0px 282px 47px;
-$general-office: -430px -47px 32px 32px;
-$home-camion_servicios: -0px -0px 500px 500px;
-$home-nuevo_entrante: -500px -0px 580px 410px;
-$home-seguro-certificado: -113px -500px 72px 84px;
-$home-seguros-IBK: -500px -410px 115px 59px;
-$home-seguros-camion: -0px -500px 113px 113px;
-$procedures-back-to-menu: -147px -450px 32px 19px;
-$procedures-banner-usa: -0px -0px 1024px 450px;
-$procedures-procedure-usa: -0px -450px 147px 73px;
-$seguros-Seguros-mx-servicio: -115px -0px 142px 81px;
-$seguros-Seguros-servicio: -0px -0px 115px 115px;
-$seguros-Seguros-usa-servicio: -0px -115px 142px 81px;
-$seguros-seguros-carros: -142px -115px 51px 51px;
-$seguros-seguros-casas: -193px -115px 51px 51px;
-$seguros-seguros-empresas: -0px -196px 51px 51px;
-$seguros-seguros-motos: -51px -196px 51px 51px;
-$seguros-seguros-personas: -102px -196px 51px 51px;
-$services-bullet: -501px -146px 12px 12px;
-$services-consultoria-mxusa: -372px -146px 62px 89px;
-$services-consultoria: -0px -115px 115px 115px;
-$services-icon-consultoria: -434px -178px 25px 36px;
-$services-icon-permisos: -473px -146px 28px 27px;
-$services-icon-seguros: -434px -146px 39px 32px;
-$services-icon-tramites: -459px -178px 24px 30px;
-$services-permisos-entrante: -147px -230px 147px 73px;
-$services-permisos-usa: -372px -0px 147px 73px;
-$services-permisos: -0px -0px 115px 115px;
-$services-placas-mx: -230px -162px 91px 52px;
-$services-placas-usa: -372px -235px 91px 52px;
-$services-seguros-mx: -230px -81px 142px 81px;
-$services-seguros-usa: -230px -0px 142px 81px;
-$services-seguros: -115px -115px 115px 115px;
-$services-tramites-mx: -0px -230px 147px 73px;
-$services-tramites-usa: -372px -73px 147px 73px;
-$services-tramites: -115px -0px 115px 115px;
-$aboutus-members-memberAvatar: -0px -0px 112px 112px;
-$home-banner-insurance: -512px -0px 256px 256px;
-$home-banner-integral_service: -0px -0px 512px 512px;
-$home-banner-permits: -512px -256px 256px 256px;
-$home-banner-procedures: -0px -512px 256px 256px;
+$elements-consulting_white: -0px -30px 23px 34px;
+$elements-consultoria: -23px -30px 23px 34px;
+$elements-fb: -22px -64px 23px 23px;
+$elements-go: -102px -0px 16px 28px;
+$elements-insurance: -0px -0px 37px 30px;
+$elements-insurance_white: -37px -0px 37px 30px;
+$elements-left_arrow_blue_big: -102px -28px 8px 13px;
+$elements-menu: -45px -64px 30px 17px;
+$elements-permit: -74px -0px 28px 27px;
+$elements-permit_white: -46px -30px 28px 27px;
+$elements-right_arrow_blue: -109px -41px 6px 8px;
+$elements-right_arrow_blue_big: -110px -28px 8px 13px;
+$elements-right_arrow_yellow_big: -102px -41px 7px 13px;
+$elements-tramit: -74px -27px 22px 28px;
+$elements-tramit_white: -0px -64px 22px 28px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -74,27 +38,6 @@ $home-banner-procedures: -0px -512px 256px 256px;
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
-.icon-aboutus {
-  background-image: url(/images/sprite-aboutus.png);
-}
-.icon-general {
-  background-image: url(/images/sprite-general.png);
-}
-.icon-home {
-  background-image: url(/images/sprite-home.png);
-}
-.icon-procedures {
-  background-image: url(/images/sprite-procedures.png);
-}
-.icon-seguros {
-  background-image: url(/images/sprite-seguros.png);
-}
-.icon-services {
-  background-image: url(/images/sprite-services.png);
-}
-.icon-aboutus-members {
-  background-image: url(/images/sprite-aboutus-members.png);
-}
-.icon-home-banner {
-  background-image: url(/images/sprite-home-banner.png);
+.icon-elements {
+  background-image: url(/images/sprites/sprite-elements.png);
 }

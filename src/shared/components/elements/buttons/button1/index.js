@@ -6,9 +6,8 @@ const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 export default class Button1 extends React.Component {
 
   render() {
-    // todo: let's use className and href instead of classTitle/refs
     return (
-      <Link className={style[this.props.className]} to={this.props.refs}>
+      <Link className={style[this.props.className]} to={this.props.href}>
         <div className={style.title}>{this.props.children}</div>
       </Link>
 
@@ -22,5 +21,5 @@ Button1.propTypes = {
     React.PropTypes.string,
   ]),
   className: React.PropTypes.string,
-  refs: React.PropTypes.string.isRequired,
+  href: React.PropTypes.string.isRequired,
 };
