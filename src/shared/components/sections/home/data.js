@@ -61,7 +61,9 @@ export default {
     texts: {
       text1: 'Seguros para Vehiculos Comerciales',
       text2: 'Contamos con seguros para vehículos comerciales con cobertura en México y en Estados Unidos, para que siempre estés protegido.',
-      text3: 'Solicita tu certificado de aseguranza',
+      text3: 'Solicita tu',
+      text32: 'certificado',
+      text33: 'de aseguranza',
     },
     links: {
       link1: {

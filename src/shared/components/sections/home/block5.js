@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import Wrapper1 from '../../elements/wrappers/wrapper1';
 
 export default class Block5 extends React.Component {
 
   render() {
     const { texts, links } = this.props.data;
-    return (<div className="row">
+    return (<Wrapper1 className="f">
+      <div className="row">
 
         <div className="col-sm-6">
           <h2>{texts.text1}</h2>
@@ -38,7 +40,8 @@ export default class Block5 extends React.Component {
 
         </div>
 
-      </div>);
+      </div>
+      </Wrapper1>);
   }
 }
 

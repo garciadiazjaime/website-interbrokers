@@ -31,6 +31,43 @@
 .c{
 	margin: 0 35px;
 }
+.d{
+  background: $red;
+  padding: 50px 50px 25px 190px;
+  margin: 0 -15px 50px;
+  @include border-radius(0 0 0 40px);
+  &::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  	@extend .icon-elements;
+    @include sprite($elements-red_truck_small);
+  }
+  &::after{
+  	content: '';
+  	position: absolute;
+  	@extend .icon-elements;
+    @include sprite($elements-yellow_corner);
+    top: -13px;
+    right: -12px; 
+  }
+}
+.e{
+	margin: 100px 0 0 190px;
+	&::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 80px;
+  	@extend .icon-elements;
+    @include sprite($elements-red_exclamation_bubble);
+  }
+}
+.f{
+  background: $purple;
+  padding: 70px 0 100px;
+}
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px;
