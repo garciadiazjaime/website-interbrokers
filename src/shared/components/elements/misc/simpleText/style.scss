@@ -1,0 +1,10 @@
+@import '../../../../constants';
+
+.a{
+  color: $red;
+}
+@media screen and (max-width: 400px){
+  .a{
+    
+  }
+}

@@ -24,6 +24,113 @@ module.exports = {
             "backgroundSize": "112px 112px"
         }
     },
+    "Elements": {
+        "ConsultingWhite": {
+            "backgroundPosition": "-0px -30px",
+            "width": "23px",
+            "height": "34px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "Consultoria": {
+            "backgroundPosition": "-23px -30px",
+            "width": "23px",
+            "height": "34px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "Fb": {
+            "backgroundPosition": "-22px -64px",
+            "width": "23px",
+            "height": "23px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "Go": {
+            "backgroundPosition": "-102px -0px",
+            "width": "16px",
+            "height": "28px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "Insurance": {
+            "backgroundPosition": "-0px -0px",
+            "width": "37px",
+            "height": "30px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "InsuranceWhite": {
+            "backgroundPosition": "-37px -0px",
+            "width": "37px",
+            "height": "30px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "LeftArrowBlueBig": {
+            "backgroundPosition": "-102px -28px",
+            "width": "8px",
+            "height": "13px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "Menu": {
+            "backgroundPosition": "-45px -64px",
+            "width": "30px",
+            "height": "17px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "Permit": {
+            "backgroundPosition": "-74px -0px",
+            "width": "28px",
+            "height": "27px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "PermitWhite": {
+            "backgroundPosition": "-46px -30px",
+            "width": "28px",
+            "height": "27px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "RightArrowBlue": {
+            "backgroundPosition": "-109px -41px",
+            "width": "6px",
+            "height": "8px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "RightArrowBlueBig": {
+            "backgroundPosition": "-110px -28px",
+            "width": "8px",
+            "height": "13px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "RightArrowYellowBig": {
+            "backgroundPosition": "-102px -41px",
+            "width": "7px",
+            "height": "13px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "Tramit": {
+            "backgroundPosition": "-74px -27px",
+            "width": "22px",
+            "height": "28px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        },
+        "TramitWhite": {
+            "backgroundPosition": "-0px -64px",
+            "width": "22px",
+            "height": "28px",
+            "backgroundImage": "url('/images/sprite-elements.png')",
+            "backgroundSize": "118px 92px"
+        }
+    },
     "General": {
         "Agent": {
             "backgroundPosition": "-462px -47px",

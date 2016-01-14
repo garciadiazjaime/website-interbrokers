@@ -1,0 +1,230 @@
+@import '../../../../constants';
+
+.a{
+  position: relative;
+  border: solid 1px $yellow;
+  width: 35px;
+  height: 20px;
+  margin-bottom: 15px;
+  @include border-radius(10px)
+  display: inline-block; 
+  &:hover{
+  	background: $yellow;
+  }
+  &::before{
+    @extend .fCenter;
+  	display: block;
+  	content: '';
+  	background-image: url('/images/sprites/sprite-elements.png');
+  	background-Position: -0px -13px;
+	width: 6px;
+	height: 8px;
+	background-size: 23px 21px;
+  }
+}
+.b{
+  position: relative;
+  background: $yellow;
+  width: 45px;
+  height: 30px;
+  margin-bottom: 20px;
+  @include border-radius(15px)
+  display: inline-block; 
+  &:hover{
+  	background: $darkYellow;
+  }
+  &::before{
+    @extend .fCenter;
+  	display: block;
+  	content: '';
+  	background-image: url('/images/sprites/sprite-elements.png');
+  	background-Position: -8px -0px;
+	width: 8px;
+	height: 13px;
+	background-size: 23px 21px;
+  }
+}
+.c{
+  position: relative;
+  background: $yellow;
+  width: 45px;
+  height: 30px;
+  margin-bottom: 20px;
+  @include border-radius(15px)
+  display: inline-block; 
+  &:hover{
+  	background: $darkYellow;
+  }
+  &::before{
+    @extend .fCenter;
+  	display: block;
+  	content: '';
+  	background-image: url('/images/sprites/sprite-elements.png');
+  	background-Position: -0px -0px;
+	width: 8px;
+	height: 13px;
+	background-size: 23px 21px;
+  }
+}
+.d{
+  position: relative;
+  background: $yellow;
+  width: 175px;
+  color: $blue;
+  font: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkYellow;
+  	color: $blue;
+  }
+  &::before{
+    @extend .vCenter;
+    right: 15px;
+  	display: block;
+  	content: '';
+  	background-image: url('/images/sprites/sprite-elements.png');
+  	background-Position: -8px -0px;
+	width: 8px;
+	height: 13px;
+	background-size: 23px 21px;
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.e{
+  position: relative;
+  background: $blue;
+  width: 225px;
+  font-size: 12px;
+  color: $yellow;
+  font: $fontABold;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkBlue;
+  	color: $yellow;
+  }
+  &::before{
+    @extend .vCenter;
+    right: 15px;
+  	display: block;
+  	content: '';
+  	background-image: url('/images/sprites/sprite-elements.png');
+  	background-Position: -16px -0px;
+	width: 7px;
+	height: 13px;
+	background-size: 23px 21px;
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.f{
+  position: relative;
+  background: $red;
+  width: 225px;
+  color: $yellow;
+  font: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkRed;
+  	color: $yellow;
+  }
+  &::before{
+    @extend .vCenter;
+    right: 15px;
+  	display: block;
+  	content: '';
+  	background-image: url('/images/sprites/sprite-elements.png');
+  	background-Position: -16px -0px;
+	width: 7px;
+	height: 13px;
+	background-size: 23px 21px;
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.g{
+  position: relative;
+  background: $yellow;
+  width: 225px;
+  color: $blue;
+  font: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+    background: $darkYellow;
+    color: $blue;
+  }
+  &::before{
+    @extend .vCenter;
+    right: 15px;
+    display: block;
+    content: '';
+    background-image: url('/images/sprites/sprite-elements.png');
+    background-Position: -8px -0px;
+  width: 8px;
+  height: 13px;
+  background-size: 23px 21px;
+  }
+  .title{
+    @extend .vCenter;
+  }
+}
+.h{
+  position: relative;
+  background: $lightGray;
+  width: 185px;
+  color: $red;
+  font: $fontABold;
+  height: 55px;
+  margin-bottom: 20px;
+  padding-left: 65px;
+  @include border-radius(30px)
+  display: inline-block; 
+  &:hover{
+  	background: $white;
+  	color: $red;
+  }
+  &::before{
+    @extend .vCenter;
+  	display: block;
+  	content: '';
+  	background-image: url('/images/sprites/sprite-elements.png');
+  	background-Position: -16px -0px;
+	width: 7px;
+	height: 13px;
+	background-size: 23px 21px;
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+@media screen and (max-width: 400px){
+  .a{
+    
+  }
+}

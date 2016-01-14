@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 
-export default class BlockD extends React.Component {
+export default class Block4 extends React.Component {
 
   render() {
     const { texts, links } = this.props.data;
@@ -23,6 +23,6 @@ export default class BlockD extends React.Component {
   }
 }
 
-BlockD.propTypes = {
+Block4.propTypes = {
   data: React.PropTypes.object.isRequired,
 };
