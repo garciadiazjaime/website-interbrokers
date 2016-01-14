@@ -16,9 +16,10 @@
   font-family: $fontABold;
   color: $white;
   font-size: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  margin-top: 0;
 }
-@media screen and (max-width: $isPhone){
+@media #{$isPhone}{
   .a{
     font-size: 30px;
   }

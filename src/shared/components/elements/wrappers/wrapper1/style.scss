@@ -3,3 +3,37 @@
 .a{
   margin: 130px 35px;
 }
+.b{
+  position: relative;
+  background: $red;
+  margin: 0 -15px 100px;
+  padding: 30px 25px 0 225px;
+  &::before{
+	content: '';
+	display: block;
+	background-image: url('/images/home_nuevoEntrante.png');
+	position: absolute;
+  	height: 391px;
+  	width: 584px;
+  	background-size: 100% 100%;
+  	left: -24px;
+  	bottom: -71px;
+  }
+  &::after{
+  	content: '';
+  	position: absolute;
+  	@extend .icon-elements;
+    @include sprite($elements-yellow_corner);
+    top: -13px;
+    right: -12px; 
+  }
+}
+.c{
+	margin: 0 35px;
+}
+@media #{$isTablet}{
+  .a{
+  	margin: 40px 20px;
+  }
+}
+	

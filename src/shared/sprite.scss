@@ -1,18 +1,19 @@
-$elements-consulting_white: -0px -30px 23px 34px;
-$elements-consultoria: -23px -30px 23px 34px;
-$elements-fb: -22px -64px 23px 23px;
-$elements-go: -102px -0px 16px 28px;
-$elements-insurance: -0px -0px 37px 30px;
-$elements-insurance_white: -37px -0px 37px 30px;
-$elements-left_arrow_blue_big: -102px -28px 8px 13px;
-$elements-menu: -45px -64px 30px 17px;
-$elements-permit: -74px -0px 28px 27px;
-$elements-permit_white: -46px -30px 28px 27px;
-$elements-right_arrow_blue: -109px -41px 6px 8px;
-$elements-right_arrow_blue_big: -110px -28px 8px 13px;
-$elements-right_arrow_yellow_big: -102px -41px 7px 13px;
-$elements-tramit: -74px -27px 22px 28px;
-$elements-tramit_white: -0px -64px 22px 28px;
+$elements-consulting_white: -77px -0px 23px 34px;
+$elements-consultoria: -77px -34px 23px 34px;
+$elements-fb: -28px -70px 23px 23px;
+$elements-go: -100px -56px 16px 28px;
+$elements-insurance: -0px -40px 37px 30px;
+$elements-insurance_white: -40px -0px 37px 30px;
+$elements-left_arrow_blue_big: -108px -84px 8px 13px;
+$elements-menu: -51px -70px 30px 17px;
+$elements-permit: -37px -40px 28px 27px;
+$elements-permit_white: -0px -70px 28px 27px;
+$elements-right_arrow_blue: -116px -56px 6px 8px;
+$elements-right_arrow_blue_big: -100px -84px 8px 13px;
+$elements-right_arrow_yellow_big: -65px -40px 7px 13px;
+$elements-tramit: -100px -28px 22px 28px;
+$elements-tramit_white: -100px -0px 22px 28px;
+$elements-yellow_corner: -0px -0px 40px 40px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
