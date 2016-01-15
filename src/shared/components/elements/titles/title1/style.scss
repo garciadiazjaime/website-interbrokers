@@ -33,6 +33,10 @@
   margin-bottom: 25px;
   margin-top: 0;
 }
+.e2{
+  @extend .e;
+  text-align: center;
+}
 .f{
   font-family: $fontABold;
   color: $white;
@@ -41,6 +45,13 @@
   border-bottom: 1px solid $white;
   margin-bottom: 25px;
   padding-bottom: 13px;
+  margin-top: 0;
+}
+g{
+  font-family: $fontABold;
+  color: $white;
+  font-size: 30px;
+  margin-bottom: 17px;
   margin-top: 0;
 }
 @media #{$isPhone}{
@@ -52,5 +63,13 @@
   }
   .c{
     font-size: 26px;
+  }
+  .e2{
+    font-size: 20px;
+  }
+}
+@media #{$isPhone}{
+  .d{
+    font-size: 25px;
   }
 }

@@ -3,7 +3,33 @@
 export default {
   // **** Banner con slider ****
   block1: {
-
+    texts: {
+      text1: 'Servicio Integral',
+      text2: 'Expertos en el Sector Transportista',
+      text3: 'Más de 15 años de experiencia.',
+    },
+    links: {
+      link1: {
+        href: 'aboutus',
+        title: 'Servicio Integral',
+      },
+      link2: {
+        href: 'permisos',
+        title: 'permisos',
+      },
+      link3: {
+        href: 'permisos',
+        title: 'permisos',
+      },
+      link4: {
+        href: 'tramites',
+        title: 'trámites',
+      },
+      link5: {
+        href: 'seguros',
+        title: 'seguros',
+      },
+    },
   },
 
   // **** 2 Cartas: Servicio Integral - img ****

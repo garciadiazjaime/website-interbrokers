@@ -16,7 +16,6 @@ export default class Block5 extends React.Component {
             <Wrapper1 className="c">
               <Title1 className="e">{texts.text1}</Title1>
               <Title1 className="f">{texts.text2}</Title1>
-
               <Button1 className="j1" href={links.link1.href}>{links.link1.title}</Button1>
               <Button1 className="j2" href={links.link2.href}>{links.link2.title}</Button1>
               <Button1 className="j3" href={links.link3.href}>{links.link3.title}</Button1>

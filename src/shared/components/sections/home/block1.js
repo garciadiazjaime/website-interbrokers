@@ -1,24 +1,65 @@
 import React from 'react';
-
+import Wrapper1 from '../../elements/wrappers/wrapper1';
+import Row1 from '../../elements/rows/row1';
 import Button1 from '../../elements/buttons/button1';
+import Title1 from '../../elements/titles/title1';
+import Paragraph1 from '../../elements/paragraphs/paragraph1';
 
-export default class BlockA extends React.Component {
+export default class Block1 extends React.Component {
   render() {
+    const { texts, links } = this.props.data;
     return (<div className="container-fluid">
-        <div className="row">
-          <Button1 className="a" href="http://www.google.com" /><br />
-          <Button1 className="b" href="http://www.google.com" /><br />
-          <Button1 className="c" href="http://www.google.com" /><br />
-          <Button1 className="d" href="http://www.google.com">Enviar</Button1><br />
-          <Button1 className="e" href="http://www.google.com">Enviar</Button1><br />
-          <Button1 className="f" href="http://www.google.com">Contáctanos</Button1><br />
-          <div style={{ background: '#b7b7b7', padding: '50px' }}>
-              <Button1 className="h1" href="http://www.google.com">Trámites</Button1><br />
-              <Button1 className="h2" href="http://www.google.com">Permits</Button1><br />
-              <Button1 className="h3" href="http://www.google.com">Insurance</Button1><br />
-              <Button1 className="h4" href="http://www.google.com">Consulting</Button1><br />
+        <Row1 className="b">
+          <div className="col-xs-6">
+            <Wrapper1 className="h1">
+              <Button1 className="k" href={links.link1.href}>
+                <Title1 className="e2">
+                  {links.link1.title}
+                </Title1>
+              </Button1>
+            </Wrapper1>
           </div>
-        </div>
+          <div className="col-xs-6">
+            <div className="row">
+              <div className="col-xs-12 col-sm-6">
+                <Wrapper1 className="i">
+                  <Title1 className="e2">
+                    {texts.text2}
+                  </Title1>
+                  <Paragraph1 className="d">
+                    {texts.text3}
+                  </Paragraph1>
+                  <Button1 className="b2" href={links.link2.href}/>
+                </Wrapper1>
+              </div>
+              <div className="col-xs-12 col-sm-6">
+                <Wrapper1 className="h2">
+                  <Button1 className="l" href={links.link3.href}>
+                    <p>{links.link3.title}</p>
+                  </Button1>
+                </Wrapper1>
+              </div>
+              <div className="col-xs-12 col-sm-6">
+                <Wrapper1 className="h3">
+                  <Button1 className="l" href={links.link4.href}>
+                    <p>{links.link4.title}</p>
+                  </Button1>
+                </Wrapper1>
+              </div>
+              <div className="col-xs-12 col-sm-6">
+                <Wrapper1 className="h4">
+                  <Button1 className="l" href={links.link5.href}>
+                    <p>{links.link5.title}</p>
+                  </Button1>
+                </Wrapper1>
+              </div>
+            </div>
+          </div>
+        </Row1>
       </div>);
   }
 }
+
+Block1.propTypes = {
+  data: React.PropTypes.object.isRequired,
+};

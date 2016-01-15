@@ -4,3 +4,11 @@
   background: $lightGray;
   margin-bottom: 100px;
 }
+.b{
+  background: $black;
+}
+@media #{$isPhone}{
+  .a{
+  	margin-bottom: 0;
+  }
+}
