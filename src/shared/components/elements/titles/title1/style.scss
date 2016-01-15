@@ -26,6 +26,23 @@
   margin-bottom: 50px;
   margin-top: 0;
 }
+.e{
+  font-family: $fontABold;
+  color: $white;
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+.f{
+  font-family: $fontABold;
+  color: $white;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid $white;
+  margin-bottom: 25px;
+  padding-bottom: 13px;
+  margin-top: 0;
+}
 @media #{$isPhone}{
   .a{
     font-size: 30px;

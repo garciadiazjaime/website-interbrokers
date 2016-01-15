@@ -68,6 +68,11 @@
   background: $purple;
   padding: 70px 0 100px;
 }
+.g{
+  @extend .icon-elements;
+  @include sprite($elements-ibk);
+  margin-bottom: 35px;
+}
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px;
