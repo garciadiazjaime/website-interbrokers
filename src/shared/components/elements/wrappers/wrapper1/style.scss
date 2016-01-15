@@ -150,6 +150,9 @@
       display: none;
     }
   }
+  .c{
+    margin: 0;
+  }
   .d{
     @include border-radius(0);
     padding-left: 50px;
