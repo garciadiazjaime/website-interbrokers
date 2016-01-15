@@ -1,0 +1,225 @@
+@import '../../../../constants';
+
+.a{
+  position: relative;
+  border: solid 1px $yellow;
+  width: 35px;
+  height: 20px;
+  margin-bottom: 15px;
+  @include border-radius(10px)
+  display: inline-block; 
+  &:hover{
+  	background: $yellow;
+  }
+  &::before{
+    @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue);  
+  	display: block;
+  	content: '';
+  }
+}
+.b{
+  position: relative;
+  background: $yellow;
+  width: 45px;
+  height: 30px;
+  margin-bottom: 20px;
+  @include border-radius(15px)
+  display: inline-block; 
+  &:hover{
+  	background: $darkYellow;
+  }
+  &::before{
+    @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);  
+  	display: block;
+  	content: '';
+  }
+}
+.c{
+  position: relative;
+  background: $yellow;
+  width: 45px;
+  height: 30px;
+  margin-bottom: 20px;
+  @include border-radius(15px)
+  display: inline-block; 
+  &:hover{
+  	background: $darkYellow;
+  }
+  &::before{
+    @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-left_arrow_blue_big);  
+  	display: block;
+  	content: '';
+  }
+}
+.d{
+  position: relative;
+  background: $yellow;
+  width: 175px;
+  color: $blue;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkYellow;
+  	color: $blue;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);  
+    right: 15px;
+  	display: block;
+  	content: '';
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.e{
+  position: relative;
+  background: $blue;
+  width: 225px;
+  font-size: 12px;
+  color: $yellow;
+  font-family: $fontABold;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkBlue;
+  	color: $yellow;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_yellow_big);  
+    right: 15px;
+  	display: block;
+  	content: '';
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.f{
+  position: relative;
+  background: $red;
+  width: 225px;
+  color: $yellow;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkRed;
+  	color: $yellow;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_yellow_big);  
+    right: 15px;
+  	display: block;
+  	content: '';
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.g{
+  position: relative;
+  background: $yellow;
+  width: 225px;
+  color: $blue;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+    background: $darkYellow;
+    color: $blue;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);  
+    right: 15px;
+    display: block;
+    content: '';
+  }
+  .title{
+    @extend .vCenter;
+  }
+}
+.h{
+  position: relative;
+  background: $lightGray;
+  width: 185px;
+  color: $red;
+  font-family: $fontABold;
+  height: 55px;
+  margin-bottom: 20px;
+  padding-left: 65px;
+  @include border-radius(30px)
+  display: inline-block; 
+  &:hover{
+  	background: $white;
+  	color: $red;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+  	display: block;
+  	content: '';
+    left: 20px;
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.h1{
+  @extend .h;
+  &::before{
+    @include sprite($elements-tramit);  
+  }
+}
+.h2{
+  @extend .h;
+  &::before{
+    @include sprite($elements-permit);  
+  }
+}
+.h3{
+  @extend .h;
+  &::before{
+    @include sprite($elements-insurance);  
+  }
+}
+.h4{
+  @extend .h;
+  &::before{
+    @include sprite($elements-consultoria);  
+  }
+}

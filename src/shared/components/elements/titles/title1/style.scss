@@ -1,0 +1,39 @@
+@import '../../../../constants';
+
+.a{
+  font-family: $fontABold;
+  color: $blue;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.b{
+  font-family: $fontABold;
+  color: $blue;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.c{
+  font-family: $fontABold;
+  color: $white;
+  font-size: 35px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+.d{
+  font-family: $fontABold;
+  color: $white;
+  font-size: 40px;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+@media #{$isPhone}{
+  .a{
+    font-size: 30px;
+  }
+  .b{
+    font-size: 26px;
+  }
+  .c{
+    font-size: 26px;
+  }
+}

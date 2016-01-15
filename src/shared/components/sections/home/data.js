@@ -31,7 +31,10 @@ export default {
   // **** 2 Cartas: texto - Nuevo entrante ****
   block3: {
     texts: {
-      text1: 'Impulsemos el crecimiento de tu empresa transportista.',
+      text1: 'Impulsemos el',
+      text12: 'crecimiento',
+      text13: 'de tu empresa',
+      text14: 'transportista.',
       text2: 'Nuevo Entrante',
       text3: 'Conoce todo lo que necesitas para operar tu compañía transportista en Estados Unidos.',
     },
@@ -58,7 +61,9 @@ export default {
     texts: {
       text1: 'Seguros para Vehiculos Comerciales',
       text2: 'Contamos con seguros para vehículos comerciales con cobertura en México y en Estados Unidos, para que siempre estés protegido.',
-      text3: 'Solicita tu certificado de aseguranza',
+      text3: 'Solicita tu',
+      text32: 'certificado',
+      text33: 'de aseguranza',
     },
     links: {
       link1: {
