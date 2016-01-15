@@ -88,7 +88,9 @@ export default {
     texts: {
       text1: 'Siente la libertad de Vivir tranquilo.',
       text2: 'Seguros',
-      text3: 'A través de nuestra empresa hermana <b>IBK Agentes de Seguros</b>, te ofrecemos un amplio portafolio en seguros personales, autos, casa, salud, entre otros. Visita nuestro sitio y conoce como podemos ayudarte.',
+      text3: 'A través de nuestra empresa hermana ',
+      text32: 'IBK Agentes de Seguros',
+      text33: ', te ofrecemos un amplio portafolio en seguros personales, autos, casa, salud, entre otros. Visita nuestro sitio y conoce como podemos ayudarte.',
     },
     links: {
       link1: {

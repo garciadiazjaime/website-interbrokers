@@ -223,3 +223,88 @@
     @include sprite($elements-consultoria);  
   }
 }
+.i{
+  position: relative;
+  background: $white;
+  width: 175px;
+  color: $purple;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block; 
+  text-transform: uppercase;
+  &:hover{
+    background: $lightGray;
+    color: $purple;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-purple_arrow);  
+    right: 15px;
+    display: block;
+    content: '';
+  }
+  .title{
+    @extend .vCenter;
+  }
+}
+.j{
+  display: inline-block;
+  margin-right: 20px;
+  color: $white;
+  font-family: $fontABold;
+  font-size: 8px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  &:hover{
+    color: $white;
+  }
+  &::before{
+    content: "";
+    margin-bottom: 8px;
+  }
+  &:last-child{
+  margin-right: 0;
+  }
+}
+.j1{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_car);  
+  }
+}
+.j2{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_bike);  
+  }
+}
+.j3{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_house);  
+  }
+}
+.j4{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_briefcase);  
+  }
+}
+.j5{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_heart);  
+  }
+}
