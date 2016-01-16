@@ -348,6 +348,13 @@
   &:hover{
     color: $white;
   }
+  &::before{
+    content: "";
+    position: absolute;
+    @extend .icon-home-banner;
+    right: 15px;
+    bottom: 15px;
+  }
   &::after{
     content: "";
     right: 40px;
@@ -356,10 +363,31 @@
     @include sprite($elements-go);  
   }
 }
+.l1{
+  @extend .l;
+  &::before{
+    @include sprite($home-banner-check);  
+  }
+}
+.l2{
+  @extend .l;
+  &::before{
+    @include sprite($home-banner-sheet);  
+  }
+}
+.l3{
+  @extend .l;
+  &::before{
+    @include sprite($home-banner-umbrella);  
+  }
+}
 @media #{$isPhone}{
   .l{
     height: 85px;
     padding-left: 20px;
+    &::before{
+      display: none;
+    }
     &::after{
       right: 10px;
     }
