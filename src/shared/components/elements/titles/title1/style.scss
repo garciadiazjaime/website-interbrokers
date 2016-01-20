@@ -74,6 +74,11 @@
   font-size: 50px;
   color: $white;
 }
+.j{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $darkBlue;
+}
 @media #{$isPhone}{
   .a{
     font-size: 30px;
