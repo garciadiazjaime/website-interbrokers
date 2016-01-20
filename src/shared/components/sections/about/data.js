@@ -1,4 +1,4 @@
-/* eslint max-len: [2, 500, 4] */
+/* eslint max-len: [2, 600, 4] */
 import dataTeam from './team';
 
 export default {
@@ -42,12 +42,6 @@ export default {
       text2: 'Entendemos tus necesidades, para ofrecerte una solución integral.',
       text3: 'Mientras que la mayoría se limita a la correduría de seguros, InterBrokers sobresale por su extensa oferta de productos y servicios. Desde una amplia variedad servicios para la gestión de trámites y permisos, hasta consultoría privada principalmente dirigida al sector transportista con actividad binacional.',
     },
-
-    images: {
-      image1: '',
-      image2: '',
-      image3: '',
-    },
   },
 
   // renglon con 2 cartas, con nino manejando
@@ -55,9 +49,7 @@ export default {
     texts: {
       text1: '¿Qué vas a hacer cuando seas grande?',
       text2: 'Nuestra misión: Ayudarte a crecer.',
-      text3: 'En interBrokers creemos en la importancia de la seguridad y tranquilidad de nuestros clientes, es por eso que promovemos una cultura enfocada en la prevención para impulsar su crecimiento, desarrollo y transformación.',
-      text4: 'A través de un servicio cálido, efectivo y personalizado nos ocupamos de entender sus necesidades y ofrecerle una solución integral.',
-      text5: 'Interbrokers ofrece servicios de consultoría, trámites, permisos y seguros, siendo expertos en el sector transportista binacional.',
+      text3: 'En interBrokers creemos en la importancia de la seguridad y tranquilidad de nuestros clientes, es por eso que promovemos una cultura enfocada en la prevención para impulsar su crecimiento, desarrollo y transformación. <br />A través de un servicio cálido, efectivo y personalizado nos ocupamos de entender sus necesidades y ofrecerle una solución integral. <br />Interbrokers ofrece servicios de consultoría, trámites, permisos y seguros, siendo expertos en el sector transportista binacional.',
     },
 
     links: {
@@ -68,7 +60,10 @@ export default {
     },
 
     images: {
-      image1: '',
+      image1: {
+        src: '/images/aboutus/kid.png',
+        alt: 'Qué vas a hacer cuando seas grande?',
+      },
     },
   },
 
