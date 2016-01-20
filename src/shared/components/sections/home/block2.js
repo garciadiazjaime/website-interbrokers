@@ -22,7 +22,7 @@ export default class Block2 extends React.Component {
                 </Title>
                 <Paragraph1 className="b">{texts.text3}</Paragraph1>
                 <Paragraph1 className="a">{texts.text4}</Paragraph1>
-                <Button1 className="g" href={links.link1.href}>
+                <Button1 className="g" href={links.link1.href} title={links.link1.title}>
                   {links.link1.title}
                 </Button1>
               </Wrapper1>
