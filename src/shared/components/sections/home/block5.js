@@ -16,12 +16,21 @@ export default class Block5 extends React.Component {
             <Wrapper1 className="c">
               <Title1 className="e">{texts.text1}</Title1>
               <Title1 className="f">{texts.text2}</Title1>
-
-              <Button1 className="j1" href={links.link1.href}>{links.link1.title}</Button1>
-              <Button1 className="j2" href={links.link2.href}>{links.link2.title}</Button1>
-              <Button1 className="j3" href={links.link3.href}>{links.link3.title}</Button1>
-              <Button1 className="j4" href={links.link4.href}>{links.link4.title}</Button1>
-              <Button1 className="j5" href={links.link5.href}>{links.link5.title}</Button1>
+              <Button1 className="j1" href={links.link1.href} title={links.link1.title}>
+                {links.link1.title}
+              </Button1>
+              <Button1 className="j2" href={links.link2.href} title={links.link2.title}>
+                {links.link2.title}
+              </Button1>
+              <Button1 className="j3" href={links.link3.href} title={links.link3.title}>
+                {links.link3.title}
+              </Button1>
+              <Button1 className="j4" href={links.link4.href} title={links.link4.title}>
+                {links.link4.title}
+              </Button1>
+              <Button1 className="j5" href={links.link5.href} title={links.link5.title}>
+                {links.link5.title}
+              </Button1>
             </Wrapper1>
           </div>
 
@@ -31,7 +40,9 @@ export default class Block5 extends React.Component {
                 <Wrapper1 className="g" />
               </div>
               <div className="col-sm-6">
-                <Button1 className="i" href={links.link6.href} >{links.link6.title}</Button1>
+                <Button1 className="i" href={links.link6.href} title={links.link6.title}>
+                  {links.link6.title}
+                </Button1>
               </div>
             </div>
             <Paragraph1 className="c">

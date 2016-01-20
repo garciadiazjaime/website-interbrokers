@@ -14,7 +14,8 @@
     "build": "npm run clean && npm run babel",
     "sprites": "./node_modules/.bin/gulp build:sprites",
     "lint": "./node_modules/.bin/eslint --ignore-pattern **/app-*.js, **/**/sprite.js --ext .js,.jsx src",
-    "deploy": "NODE_ENV=production webpack -p --config webpack.config.prod.js"
+    "deploy": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
+    "bower": "./node_modules/.bin/bower install"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "bower": "^1.7.2",
     "css-loader": "^0.23.1",
     "del": "^2.2.0",
     "eslint": "^1.10.3",

@@ -23,6 +23,11 @@ $elements-right_arrow_yellow_big: -271px -138px 7px 13px;
 $elements-tramit: -68px -194px 22px 28px;
 $elements-tramit_white: -46px -194px 22px 28px;
 $elements-yellow_corner: -234px -98px 40px 40px;
+$home-banner-check: -364px -155px 52px 52px;
+$home-banner-plecks: -0px -0px 364px 368px;
+$home-banner-sheet: -416px -155px 52px 52px;
+$home-banner-truck: -364px -0px 155px 155px;
+$home-banner-umbrella: -364px -207px 52px 52px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -50,4 +55,7 @@ $elements-yellow_corner: -234px -98px 40px 40px;
 }
 .icon-elements {
   background-image: url(/images/sprites/sprite-elements.png);
+}
+.icon-home-banner {
+  background-image: url(/images/sprites/sprite-home-banner.png);
 }

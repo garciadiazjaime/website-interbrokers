@@ -19,14 +19,16 @@ export default class Block3 extends React.Component {
                 {texts.text13}<br />
                 {texts.text14}
               </Title>
-              <Button1 className="g" href={links.link1.href}>{links.link1.title}</Button1>
+              <Button1 className="g" href={links.link1.href} title={links.link1.title}>
+                {links.link1.title}
+              </Button1>
             </Wrapper1>
           </div>
           <div className="col-xs-12 col-sm-6">
             <Wrapper1 className="b">
               <Title className="c">{texts.text2}</Title>
               <Paragraph1 className="c">{texts.text3}</Paragraph1>
-              <Button1 className="b" href={links.link2.href} />
+              <Button1 className="b" href={links.link2.href} title={links.link2.title}/>
             </Wrapper1>
           </div>
         </div>
