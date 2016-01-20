@@ -45,6 +45,10 @@
   @extend .e;
   text-align: center;
 }
+.e3{
+  @extend .e;
+  color: $yellow;
+}
 .f{
   font-family: $fontABold;
   color: $white;
