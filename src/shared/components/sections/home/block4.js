@@ -15,7 +15,7 @@ export default class Block4 extends React.Component {
             <Wrapper1 className="d">
               <Title1 className="d">{texts.text1}</Title1>
               <Paragraph1 className="c">{texts.text2}</Paragraph1>
-              <Button1 href={links.link1.href} className="b" />
+              <Button1 href={links.link1.href} className="b" title={links.link1.title}/>
             </Wrapper1>
           </div>
 
@@ -26,7 +26,9 @@ export default class Block4 extends React.Component {
                 {texts.text32}<br />
                 {texts.text33}
               </Title1>
-              <Button1 href={links.link2.href} className="g">{links.link2.title}</Button1>
+              <Button1 href={links.link2.href} className="g"title={links.link2.title}>
+                {links.link2.title}
+              </Button1>
             </Wrapper1>
           </div>
         </div>

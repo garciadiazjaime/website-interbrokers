@@ -29,7 +29,7 @@ export default class Block2 extends React.Component {
             </div>
             <div className="col-sm-6">
               <div className="row">
-                <Image1 className="a" src="/images/home360.png" />
+                <Image1 className="a" src="/images/home360.png" alt="Servicio Integral 360º"/>
               </div>
             </div>
         </Row1>

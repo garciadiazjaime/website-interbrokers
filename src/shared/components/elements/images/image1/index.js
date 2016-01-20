@@ -7,7 +7,7 @@ export default class Image1 extends React.Component {
   render() {
     // todo: let's use className and href instead of classTitle/refs
     return (
-      <img className={style[this.props.className]} src={this.props.src} />
+      <img className={style[this.props.className]} src={this.props.src} alt={this.props.alt} />
 
     );
   }
@@ -20,4 +20,5 @@ Image1.propTypes = {
   ]),
   className: React.PropTypes.string,
   src: React.PropTypes.string.isRequired,
+  alt: React.PropTypes.string.isRequired,
 };

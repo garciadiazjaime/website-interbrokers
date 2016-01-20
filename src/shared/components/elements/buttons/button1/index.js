@@ -7,7 +7,7 @@ export default class Button1 extends React.Component {
 
   render() {
     return (
-      <Link className={style[this.props.className]} to={this.props.href}>
+      <Link className={style[this.props.className]} to={this.props.href} title={this.props.title}>
         <div className={style.title}>{this.props.children}</div>
       </Link>
 
@@ -22,4 +22,5 @@ Button1.propTypes = {
   ]),
   className: React.PropTypes.string,
   href: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string.isRequired,
 };
