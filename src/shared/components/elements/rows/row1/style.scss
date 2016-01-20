@@ -7,6 +7,9 @@
 .b{
   background: $black;
 }
+.c{
+  background: $red;
+}
 @media #{$isPhone}{
   .a{
   	margin-bottom: 0;

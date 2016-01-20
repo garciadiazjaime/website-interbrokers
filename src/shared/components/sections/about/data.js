@@ -11,7 +11,7 @@ export default {
 
     images: {
       image1: {
-        src: '/images/banner-nosotros.png',
+        src: '/images/aboutus/banner.png',
         alt: 'nosotros',
       },
     },
