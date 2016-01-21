@@ -35,6 +35,9 @@ export default {
   icons: [{
     title: 'facebook',
     url: '#',
+  }, {
+    title: 'portfolio',
+    url: '#',
   }],
   addresses: [{
     id: 'google',
