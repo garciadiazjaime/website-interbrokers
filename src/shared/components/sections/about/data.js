@@ -1,5 +1,5 @@
 /* eslint max-len: [2, 600, 4] */
-import dataTeam from './team';
+import dataTeam from './dataTeam';
 
 export default {
   // banner principal

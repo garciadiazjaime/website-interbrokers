@@ -74,9 +74,19 @@
   font-size: 50px;
   color: $white;
 }
+.i{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $white;
+}
 .j{
   font-family: $fontABold;
   font-size: 25px;
+  color: $darkBlue;
+}
+.k{
+  font-family: $fontABold;
+  font-size: 16px;
   color: $darkBlue;
 }
 @media #{$isPhone}{

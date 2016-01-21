@@ -23,9 +23,7 @@ export default class Block5 extends React.Component {
           <Title1 className="b2">
             {texts.text2}
           </Title1>
-          <Paragraph1 className="d">
-            {texts.text3}
-          </Paragraph1>
+          <Paragraph1 className="d" data={texts.text3} />
           <Button1 className="g" href={links.link1.href} title={links.link1.title}>
             {links.link1.title}
           </Button1>

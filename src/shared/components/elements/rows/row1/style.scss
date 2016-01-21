@@ -10,6 +10,9 @@
 .c{
   background: $red;
 }
+.d{
+  background: $yellow;
+}
 @media #{$isPhone}{
   .a{
   	margin-bottom: 0;
