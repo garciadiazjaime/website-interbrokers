@@ -19,7 +19,7 @@ export default class MainMenu extends React.Component {
   getIcons(data) {
     return data.map((item, index) => {
       return (<li key={index}>
-          <Link to={item.url} className={style[item.title]} id={item.url} />
+          <a href={item.url} className={style[item.title]} id={item.url} />
         </li>
       );
     });
@@ -29,7 +29,7 @@ export default class MainMenu extends React.Component {
     /*eslint-disable */
     return (<div className="container-fluid">
         <nav className={style.navbarDefault + ' navbar navbar-default'}>
-          
+
             <div className={style.navbarHeader + ' navbar-header'}>
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
                 <span className="sr-only">Toggle navigation</span>
@@ -46,7 +46,7 @@ export default class MainMenu extends React.Component {
               </ul>
               <ul className={style.socialNetwork}>
                 {this.getIcons(this.props.icons)}
-              </ul>                
+              </ul>
             </div>
 
         </nav>
