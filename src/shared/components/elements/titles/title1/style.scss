@@ -20,6 +20,9 @@
   font-size: 35px;
   margin-bottom: 50px;
 }
+.b2{
+  color: $white;
+}
 .c{
   font-family: $fontABold;
   color: $white;
@@ -74,6 +77,22 @@
   font-size: 50px;
   color: $white;
 }
+.i{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $white;
+}
+.j{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $darkBlue;
+}
+.k{
+  font-family: $fontABold;
+  font-size: 16px;
+  color: $darkBlue;
+}
+
 @media#{$headerAdjuster}{
   .e4{
     font-size: 20px;
