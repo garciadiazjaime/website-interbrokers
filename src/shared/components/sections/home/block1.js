@@ -23,7 +23,7 @@ export default class Block1 extends React.Component {
             <div className="row">
               <div className="col-xs-12 col-sm-6">
                 <Wrapper1 className="i">
-                  <Title1 className="e2">
+                  <Title1 className="e4">
                     {texts.text2}
                   </Title1>
                   <Paragraph1 className="d">

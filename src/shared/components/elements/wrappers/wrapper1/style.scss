@@ -136,7 +136,7 @@
 }
 @media #{$isTablet}{
   .a{
-  	margin: 40px 20px;
+  	margin: 40px 20px 40px 35px;
   }
 }
 @media #{$isPhone}{
@@ -149,9 +149,6 @@
     &::after{
       display: none;
     }
-  }
-  .c{
-    margin: 0;
   }
   .d{
     @include border-radius(0);
@@ -170,6 +167,9 @@
       left: 40px;
       top: 0;
     }
+  }
+  .g{
+    margin-top: 60px;
   }
   .h{
     height: 85px;

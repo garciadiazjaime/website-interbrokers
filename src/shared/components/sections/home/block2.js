@@ -17,7 +17,8 @@ export default class Block2 extends React.Component {
             <div className="col-sm-6">
               <Wrapper1 className="a">
                 <Title className="a">
-                  {texts.text1}
+                  {texts.text1}<br />
+                  {texts.text1b}
                   <SimpleText className="a">{texts.text2}</SimpleText>
                 </Title>
                 <Paragraph1 className="b">{texts.text3}</Paragraph1>

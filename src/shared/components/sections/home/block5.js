@@ -14,7 +14,7 @@ export default class Block5 extends React.Component {
         <div className="row">
           <div className="col-xs-12 col-sm-5">
             <Wrapper1 className="c">
-              <Title1 className="e">{texts.text1}</Title1>
+              <Title1 className="e">{texts.text1}<br />{texts.text1b}</Title1>
               <Title1 className="f">{texts.text2}</Title1>
               <Button1 className="j1" href={links.link1.href} title={links.link1.title}>
                 {links.link1.title}
@@ -35,21 +35,23 @@ export default class Block5 extends React.Component {
           </div>
 
           <div className="col-xs-12 col-sm-5 col-sm-offset-1">
-            <div className="row">
-              <div className="col-sm-6">
-                <Wrapper1 className="g" />
+            <Wrapper1 className="c">
+              <div className="row">
+                <div className="col-sm-6">
+                  <Wrapper1 className="g" />
+                </div>
+                <div className="col-sm-6">
+                  <Button1 className="i" href={links.link6.href} title={links.link6.title}>
+                    {links.link6.title}
+                  </Button1>
+                </div>
               </div>
-              <div className="col-sm-6">
-                <Button1 className="i" href={links.link6.href} title={links.link6.title}>
-                  {links.link6.title}
-                </Button1>
-              </div>
-            </div>
-            <Paragraph1 className="c">
-                {texts.text3}
-                <b>{texts.text32}</b>
-                {texts.text33}
-            </Paragraph1>
+              <Paragraph1 className="c">
+                  {texts.text3}
+                  <b>{texts.text32}</b>
+                  {texts.text33}
+              </Paragraph1>
+            </Wrapper1>
           </div>
         </div>
       </div>

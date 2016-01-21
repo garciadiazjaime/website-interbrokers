@@ -49,6 +49,9 @@
   @extend .e;
   color: $yellow;
 }
+.e4{
+  @extend .e;
+}
 .f{
   font-family: $fontABold;
   color: $white;
@@ -71,6 +74,11 @@
   font-size: 50px;
   color: $white;
 }
+@media#{$headerAdjuster}{
+  .e4{
+    font-size: 20px;
+  }
+}
 @media #{$isPhone}{
   .a{
     font-size: 30px;
@@ -83,6 +91,9 @@
   }
   .e2{
     font-size: 20px;
+  }
+  .e4{
+    font-size: 18px;
   }
 }
 @media #{$isPhone}{

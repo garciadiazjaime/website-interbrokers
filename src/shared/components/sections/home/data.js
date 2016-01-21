@@ -35,7 +35,8 @@ export default {
   // **** 2 Cartas: Servicio Integral - img ****
   block2: {
     texts: {
-      text1: 'Servicio Integral',
+      text1: 'Servicio',
+      text1b: 'Integral ',
       text2: '360',
       text3: 'Te ayudamos a llegar más lejos.',
       text4: 'Entendemos tus necesidades, para ofrecerte una solución integral.',
@@ -112,7 +113,8 @@ export default {
   // **** Fondo morado ****
   block5: {
     texts: {
-      text1: 'Siente la libertad de Vivir tranquilo.',
+      text1: 'Siente la libertad de',
+      text1b: ' Vivir tranquilo.',
       text2: 'Seguros',
       text3: 'A través de nuestra empresa hermana ',
       text32: 'IBK Agentes de Seguros',
