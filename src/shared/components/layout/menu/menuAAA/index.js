@@ -27,31 +27,28 @@ export default class MainMenu extends React.Component {
 
   render() {
     /*eslint-disable */
-    return (<div className="container-fluid">
-        <nav className={style.navbarDefault + ' navbar navbar-default'}>
+    return (<nav className={style.navbarDefault + ' navbar navbar-default'}>
+            <div className="container-fluid">
+              <div className={style.navbarHeader + ' navbar-header'}>
+                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
+                  <span className="sr-only">Toggle navigation</span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                </button>
+                <Link className={style.navbarBrand + ' navbar-brand'} to="inicio">01.800.788.04.08</Link>
+              </div>
 
-            <div className={style.navbarHeader + ' navbar-header'}>
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
-              <Link className={style.navbarBrand + ' navbar-brand'} to="inicio">01.800.788.04.08</Link>
+              <div className={style.navbarCollapse + ' collapse navbar-collapse'} id='mainmenu'>
+                <ul className={style.socialNetwork}>
+                  {this.getIcons(this.props.icons)}
+                </ul>
+                <ul className={style.navbarNav + ' nav navbar-nav'}>
+                  {this.getItems(this.props.items)}
+                </ul>
+              </div>
             </div>
-
-            <div className={style.navbarCollapse + ' collapse navbar-collapse'} id='mainmenu'>
-              <ul className={style.navbarNav + ' nav navbar-nav'}>
-                {this.getItems(this.props.items)}
-              </ul>
-              <ul className={style.socialNetwork}>
-                {this.getIcons(this.props.icons)}
-              </ul>
-            </div>
-
-        </nav>
-      </div>
-    );
+        </nav>);
     /*eslint-enable */
   }
 }

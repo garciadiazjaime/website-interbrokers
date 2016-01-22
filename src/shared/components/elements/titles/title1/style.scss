@@ -92,7 +92,25 @@
   font-size: 16px;
   color: $darkBlue;
 }
-
+.l{
+  @extend .vCenter;
+  width: 90%;
+  font-family: $fontA;
+  color: $darkBlue;
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 12px;
+  &:after{
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    display: block;
+    @extend .icon-layout;
+    @include sprite($layout-yellowFleck_small); 
+  }
+}
 @media#{$headerAdjuster}{
   .e4{
     font-size: 20px;
