@@ -89,6 +89,11 @@
   font-size: 16px;
   color: $darkBlue;
 }
+.l{
+  font-family: $fontABold;
+  font-size: 30px;
+  color: $red;
+}
 @media #{$isPhone}{
   .a{
     font-size: 30px;
