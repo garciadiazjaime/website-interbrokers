@@ -1,11 +1,12 @@
+$layout-phone_icon: -0px -30px 25px 16px;
+$layout-sm_facebook: -0px -0px 30px 30px;
+$layout-sm_portfolio: -30px -0px 30px 30px;
+$layout-yellowFleck_small: -25px -30px 10px 10px;
 $home-banner-check: -364px -155px 52px 52px;
 $home-banner-plecks: -0px -0px 364px 368px;
 $home-banner-sheet: -416px -155px 52px 52px;
 $home-banner-truck: -364px -0px 155px 155px;
 $home-banner-umbrella: -364px -207px 52px 52px;
-$layout-phone_icon: -0px -30px 25px 16px;
-$layout-sm_facebook: -0px -0px 30px 30px;
-$layout-sm_portfolio: -30px -0px 30px 30px;
 $elements-consulting_white: -0px -194px 23px 34px;
 $elements-consultoria: -23px -194px 23px 34px;
 $elements-fb: -234px -168px 23px 23px;
@@ -56,11 +57,11 @@ $elements-yellow_corner: -234px -98px 40px 40px;
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
-.icon-home-banner {
-  background-image: url(/images/sprites/sprite-home-banner.png);
-}
 .icon-layout {
   background-image: url(/images/sprites/sprite-layout.png);
+}
+.icon-home-banner {
+  background-image: url(/images/sprites/sprite-home-banner.png);
 }
 .icon-elements {
   background-image: url(/images/sprites/sprite-elements.png);

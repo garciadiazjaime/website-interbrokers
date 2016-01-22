@@ -391,14 +391,25 @@
     color: $red;
   }
 }
+
+@media#{$headerAdjuster}{
+  .l{
+    &::after{
+      display: none;
+    }
+  }
+}
+
 @media #{$isPhone}{
   .l{
     height: 85px;
     padding-left: 20px;
+    font-size: 18px;
     &::before{
       display: none;
     }
     &::after{
+      display: bock;
       right: 10px;
     }
   }

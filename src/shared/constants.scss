@@ -19,8 +19,9 @@ $black: #000;
 $white: #fff;
 
 $isTablet: "only screen and (max-width: 1023px)";
-$isPhone: "only screen and (max-width : 768px)";
+$isPhone: "only screen and (max-width: 767px)";
 
+$headerAdjuster: "only screen and (max-width: 969px) and (min-width: 767px)";
 
 // ****************** MIXINS *********************
 
@@ -147,6 +148,4 @@ $isPhone: "only screen and (max-width : 768px)";
   @include transform(translateY(-50%));
 }
 // **************** PADDINGS & MARGINS *************************
-.container-fluid{
 
-}
