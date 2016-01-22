@@ -8,7 +8,7 @@ import Image1 from '../../../elements/images/image1';
 
 export default class HeaderMenu extends React.Component {
 
-  renderMenu(data) {
+  renderHeader(data) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
         return (<div key={index} className="col-sm-3">
@@ -27,7 +27,7 @@ export default class HeaderMenu extends React.Component {
   render() {
     const { data } = this.props;
     return (<div>
-      {this.renderMenu(data)}
+      {this.renderHeader(data)}
     </div>);
   }
 }

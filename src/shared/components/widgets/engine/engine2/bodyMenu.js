@@ -12,6 +12,7 @@ export default class BodyMenu extends React.Component {
         return (<BodyBlock data={item.children} key={index} />);
       });
     }
+    return null;
   }
 
   render() {

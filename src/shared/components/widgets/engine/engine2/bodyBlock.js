@@ -9,7 +9,7 @@ import List from './list';
 export default class BodyBlock extends React.Component {
 
   renderServiceChild(data) {
-    switch (data.type.toUpperCase()) {
+    switch (_.isString(data.type) && data.type.toUpperCase()) {
       case 'TITLE':
         return (<Title>
             {data.title}
@@ -33,6 +33,7 @@ export default class BodyBlock extends React.Component {
           </div>);
       });
     }
+    return null;
   }
 
   render() {
