@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
-// import Sprites from '../../../../sprite';
-
+import Wrapper1 from '../../../elements/wrappers/wrapper1';
+import Image1 from '../../../elements/images/image1';
+import Title1 from '../../../elements/titles/title1';
+import Paragraph1 from '../../../elements/paragraphs/paragraph1';
+import Button1 from '../../../elements/buttons/button1';
 
 export default class FooterAAA extends React.Component {
 
-  getMenu(data, className) {
+  getMenu(data) {
     const items = data.map((item, index) => {
       const children = item.children ? this.getMenu(item.children) : null;
 
-      return (<li key={index} className={className || style.menuChild}>
+      return (<li key={index}>
         {
           item.type ?
           <a href={item.url} target="_blank">{item.title}</a> :
@@ -26,18 +28,38 @@ export default class FooterAAA extends React.Component {
 
   getAddress(data) {
     const items = data.map((item, index) => {
-      return (<div className="col-sm-4" key={index}>
-        <div className="row">
-          [address]
-        </div>
+      return (<div className="col-xs-12 col-sm-3" key={index}>
+        <Wrapper1 className="l">
+          <Title1 className="m">
+            {item.id}
+          </Title1>
+          <Paragraph1 className="e">
+            {item.address}<br />
+            {item.address2}<br />
+            {item.address3}<br />
+          </Paragraph1>
+          <Title1 className="n">
+            {item.cta}
+          </Title1>
+          <div className="hidden-xs">
+            <Title1 className="e">
+              {item.phone}
+            </Title1>
+          </div>
+          <div className="visible-xs">
+            <Button1 className="n" href={ 'tel:' + item.phone } title={ item.phone }>
+              {item.phone}
+            </Button1>
+          </div>
+        </Wrapper1>
       </div>);
     });
 
-    return (<div id={style.addresses} className="hidden-sm hidden-xs">{items}</div>);
+    return (<div>{items}</div>);
   }
 
   render() {
-    const { items, addresses } = this.props;
+    const { addresses } = this.props;
     const data = [{
       name: 'POOL',
       url: 'http://somospool.com',
@@ -48,54 +70,69 @@ export default class FooterAAA extends React.Component {
       title: 'Diseño y Desarrollo Web en Tijuana',
     }];
 
-    return (<div id={style.footer}>
-
-        <div className="container-fluid">
-          <div className={style.footerWrapper}>
-
+    return (<Wrapper1 className="k">
+          <div className="container-fluid">
             <div className="row">
-              <div className="col-sm-8 col-xs-5">
-                <div className="row">
-                  [logo]
-                </div>
+              <div className="col-xs-12 col-sm-8">
+                  <Image1 className="b" src="/images/logoWhite.png" alt="InterBrokers"/>
               </div>
-              <div className="col-sm-4 col-xs-6">
-                <div className={style.followUs}>
-                  [sm]
-                </div>
+              <div className="col-sm-4 col-xs-4">
+                [sm]
               </div>
             </div>
-
             <div className="row">
-              <div className={style.footerMenu}>
-                {this.getMenu(items, style.menuParent)}
-
                 {this.getAddress(addresses)}
+              <div className="col-xs-12 col-sm-6">
+                <Title1 className="m">
+                  Servicios
+                </Title1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Trámites en Estados Unidos para Transportistas
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Trámites en México para Transportistas
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Trámite de Placas en DMV - Estados Unidos
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Trámite de Placas en  SCT - México
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Permisos para Transportistas en Estados Unidos
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Permisos y Servicios para Nuevos Entrantes
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Seguros para Vehículos Comerciales en Estados Unidos
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Seguros para Vehículos Comerciales en México
+                </Button1>
+                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
+                  Consultoría y Servicio de Auditorias para Empresas Transportistas
+                </Button1>
               </div>
             </div>
-
           </div>
-        </div>
-
-        <div className={style.powered}>
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-7">
-                Todos los derechos reservados Branding Pool 2015
+          <Wrapper1 className="l">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-xs-12 col-sm-6">
+                    Todos los derechos reservados &copy; InterBrokers
+                  </div>
+                  <div className="col-xs-12 col-sm-6">
+                    Un proyecto de:&nbsp;
+                    <a href={data[0].url} title={data[0].title} target="_blank">{data[0].name}</a>
+                    &nbsp;&nbsp;
+                    Código por:&nbsp;
+                    <a href={data[1].url} title={data[1].title} target="_blank">{data[1].name}</a>
+                  </div>
+                </div>
               </div>
-              <div className="col-sm-5">
-                Un proyecto de:&nbsp;
-                <a href={data[0].url} title={data[0].title} target="_blank">{data[0].name}</a>
-                &nbsp;&nbsp;
-                Código por:&nbsp;
-                <a href={data[1].url} title={data[1].title} target="_blank">{data[1].name}</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    );
+          </Wrapper1>
+        </Wrapper1>);
   }
 }
 

@@ -32,3 +32,24 @@
   @extend .d;
   font-family: $fontABold;
 }
+.e{
+  position: relative;
+  font-family: $fontA;
+  color: $gray;
+  font-size: 12px;
+  padding-left: 35px;
+  height: 110px;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-location_big);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media #{$isPhone}{
+  .e{
+    height: 70px;
+  }
+}
