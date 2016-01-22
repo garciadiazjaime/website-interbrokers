@@ -7,14 +7,14 @@
   height: 20px;
   margin-bottom: 15px;
   @include border-radius(10px)
-  display: inline-block; 
+  display: inline-block;
   &:hover{
   	background: $yellow;
   }
   &::before{
     @extend .fCenter;
     @extend .icon-elements;
-    @include sprite($elements-right_arrow_blue);  
+    @include sprite($elements-right_arrow_blue);
   	display: block;
   	content: '';
   }
@@ -26,14 +26,14 @@
   height: 30px;
   margin-bottom: 20px;
   @include border-radius(15px)
-  display: inline-block; 
+  display: inline-block;
   &:hover{
   	background: $darkYellow;
   }
   &::before{
     @extend .fCenter;
     @extend .icon-elements;
-    @include sprite($elements-right_arrow_blue_big);  
+    @include sprite($elements-right_arrow_blue_big);
   	display: block;
   	content: '';
   }
@@ -49,14 +49,14 @@
   height: 30px;
   margin-bottom: 20px;
   @include border-radius(15px)
-  display: inline-block; 
+  display: inline-block;
   &:hover{
   	background: $darkYellow;
   }
   &::before{
     @extend .fCenter;
     @extend .icon-elements;
-    @include sprite($elements-left_arrow_blue_big);  
+    @include sprite($elements-left_arrow_blue_big);
   	display: block;
   	content: '';
   }
@@ -72,7 +72,7 @@
   margin-bottom: 20px;
   padding-left: 25px;
   @include border-radius(15px)
-  display: inline-block; 
+  display: inline-block;
   text-transform: uppercase;
   &:hover{
   	background: $darkYellow;
@@ -81,7 +81,7 @@
   &::before{
     @extend .vCenter;
     @extend .icon-elements;
-    @include sprite($elements-right_arrow_blue_big);  
+    @include sprite($elements-right_arrow_blue_big);
     right: 15px;
   	display: block;
   	content: '';
@@ -101,7 +101,7 @@
   margin-bottom: 20px;
   padding-left: 25px;
   @include border-radius(15px)
-  display: inline-block; 
+  display: inline-block;
   text-transform: uppercase;
   &:hover{
   	background: $darkBlue;
@@ -110,7 +110,7 @@
   &::before{
     @extend .vCenter;
     @extend .icon-elements;
-    @include sprite($elements-right_arrow_yellow_big);  
+    @include sprite($elements-right_arrow_yellow_big);
     right: 15px;
   	display: block;
   	content: '';
@@ -130,7 +130,7 @@
   margin-bottom: 20px;
   padding-left: 25px;
   @include border-radius(15px)
-  display: inline-block; 
+  display: inline-block;
   text-transform: uppercase;
   &:hover{
   	background: $darkRed;
@@ -139,7 +139,7 @@
   &::before{
     @extend .vCenter;
     @extend .icon-elements;
-    @include sprite($elements-right_arrow_yellow_big);  
+    @include sprite($elements-right_arrow_yellow_big);
     right: 15px;
   	display: block;
   	content: '';
@@ -159,7 +159,7 @@
   margin-bottom: 20px;
   padding-left: 25px;
   @include border-radius(15px)
-  display: inline-block; 
+  display: inline-block;
   text-transform: uppercase;
   &:hover{
     background: $darkYellow;
@@ -168,7 +168,7 @@
   &::before{
     @extend .vCenter;
     @extend .icon-elements;
-    @include sprite($elements-right_arrow_blue_big);  
+    @include sprite($elements-right_arrow_blue_big);
     right: 15px;
     display: block;
     content: '';
@@ -187,7 +187,7 @@
   margin-bottom: 20px;
   padding-left: 65px;
   @include border-radius(30px)
-  display: inline-block; 
+  display: inline-block;
   &:hover{
   	background: $white;
   	color: $red;
@@ -206,25 +206,25 @@
 .h1{
   @extend .h;
   &::before{
-    @include sprite($elements-tramit);  
+    @include sprite($elements-tramit);
   }
 }
 .h2{
   @extend .h;
   &::before{
-    @include sprite($elements-permit);  
+    @include sprite($elements-permit);
   }
 }
 .h3{
   @extend .h;
   &::before{
-    @include sprite($elements-insurance);  
+    @include sprite($elements-insurance);
   }
 }
 .h4{
   @extend .h;
   &::before{
-    @include sprite($elements-consultoria);  
+    @include sprite($elements-consultoria);
   }
 }
 .i{
@@ -239,7 +239,7 @@
   margin-top: 25px;
   padding-left: 25px;
   @include border-radius(15px)
-  display: inline-block; 
+  display: inline-block;
   text-transform: uppercase;
   &:hover{
     background: $lightGray;
@@ -248,7 +248,7 @@
   &::before{
     @extend .vCenter;
     @extend .icon-elements;
-    @include sprite($elements-purple_arrow);  
+    @include sprite($elements-purple_arrow);
     right: 15px;
     display: block;
     content: '';
@@ -281,35 +281,35 @@
   @extend .j;
   &::before{
     @extend .icon-elements;
-    @include sprite($elements-home_purple_car);  
+    @include sprite($elements-home_purple_car);
   }
 }
 .j2{
   @extend .j;
   &::before{
     @extend .icon-elements;
-    @include sprite($elements-home_purple_bike);  
+    @include sprite($elements-home_purple_bike);
   }
 }
 .j3{
   @extend .j;
   &::before{
     @extend .icon-elements;
-    @include sprite($elements-home_purple_house);  
+    @include sprite($elements-home_purple_house);
   }
 }
 .j4{
   @extend .j;
   &::before{
     @extend .icon-elements;
-    @include sprite($elements-home_purple_briefcase);  
+    @include sprite($elements-home_purple_briefcase);
   }
 }
 .j5{
   @extend .j;
   &::before{
     @extend .icon-elements;
-    @include sprite($elements-home_purple_heart);  
+    @include sprite($elements-home_purple_heart);
   }
 }
 .k{
@@ -321,7 +321,7 @@
     content: "";
     margin: 0 auto 20px;
     @extend .icon-home-banner;
-    @include sprite($home-banner-truck);  
+    @include sprite($home-banner-truck);
   }
   &::after  {
     content: "";
@@ -329,7 +329,7 @@
     bottom: 30px;
     right: 30px;
     @extend .icon-home-banner;
-    @include sprite($home-banner-plecks);  
+    @include sprite($home-banner-plecks);
     margin: 0 auto;
   }
 }
@@ -360,25 +360,35 @@
     right: 40px;
     @extend .vCenter;
     @extend .icon-elements;
-    @include sprite($elements-go);  
+    @include sprite($elements-go);
   }
 }
 .l1{
   @extend .l;
   &::before{
-    @include sprite($home-banner-check);  
+    @include sprite($home-banner-check);
   }
 }
 .l2{
   @extend .l;
   &::before{
-    @include sprite($home-banner-sheet);  
+    @include sprite($home-banner-sheet);
   }
 }
 .l3{
   @extend .l;
   &::before{
-    @include sprite($home-banner-umbrella);  
+    @include sprite($home-banner-umbrella);
+  }
+}
+.m{
+  font-family: $fontABold;
+  font-size: 16px;
+  color: $gray;
+  display: block;
+
+  &:hover{
+    color: $red;
   }
 }
 @media #{$isPhone}{
