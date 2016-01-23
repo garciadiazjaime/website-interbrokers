@@ -1,7 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
 
+import data from './data';
 import Banner from './banner';
+import Intro from './intro';
+import Footer from './footer';
 
 
 export default class ServiceInner extends React.Component {
@@ -18,13 +21,14 @@ export default class ServiceInner extends React.Component {
     }
   }
 
-  renderHeader(data) {
-    if (_.isArray(data) && data.length) {
-      return data.map((item) => {
-        console.log('item', item);
+  renderHeader(serviceData) {
+    if (_.isArray(serviceData) && serviceData.length) {
+      return serviceData.map((item) => {
         switch (item.type.toUpperCase()) {
           case 'BANNER':
             return (<Banner data={item} />);
+          case 'INTRO':
+            return (<Intro data={item} />);
           default:
             return null;
         }
@@ -34,10 +38,11 @@ export default class ServiceInner extends React.Component {
 
   render() {
     const { category, subcategory, service } = this.props.params;
-    const data = this.getData(category, subcategory, service);
+    const serviceData = this.getData(category, subcategory, service);
 
-    return (<div className="container-fluid">
-      {this.renderHeader(data.header)}
+    return (<div>
+      {this.renderHeader(serviceData.header)}
+      <Footer data={data.block1} />
     </div>);
   }
 }

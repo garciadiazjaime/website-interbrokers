@@ -53,3 +53,19 @@
     height: 70px;
   }
 }
+
+.f{
+  font: $fontA;
+  font-size: 16px;
+  color: $darkGray;
+}
+.f1{
+  @extend .f;
+  font-size: 21px;
+  font-family: $fontABold;
+}
+.g{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $white;
+}
