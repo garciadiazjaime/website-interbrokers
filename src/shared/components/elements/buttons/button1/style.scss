@@ -405,6 +405,9 @@
   &:hover{
     color: $lightGray;
   }
+  &:last-child{
+    margin-bottom: 70px;
+  }
 }
 .p{
   font-family: $fontABold;
