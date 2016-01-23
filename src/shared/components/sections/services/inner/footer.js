@@ -11,13 +11,13 @@ export default class Footer extends React.Component {
     return (<Row1 className="c">
       <div className="container-fluid">
         <hr />
-        <div className="col-sm-10">
+        <div className="col-sm-8">
           <Button1 className="b" href={links.link1.href} title={links.link1.title} />
           <Paragraph1 className="g">
             {links.link1.title}
           </Paragraph1>
         </div>
-        <div className="col-sm-2">
+        <div className="col-sm-4">
           <Button1 className="g" href={links.link2.href} title={links.link2.title}>
             {links.link2.title}
           </Button1>

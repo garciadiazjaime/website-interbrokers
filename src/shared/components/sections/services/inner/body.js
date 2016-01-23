@@ -56,7 +56,7 @@ export default class Body extends React.Component {
 
   render() {
     const { data, menuItems, rootUrl } = this.props;
-    return (<div className="content-fluid clearfix">
+    return (<div className="container-fluid">
         <div className="col-sm-6">
           {this.renderMenu(menuItems, rootUrl)}
         </div>

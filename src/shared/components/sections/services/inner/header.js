@@ -24,7 +24,7 @@ export default class Header extends React.Component {
 
   render() {
     const { data } = this.props;
-    return (<div className="content-fluid">
+    return (<div className="container-fluid">
         {this.renderElement(data)}
       </div>);
   }
