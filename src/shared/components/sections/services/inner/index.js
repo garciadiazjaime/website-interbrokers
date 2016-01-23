@@ -1,7 +1,12 @@
 import React from 'react';
 import _ from 'lodash';
 
-import Banner from './banner';
+import Header from './header';
+import Body from './body';
+import Footer from './footer';
+
+import servicesData from '../db';
+import dataBlocks from './data';
 
 
 export default class ServiceInner extends React.Component {
@@ -18,26 +23,37 @@ export default class ServiceInner extends React.Component {
     }
   }
 
-  renderHeader(data) {
+  getMenuItems(data, baseUrl, category, subcategory) {
     if (_.isArray(data) && data.length) {
-      return data.map((item) => {
-        console.log('item', item);
-        switch (item.type.toUpperCase()) {
-          case 'BANNER':
-            return (<Banner data={item} />);
-          default:
-            return null;
+      const seccionUrl = [baseUrl, category].join('/');
+      const categoryData = data.filter((item) => {
+        return item.href && item.href.toUpperCase() === seccionUrl.toUpperCase();
+      }).pop();
+
+      if (_.isArray(categoryData.children) && categoryData.children.length) {
+        const subcategoryData = categoryData.children.filter((item) => {
+          return item.href && item.href.toUpperCase() === subcategory.toUpperCase();
+        }).pop();
+
+        if (_.isArray(subcategoryData.children) && subcategoryData.children.length) {
+          return subcategoryData.children;
         }
-      });
+      }
     }
+    return null;
   }
 
   render() {
+    const baseUrl = 'servicios';
     const { category, subcategory, service } = this.props.params;
-    const data = this.getData(category, subcategory, service);
+    const serviceData = this.getData(category, subcategory, service);
+    const menuItems = this.getMenuItems(servicesData, baseUrl, category, subcategory);
+    const rootUrl = [baseUrl, category, subcategory].join('/');
 
-    return (<div className="container-fluid">
-      {this.renderHeader(data.header)}
+    return (<div>
+      <Header data={serviceData.header} />
+      <Body data={serviceData.content} menuItems={menuItems} rootUrl={rootUrl} />
+      <Footer data={dataBlocks.block1} />
     </div>);
   }
 }

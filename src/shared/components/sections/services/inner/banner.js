@@ -9,7 +9,7 @@ export default class Banner extends React.Component {
 
   render() {
     const { texts, images } = this.props.data;
-    return (<div>
+    return (<div className="container-fluid">
         <Image1 src={images.image1.src} alt={images.image1.alt} />
         <Title1>
           {texts.text1}
