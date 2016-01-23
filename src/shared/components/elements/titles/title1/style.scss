@@ -108,7 +108,7 @@
     right: -3px;
     display: block;
     @extend .icon-layout;
-    @include sprite($layout-yellowFleck_small); 
+    @include sprite($layout-yellowFleck_small);
   }
 }
 .m{

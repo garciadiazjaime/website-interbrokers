@@ -13,7 +13,7 @@ export default class HeaderMenu extends React.Component {
       return data.map((item, index) => {
         return (<div key={index} className="col-sm-3">
             <Image1 src="" className="" alt="" />
-            <Title1 className="l">
+            <Title1 className="m">
               {item.title}
             </Title1>
             <Button1 className="b" href={item.href} title={item.title} />
