@@ -406,6 +406,26 @@
     color: $lightGray;
   }
 }
+.p{
+  font-family: $fontABold;
+  font-size: 14px;
+  color: $white;
+  position: relative;
+  display: block;
+  text-align: right;
+  padding-right: 60px;
+  &:hover{
+    color: $white;
+  }
+  &::after{
+    @extend .icon-layout;
+    @extend .vCenter;
+    content: "";
+    right: 0;
+    @include sprite($layout-sm_facebook);
+
+  }
+}
 @media#{$headerAdjuster}{
   .l{
     &::after{

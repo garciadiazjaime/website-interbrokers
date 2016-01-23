@@ -77,7 +77,9 @@ export default class FooterAAA extends React.Component {
                   <Image1 className="b" src="/images/logoWhite.png" alt="InterBrokers"/>
               </div>
               <div className="col-sm-4 col-xs-4">
-                [sm]
+                <Button1 className="p" href="https://www.facebook.com/InterbrokersSeguros/" title="InterBrokers en Facebook">
+                  Síguenos en Facebook
+                </Button1>
               </div>
             </div>
             <div className="row">
@@ -116,18 +118,20 @@ export default class FooterAAA extends React.Component {
               </div>
             </div>
           </div>
-          <Wrapper1 className="l">
+          <Wrapper1 className="m">
               <div className="container-fluid">
                 <div className="row">
                   <div className="col-xs-12 col-sm-6">
                     Todos los derechos reservados &copy; InterBrokers
                   </div>
                   <div className="col-xs-12 col-sm-6">
-                    Un proyecto de:&nbsp;
-                    <a href={data[0].url} title={data[0].title} target="_blank">{data[0].name}</a>
-                    &nbsp;&nbsp;
-                    Código por:&nbsp;
-                    <a href={data[1].url} title={data[1].title} target="_blank">{data[1].name}</a>
+                    <Wrapper1 className="n">
+                      Un proyecto de:&nbsp;
+                      <a href={data[0].url} title={data[0].title} target="_blank">{data[0].name}</a>
+                      &nbsp;&nbsp;
+                      Código por:&nbsp;
+                      <a href={data[1].url} title={data[1].title} target="_blank">{data[1].name}</a>
+                    </Wrapper1>
                   </div>
                 </div>
               </div>
