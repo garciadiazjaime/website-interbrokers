@@ -1,14 +1,47 @@
 import React from 'react';
+import _ from 'lodash';
 
-// import Block1 from './block1';
-// import Block2 from './block2';
-// import data from './data';
+import Banner from './banner';
 
 
 export default class ServiceInner extends React.Component {
+
+  getData(category, subcategory, service) {
+    try {
+      return {
+        header: require('../db/' + category + '/header_common'),
+        content: require('../db/' + category + '/' + subcategory + '/' + service),
+      };
+    } catch (err) {
+      console.error(err.message);
+      return null;
+    }
+  }
+
+  renderHeader(data) {
+    if (_.isArray(data) && data.length) {
+      return data.map((item) => {
+        console.log('item', item);
+        switch (item.type.toUpperCase()) {
+          case 'BANNER':
+            return (<Banner data={item} />);
+          default:
+            return null;
+        }
+      });
+    }
+  }
+
   render() {
-    return (<div>
-      nice
+    const { category, subcategory, service } = this.props.params;
+    const data = this.getData(category, subcategory, service);
+
+    return (<div className="container-fluid">
+      {this.renderHeader(data.header)}
     </div>);
   }
 }
+
+ServiceInner.propTypes = {
+  params: React.PropTypes.any,
+};
