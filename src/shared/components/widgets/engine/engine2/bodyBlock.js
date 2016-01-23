@@ -8,7 +8,7 @@ import List from './list';
 
 export default class BodyBlock extends React.Component {
 
-  renderServiceChild(data) {
+  renderServiceChild(data, href) {
     switch (_.isString(data.type) && data.type.toUpperCase()) {
       case 'TITLE':
         return (<Title>
@@ -19,17 +19,17 @@ export default class BodyBlock extends React.Component {
             {data.title}
           </Subtitle>);
       case 'LIST':
-        return (<List data={data} />);
+        return (<List data={data} href={href} />);
       default:
         return null;
     }
   }
 
-  renderBlock(data) {
+  renderBlock(data, href) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
         return (<div key={index}>
-            {this.renderServiceChild(item)}
+            {this.renderServiceChild(item, href)}
           </div>);
       });
     }
@@ -37,13 +37,14 @@ export default class BodyBlock extends React.Component {
   }
 
   render() {
-    const { data } = this.props;
+    const { data, href } = this.props;
     return (<div>
-      {this.renderBlock(data)}
+      {this.renderBlock(data, href)}
     </div>);
   }
 }
 
 BodyBlock.propTypes = {
   data: React.PropTypes.array.isRequired,
+  href: React.PropTypes.string.isRequired,
 };
