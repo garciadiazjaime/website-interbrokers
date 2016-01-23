@@ -19,31 +19,31 @@ export default {
       href: 'pnp-pull-notice-programa',
     }, {
       title: 'BIT- Biennial Inspection of Terminals',
-      href: 'pnp-pull-notice-programa',
+      href: 'bit-biennial-inspection-terminals',
     }, {
       title: 'SCAC- Standard Carrier Alpha Code',
-      href: 'pnp-pull-notice-programa',
+      href: 'scac-standard-carrier-alpha-code',
     }, {
       title: 'Forma 2290UCR -Unified Carrier Registration',
-      href: 'pnp-pull-notice-programa',
+      href: 'forma-2290ucr-unified-carrier-registration',
     }, {
       title: 'Decal (User Fee) -US Customs',
-      href: 'pnp-pull-notice-programa',
+      href: 'decal-user-fee-us-customs',
     }, {
       title: 'FASTID Badge US CBP- (Gafete USA)',
-      href: 'pnp-pull-notice-programa',
+      href: 'fastid-badge-us-cbp',
     }, {
       title: 'Pago de TicketsARB- Air Resources Board',
-      href: 'pnp-pull-notice-programa',
+      href: 'pago-ticketsarb-air-resources-board',
     }, {
       title: 'Permisos temporales para otros Estados',
-      href: 'pnp-pull-notice-programa',
+      href: 'permisos-temporales-otros-estados',
     }, {
       title: 'Hazardous Material (Hazmat)',
-      href: 'pnp-pull-notice-programa',
+      href: 'hazardous-material-hazmat',
     }, {
       title: 'Cumplimiento para DOT',
-      href: 'pnp-pull-notice-programa',
+      href: 'cumplimiento-dot',
     }],
   }, {
     type: 'list',

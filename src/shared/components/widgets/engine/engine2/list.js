@@ -8,11 +8,12 @@ import Button1 from '../../../elements/buttons/button1';
 
 export default class List extends React.Component {
 
-  renderChildren(data) {
+  renderChildren(data, sectionUrl, blockUrl) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
+        const serviceLink = [sectionUrl, blockUrl, item.href].join('/');
         return (<li key={index}>
-            <Button1 href={item.href} className="m" title={item.title} data={item.title} />
+            <Button1 href={serviceLink} className="m" title={item.title} data={item.title} />
           </li>);
       });
     }
@@ -20,7 +21,7 @@ export default class List extends React.Component {
   }
 
   render() {
-    const { data } = this.props;
+    const { data, href } = this.props;
     return (<div className="row">
         <div className="col-sm-6">
           [img]
@@ -31,7 +32,7 @@ export default class List extends React.Component {
 
         <div className="col-sm-6">
           <ul>
-            {this.renderChildren(data.children)}
+            {this.renderChildren(data.children, href, data.href)}
           </ul>
         </div>
       </div>);
@@ -40,4 +41,5 @@ export default class List extends React.Component {
 
 List.propTypes = {
   data: React.PropTypes.object.isRequired,
+  href: React.PropTypes.string.isRequired,
 };

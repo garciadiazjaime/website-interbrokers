@@ -9,7 +9,7 @@ export default class BodyMenu extends React.Component {
   renderyBody(data) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        return (<BodyBlock data={item.children} key={index} />);
+        return (<BodyBlock data={item.children} key={index} href={item.href} />);
       });
     }
     return null;
