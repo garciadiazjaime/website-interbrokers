@@ -1,12 +1,3 @@
-$layout-phone_icon: -0px -30px 25px 16px;
-$layout-sm_facebook: -0px -0px 30px 30px;
-$layout-sm_portfolio: -30px -0px 30px 30px;
-$layout-yellowFleck_small: -25px -30px 10px 10px;
-$home-banner-check: -364px -155px 52px 52px;
-$home-banner-plecks: -0px -0px 364px 368px;
-$home-banner-sheet: -416px -155px 52px 52px;
-$home-banner-truck: -364px -0px 155px 155px;
-$home-banner-umbrella: -364px -207px 52px 52px;
 $elements-consulting_white: -0px -194px 23px 34px;
 $elements-consultoria: -23px -194px 23px 34px;
 $elements-fb: -234px -168px 23px 23px;
@@ -20,9 +11,10 @@ $elements-ibk: -112px -0px 122px 87px;
 $elements-insurance: -234px -138px 37px 30px;
 $elements-insurance_white: -70px -161px 37px 30px;
 $elements-left_arrow_blue_big: -274px -124px 8px 13px;
+$elements-location_big: -0px -228px 21px 36px;
 $elements-menu: -112px -87px 30px 17px;
-$elements-permit: -135px -161px 28px 27px;
-$elements-permit_white: -107px -161px 28px 27px;
+$elements-permit: -107px -161px 28px 27px;
+$elements-permit_white: -135px -161px 28px 27px;
 $elements-purple_arrow: -274px -111px 8px 13px;
 $elements-red_exclamation_bubble: -0px -112px 70px 82px;
 $elements-red_truck-small: -0px -0px 112px 112px;
@@ -32,6 +24,15 @@ $elements-right_arrow_yellow_big: -271px -138px 7px 13px;
 $elements-tramit: -68px -194px 22px 28px;
 $elements-tramit_white: -46px -194px 22px 28px;
 $elements-yellow_corner: -234px -98px 40px 40px;
+$home-banner-check: -364px -155px 52px 52px;
+$home-banner-plecks: -0px -0px 364px 368px;
+$home-banner-sheet: -416px -155px 52px 52px;
+$home-banner-truck: -364px -0px 155px 155px;
+$home-banner-umbrella: -364px -207px 52px 52px;
+$layout-phone_icon: -0px -30px 25px 16px;
+$layout-sm_facebook: -0px -0px 30px 30px;
+$layout-sm_portfolio: -30px -0px 30px 30px;
+$layout-yellowFleck_small: -25px -30px 10px 10px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -57,12 +58,12 @@ $elements-yellow_corner: -234px -98px 40px 40px;
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
-.icon-layout {
-  background-image: url(/images/sprites/sprite-layout.png);
+.icon-elements {
+  background-image: url(/images/sprites/sprite-elements.png);
 }
 .icon-home-banner {
   background-image: url(/images/sprites/sprite-home-banner.png);
 }
-.icon-elements {
-  background-image: url(/images/sprites/sprite-elements.png);
+.icon-layout {
+  background-image: url(/images/sprites/sprite-layout.png);
 }

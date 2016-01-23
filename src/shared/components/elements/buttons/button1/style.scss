@@ -391,7 +391,44 @@
     color: $red;
   }
 }
+.n{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $white;
+}
+.o{
+  display: block;
+  font-family: $fontABold; 
+  font-size: 14px;
+  color: $gray;
+  margin-bottom: 20px;
+  &:hover{
+    color: $lightGray;
+  }
+  &:last-child{
+    margin-bottom: 70px;
+  }
+}
+.p{
+  font-family: $fontABold;
+  font-size: 14px;
+  color: $white;
+  position: relative;
+  display: block;
+  text-align: right;
+  padding-right: 60px;
+  &:hover{
+    color: $white;
+  }
+  &::after{
+    @extend .icon-layout;
+    @extend .vCenter;
+    content: "";
+    right: 0;
+    @include sprite($layout-sm_facebook);
 
+  }
+}
 @media#{$headerAdjuster}{
   .l{
     &::after{

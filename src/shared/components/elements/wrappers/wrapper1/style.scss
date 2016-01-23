@@ -137,6 +137,30 @@
 .j{
   height: 160px;
 }
+.k{
+  background-color: $darkGray;
+  color: $lightGray;
+  padding-top: 50px;
+}
+.l{
+  padding-right: 30px;
+}
+.m{
+  background-color: $darkestGray;
+  padding: 15px;
+  font-size: 10px;
+  font-family: $fontA;
+  color: $white;
+  a{
+    color: $white;
+    &:hover{
+      color: $gray;
+    }
+  }
+}
+.n{
+  text-align: right;
+}
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px 40px 35px;

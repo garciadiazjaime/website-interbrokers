@@ -112,9 +112,28 @@
   }
 }
 .m{
-  font-weight: $fontABold;
-  font-size: 30px;
-  color: $red;
+  font-family: $fontABold;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 46px 0 17px;
+  padding-bottom: 12px;
+  color: $white;
+  border-bottom: solid 1px $gray;
+}
+.n{
+  color: $yellow;
+  position: relative;
+  font-size: 9;
+  text-transform: uppercase;
+  font-family: $fontABold;
+  &::after{
+    content: "";
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_yellow_big); 
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: -2px;
+  }
 }
 @media#{$headerAdjuster}{
   .e4{
