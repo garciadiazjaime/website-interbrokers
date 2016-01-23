@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
           </Paragraph1>
         </div>
         <div className="col-sm-2">
-          <Button1 className="g" href={links.link2.href}>
+          <Button1 className="g" href={links.link2.href} title={links.link2.title}>
             {links.link2.title}
           </Button1>
         </div>

@@ -1,10 +1,12 @@
 import React from 'react';
 import _ from 'lodash';
 
-import data from './data';
-import Banner from './banner';
-import Intro from './intro';
+import Header from './header';
+import Body from './body';
 import Footer from './footer';
+
+import servicesData from '../db';
+import dataBlocks from './data';
 
 
 export default class ServiceInner extends React.Component {
@@ -21,28 +23,37 @@ export default class ServiceInner extends React.Component {
     }
   }
 
-  renderHeader(serviceData) {
-    if (_.isArray(serviceData) && serviceData.length) {
-      return serviceData.map((item) => {
-        switch (item.type.toUpperCase()) {
-          case 'BANNER':
-            return (<Banner data={item} />);
-          case 'INTRO':
-            return (<Intro data={item} />);
-          default:
-            return null;
+  getMenuItems(data, baseUrl, category, subcategory) {
+    if (_.isArray(data) && data.length) {
+      const seccionUrl = [baseUrl, category].join('/');
+      const categoryData = data.filter((item) => {
+        return item.href && item.href.toUpperCase() === seccionUrl.toUpperCase();
+      }).pop();
+
+      if (_.isArray(categoryData.children) && categoryData.children.length) {
+        const subcategoryData = categoryData.children.filter((item) => {
+          return item.href && item.href.toUpperCase() === subcategory.toUpperCase();
+        }).pop();
+
+        if (_.isArray(subcategoryData.children) && subcategoryData.children.length) {
+          return subcategoryData.children;
         }
-      });
+      }
     }
+    return null;
   }
 
   render() {
+    const baseUrl = 'servicios';
     const { category, subcategory, service } = this.props.params;
     const serviceData = this.getData(category, subcategory, service);
+    const menuItems = this.getMenuItems(servicesData, baseUrl, category, subcategory);
+    const rootUrl = [baseUrl, category, subcategory].join('/');
 
     return (<div>
-      {this.renderHeader(serviceData.header)}
-      <Footer data={data.block1} />
+      <Header data={serviceData.header} />
+      <Body data={serviceData.content} menuItems={menuItems} rootUrl={rootUrl} />
+      <Footer data={dataBlocks.block1} />
     </div>);
   }
 }

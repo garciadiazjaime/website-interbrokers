@@ -16,7 +16,7 @@ export default class Intro extends React.Component {
 
           <Title1 className="o" data={texts.text1} />
 
-          <Button1 className="g" href={links.link1.href}>
+          <Button1 className="g" href={links.link1.href} title={links.link1.title}>
             {links.link1.title}
           </Button1>
         </Row1>
@@ -37,5 +37,5 @@ export default class Intro extends React.Component {
 }
 
 Intro.propTypes = {
-  data: React.PropTypes.object.isRequiered,
+  data: React.PropTypes.object.isRequired,
 };
