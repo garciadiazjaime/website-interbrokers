@@ -1,38 +1,40 @@
-$elements-consulting_white: -0px -194px 23px 34px;
-$elements-consultoria: -23px -194px 23px 34px;
-$elements-fb: -234px -168px 23px 23px;
-$elements-go: -217px -112px 16px 28px;
-$elements-home_purple_bike: -119px -112px 49px 49px;
-$elements-home_purple_briefcase: -168px -112px 49px 49px;
-$elements-home_purple_car: -70px -112px 49px 49px;
-$elements-home_purple_heart: -234px -0px 49px 49px;
-$elements-home_purple_house: -234px -49px 49px 49px;
-$elements-ibk: -112px -0px 122px 87px;
-$elements-insurance: -234px -138px 37px 30px;
-$elements-insurance_white: -70px -161px 37px 30px;
-$elements-left_arrow_blue_big: -274px -124px 8px 13px;
-$elements-location_big: -0px -228px 21px 36px;
-$elements-menu: -112px -87px 30px 17px;
-$elements-permit: -107px -161px 28px 27px;
-$elements-permit_white: -135px -161px 28px 27px;
-$elements-purple_arrow: -274px -111px 8px 13px;
-$elements-red_exclamation_bubble: -0px -112px 70px 82px;
-$elements-red_truck-small: -0px -0px 112px 112px;
-$elements-right_arrow_blue: -271px -151px 6px 8px;
-$elements-right_arrow_blue_big: -274px -98px 8px 13px;
-$elements-right_arrow_yellow_big: -271px -138px 7px 13px;
-$elements-tramit: -68px -194px 22px 28px;
-$elements-tramit_white: -46px -194px 22px 28px;
-$elements-yellow_corner: -234px -98px 40px 40px;
+$aboutus-big_ass_yellow_decoration: -0px -0px 1092px 1330px;
+$elements-banner_decoration: -0px -0px 354px 274px;
+$elements-consulting_white: -269px -274px 23px 34px;
+$elements-consultoria: -292px -274px 23px 34px;
+$elements-fb: -359px -274px 23px 23px;
+$elements-go: -143px -323px 16px 28px;
+$elements-home_purple_bike: -354px -194px 49px 49px;
+$elements-home_purple_briefcase: -403px -194px 49px 49px;
+$elements-home_purple_car: -122px -274px 49px 49px;
+$elements-home_purple_heart: -171px -274px 49px 49px;
+$elements-home_purple_house: -220px -274px 49px 49px;
+$elements-ibk: -0px -274px 122px 87px;
+$elements-insurance: -354px -243px 37px 30px;
+$elements-insurance_white: -424px -152px 37px 30px;
+$elements-left_arrow_blue_big: -452px -207px 8px 13px;
+$elements-location_big: -122px -323px 21px 36px;
+$elements-menu: -382px -274px 30px 17px;
+$elements-permit: -419px -243px 28px 27px;
+$elements-permit_white: -391px -243px 28px 27px;
+$elements-purple_arrow: -452px -220px 8px 13px;
+$elements-red_exclamation_bubble: -354px -112px 70px 82px;
+$elements-red_truck-small: -354px -0px 112px 112px;
+$elements-right_arrow_blue: -424px -182px 6px 8px;
+$elements-right_arrow_blue_big: -452px -194px 8px 13px;
+$elements-right_arrow_yellow_big: -447px -243px 7px 13px;
+$elements-tramit: -315px -274px 22px 28px;
+$elements-tramit_white: -337px -274px 22px 28px;
+$elements-yellow_corner: -424px -112px 40px 40px;
+$layout-phone_icon: -0px -30px 25px 16px;
+$layout-sm_facebook: -0px -0px 30px 30px;
+$layout-sm_portfolio: -30px -0px 30px 30px;
+$layout-yellowFleck_small: -25px -30px 10px 10px;
 $home-banner-check: -364px -155px 52px 52px;
 $home-banner-plecks: -0px -0px 364px 368px;
 $home-banner-sheet: -416px -155px 52px 52px;
 $home-banner-truck: -364px -0px 155px 155px;
 $home-banner-umbrella: -364px -207px 52px 52px;
-$layout-phone_icon: -0px -30px 25px 16px;
-$layout-sm_facebook: -0px -0px 30px 30px;
-$layout-sm_portfolio: -30px -0px 30px 30px;
-$layout-yellowFleck_small: -25px -30px 10px 10px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -58,12 +60,15 @@ $layout-yellowFleck_small: -25px -30px 10px 10px;
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
+.icon-aboutus {
+  background-image: url(/images/sprites/sprite-aboutus.png);
+}
 .icon-elements {
   background-image: url(/images/sprites/sprite-elements.png);
 }
-.icon-home-banner {
-  background-image: url(/images/sprites/sprite-home-banner.png);
-}
 .icon-layout {
   background-image: url(/images/sprites/sprite-layout.png);
+}
+.icon-home-banner {
+  background-image: url(/images/sprites/sprite-home-banner.png);
 }

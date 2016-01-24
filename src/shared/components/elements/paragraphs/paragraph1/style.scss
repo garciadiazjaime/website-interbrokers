@@ -21,6 +21,10 @@
     font-family: $fontABold;
   }
 }
+.c2{
+  @extend .c;
+  text-align: center;
+}
 .d{
   font-family: $fontA;
   color: $white;
@@ -31,6 +35,8 @@
 .d2{
   @extend .d;
   font-family: $fontABold;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .e{
   position: relative;

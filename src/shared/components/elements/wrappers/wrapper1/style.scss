@@ -161,6 +161,30 @@
 .n{
   text-align: right;
 }
+.o{
+  @extend .vCenter;
+  margin-left: 35px;
+}
+.p{
+  height: 512px;
+}
+.q{
+  margin-bottom: 90px;
+  position: relative;
+  &::before{
+    content: "";
+    @extend .icon-aboutus;
+    @include sprite($aboutus-big_ass_yellow_decoration); 
+    position: absolute;
+    left: 55%;
+    top: -450px;
+  }
+}
+.r{
+  background: $blue;
+  padding: 50px 0 80px;
+  margin-bottom: 20px;
+}
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px 40px 35px;
@@ -211,6 +235,12 @@
     padding: 50px 20px 0 20px;
     margin: 0 -15px;
     @include border-radius(0);
+    &::before{
+      display: none;
+    }
+  }
+  .q{
+    margin-bottom: 50px;
     &::before{
       display: none;
     }

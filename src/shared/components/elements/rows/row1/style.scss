@@ -13,8 +13,35 @@
 .d{
   background: $yellow;
 }
+.e{
+  background-image: url("/images/aboutus/banner.jpg");
+  height: 512px;
+  position: relative;
+  margin-bottom: 100px;
+  &::after{
+    @extend .icon-elements;
+    @include sprite($elements-yellow_corner); 
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: -12px;
+  }
+  &::before{
+    content: "";
+    @extend .icon-elements;
+    @include sprite($elements-banner_decoration); 
+    position: absolute;
+    right: 132px;
+    bottom: 140px;
+  }
+}
 @media #{$isPhone}{
   .a{
   	margin-bottom: 0;
+  }
+  .e{
+    &::before{
+      display: none!important; 
+    }
   }
 }
