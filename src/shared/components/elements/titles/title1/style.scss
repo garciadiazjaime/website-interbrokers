@@ -169,6 +169,9 @@
   margin-top: -120px;
   position: relative;
   max-width: 100%;
+  b{
+    font-family: $fontABold;
+  }
 }
 @media#{$headerAdjuster}{
   .e4{

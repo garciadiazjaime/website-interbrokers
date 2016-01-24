@@ -12,7 +12,7 @@ export default class Engine1 extends React.Component {
   renderItems(data) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        return (<div key={index} className="col-xs-12 col-sm-3">
+        return (<div key={index} className="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-3">
           <Wrapper1 className="v">
             <Image1 src={item.image} alt={item.name} className="c" />
             <Title1 className="k">
