@@ -13,17 +13,19 @@ export default class Block5 extends React.Component {
     const { texts, images, links } = this.props.data;
     return (<div className="container-fluid">
       <div className="col-sm-6">
-        <Image1 className="" src={images.image1.src} alt={images.image1.alt} />
-        <Title1 className="b2">
-          {texts.text1}
-        </Title1>
+        <Row1 className="f2">
+          <Image1 className="a" src={images.image1.src} alt={images.image1.alt} />
+          <Title1 className="p">
+            {texts.text1}
+          </Title1>
+        </Row1>
       </div>
       <div className="col-sm-6">
-        <Row1 className="c">
-          <Title1 className="b2">
+        <Row1 className="c2">
+          <Title1 className="c2">
             {texts.text2}
           </Title1>
-          <Paragraph1 className="d" data={texts.text3} />
+          <Paragraph1 className="d4" data={texts.text3} />
           <Button1 className="g" href={links.link1.href} title={links.link1.title}>
             {links.link1.title}
           </Button1>

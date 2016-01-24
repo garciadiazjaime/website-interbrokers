@@ -13,10 +13,10 @@ export default class Block4 extends React.Component {
     return (<div className="container-fluid">
       <div className="col-sm-6">
         <Row1 className="c">
-          <Paragraph1 className="d2">
+          <Paragraph1 className="d3">
             {texts.text1}
           </Paragraph1>
-          <Title1 className="b2">
+          <Title1 className="c2">
             {texts.text2}
           </Title1>
           <Paragraph1 className="d">
@@ -25,7 +25,9 @@ export default class Block4 extends React.Component {
         </Row1>
       </div>
       <div className="col-sm-6">
-        <Carousel1 data={carouselData} />
+        <Row1 className="f">
+          <Carousel1 data={carouselData} />
+        </Row1>
       </div>
     </div>);
   }

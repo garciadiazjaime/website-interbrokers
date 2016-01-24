@@ -38,6 +38,10 @@
   margin-bottom: 25px;
   margin-top: 0;
 }
+.c2{
+  @extend .c;
+  margin-bottom: 50px;
+}
 .d{
   font-family: $fontABold;
   color: $white;
@@ -63,6 +67,7 @@
 }
 .e4{
   @extend .e;
+  margin-bottom: 0;
 }
 .f{
   font-family: $fontABold;
@@ -92,15 +97,12 @@
   font-size: 25px;
   color: $white;
 }
-.j{
-  font-family: $fontABold;
-  font-size: 25px;
-  color: $darkBlue;
-}
 .k{
   font-family: $fontABold;
   font-size: 16px;
   color: $darkBlue;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .l{
   @extend .vCenter;
@@ -154,6 +156,20 @@
     color: $yellow;
   }
 }
+.p{
+  float: right;
+  display: block;
+  background: $yellow;
+  padding: 55px 30px 55px 50px;
+  border-radius: 0 0 0 45px;
+  font-family: $fontA;
+  color: $blue;
+  font-size: 35px;
+  width: 320px;
+  margin-top: -120px;
+  position: relative;
+  max-width: 100%;
+}
 @media#{$headerAdjuster}{
   .e4{
     font-size: 20px;
@@ -183,5 +199,9 @@
   }
   .d{
     font-size: 25px;
+  }
+  .p{
+    padding: 30px 30px 30px 50px;
+    margin-top: -80px;
   }
 }

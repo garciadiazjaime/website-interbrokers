@@ -64,7 +64,7 @@ export default {
 
     images: {
       image1: {
-        src: '/images/aboutus/kid.png',
+        src: '/images/aboutus/kid.jpg',
         alt: 'Qué vas a hacer cuando seas grande?',
       },
     },

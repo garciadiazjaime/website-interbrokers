@@ -185,6 +185,27 @@
   padding: 50px 0 80px;
   margin-bottom: 20px;
 }
+.s{
+  background-image: url('/images/aboutus/golden_shower.png');
+  background-repeat: no-repeat;
+  baciground-position: center center;
+  margin-top: -230px;
+  padding-top: 230px;
+  padding-bottom: 160px;
+}
+.t{
+  background-color: $red;
+  padding: 100px 0 40px;
+}
+.u{
+  background-color: $yellow;
+  padding: 100px 0;
+}
+.v{
+  background-color: $white;
+  padding: 35px 10% 50px;
+  margin: 0 -13px 4px -13px;
+}
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px 40px 35px;
