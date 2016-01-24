@@ -148,5 +148,8 @@ $headerAdjuster: "only screen and (max-width: 969px) and (min-width: 767px)";
   top: 50%;
   @include transform(translateY(-50%));
 }
+.inheritHeight{
+  height: inherit;
+}
 // **************** PADDINGS & MARGINS *************************
 

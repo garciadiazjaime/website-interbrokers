@@ -25,7 +25,7 @@
   	@extend .icon-elements;
     @include sprite($elements-yellow_corner);
     top: -13px;
-    right: -12px; 
+    right: -12px;
   }
 }
 .c{
@@ -50,7 +50,7 @@
   	@extend .icon-elements;
     @include sprite($elements-yellow_corner);
     top: -13px;
-    right: -12px; 
+    right: -12px;
   }
 }
 .e{
@@ -99,7 +99,7 @@
   &::before{
     background-image: url('/images/banner_servicio.jpg');
   }
-  
+
 }
 .h2{
   @extend .h;
@@ -128,7 +128,7 @@
   &::before{
     content: "";
     @extend .icon-elements;
-    @include sprite($elements-yellow_corner); 
+    @include sprite($elements-yellow_corner);
     position: absolute;
     top: 20px;
     right: 20px;
@@ -160,6 +160,51 @@
 }
 .n{
   text-align: right;
+}
+.o{
+  @extend .vCenter;
+  margin-left: 35px;
+}
+.p{
+  height: 512px;
+}
+.q{
+  margin-bottom: 90px;
+  position: relative;
+  &::before{
+    content: "";
+    @extend .icon-aboutus;
+    @include sprite($aboutus-big_ass_yellow_decoration);
+    position: absolute;
+    left: 55%;
+    top: -450px;
+  }
+}
+.r{
+  background: $blue;
+  padding: 50px 0 80px;
+  margin-bottom: 20px;
+}
+.s{
+  background-image: url('/images/aboutus/golden_shower.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -230px;
+  padding-top: 230px;
+  padding-bottom: 160px;
+}
+.t{
+  background-color: $red;
+  padding: 100px 0 40px;
+}
+.u{
+  background-color: $yellow;
+  padding: 100px 0;
+}
+.v{
+  background-color: $white;
+  padding: 35px 10% 50px;
+  margin: 0 -13px 4px -13px;
 }
 @media #{$isTablet}{
   .a{
@@ -215,5 +260,10 @@
       display: none;
     }
   }
+  .q{
+    margin-bottom: 50px;
+    &::before{
+      display: none;
+    }
+  }
 }
-	

@@ -1,17 +1,19 @@
 import React from 'react';
 
 import Engine1 from '../../widgets/engine/engine1';
-import Row1 from '../../elements/rows/row1';
+import Wrapper1 from '../../elements/wrappers/wrapper1';
 
 
 export default class Block7 extends React.Component {
 
   render() {
-    return (<Row1 className="d">
+    return (<Wrapper1 className="u">
         <div className="container-fluid">
-        <Engine1 data={this.props.data} />
+          <div className="row">
+             <Engine1 data={this.props.data} />
+          </div>
       </div>
-    </Row1>);
+    </Wrapper1>);
   }
 }
 

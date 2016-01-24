@@ -7,11 +7,14 @@ export default {
     texts: {
       text1: 'Expertos en el sector transportista binacional.',
       text2: 'Con más de 15 años de experiencia, somos expertos en el sector transportista binacional.',
+      text3: 'Nosotros',
+      text4: 'A más de 15 años de su surgimiento, nos consolidamos como una empresa de alcance binacional cuyos servicios hemos extendido hasta incluir la gestión de trámites y consultoría privada, transformando nuestro trabajo en un servicio integral capaz de satisfacer las necesidades de nuestros clientes en su totalidad.',
+      text5: 'Nuestra misión: Ayudarte a crecer.',
     },
 
     images: {
       image1: {
-        src: '/images/aboutus/banner.png',
+        src: '/images/aboutus/banner.jpg',
         alt: 'nosotros',
       },
     },
@@ -61,7 +64,7 @@ export default {
 
     images: {
       image1: {
-        src: '/images/aboutus/kid.png',
+        src: '/images/aboutus/kid.jpg',
         alt: 'Qué vas a hacer cuando seas grande?',
       },
     },
