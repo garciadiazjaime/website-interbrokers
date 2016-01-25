@@ -25,7 +25,7 @@
   	@extend .icon-elements;
     @include sprite($elements-yellow_corner);
     top: -13px;
-    right: -12px; 
+    right: -12px;
   }
 }
 .c{
@@ -50,7 +50,7 @@
   	@extend .icon-elements;
     @include sprite($elements-yellow_corner);
     top: -13px;
-    right: -12px; 
+    right: -12px;
   }
 }
 .e{
@@ -99,7 +99,7 @@
   &::before{
     background-image: url('/images/banner_servicio.jpg');
   }
-  
+
 }
 .h2{
   @extend .h;
@@ -128,7 +128,7 @@
   &::before{
     content: "";
     @extend .icon-elements;
-    @include sprite($elements-yellow_corner); 
+    @include sprite($elements-yellow_corner);
     position: absolute;
     top: 20px;
     right: 20px;
@@ -174,7 +174,7 @@
   &::before{
     content: "";
     @extend .icon-aboutus;
-    @include sprite($aboutus-big_ass_yellow_decoration); 
+    @include sprite($aboutus-big_ass_yellow_decoration);
     position: absolute;
     left: 55%;
     top: -450px;
@@ -188,7 +188,7 @@
 .s{
   background-image: url('/images/aboutus/golden_shower.png');
   background-repeat: no-repeat;
-  baciground-position: center center;
+  background-position: center center;
   margin-top: -230px;
   padding-top: 230px;
   padding-bottom: 160px;
@@ -270,4 +270,3 @@
     padding-bottom: 80px;
   }
 }
-	
