@@ -1,22 +1,20 @@
 import React from 'react';
 
-export default class Block1 extends React.Component {
+export default class Block3 extends React.Component {
   render() {
     const { texts } = this.props.data;
     return (<div className="row">
 
     <div className="col-sm-6">
-      <h2><b>{texts.text1}</b></h2>
+      <h3><b>{texts.text1}</b></h3>
       <p><b>{texts.text2}</b></p>
-      <h2><b>{texts.text3}</b></h2>
-      <h2><b>{texts.text4}</b></h2>
-      <h2><b>{texts.text5}</b></h2>
+      <p>{texts.text3}</p>
     </div>
 
     </div>);
   }
 }
 
-Block1.propTypes = {
+Block3.propTypes = {
   data: React.PropTypes.object.isRequired,
 };

@@ -3,7 +3,13 @@
 export default {
   // **** Banner con slider ****
   block1: {
-
+    texts: {
+      text1: 'Expertos en el sector transportista',
+      text2: 'mas de 15 anos de experiencia',
+      text3: 'PERMISOS',
+      text4: 'TRÁMITES',
+      text5: 'SEGUROS',
+    },
   },
 
   // **** 2 Cartas: Servicio Integral - img ****

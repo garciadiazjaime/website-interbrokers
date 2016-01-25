@@ -6,11 +6,8 @@ export default class Block1 extends React.Component {
     return (<div className="row">
 
     <div className="col-sm-6">
-      <h2><b>{texts.text1}</b></h2>
-      <p><b>{texts.text2}</b></p>
-      <h2><b>{texts.text3}</b></h2>
-      <h2><b>{texts.text4}</b></h2>
-      <h2><b>{texts.text5}</b></h2>
+      <h1><b>{texts.text1}</b></h1>
+      <p>{texts.text2}</p>
     </div>
 
     </div>);
