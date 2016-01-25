@@ -4,18 +4,47 @@ export default {
   // **** Banner con slider ****
   block1: {
     texts: {
+<<<<<<< HEAD
       text1: 'Expertos en el sector transportista',
       text2: 'mas de 15 anos de experiencia',
       text3: 'PERMISOS',
       text4: 'TRÁMITES',
       text5: 'SEGUROS',
+=======
+      text1: 'Servicio Integral',
+      text2: 'Expertos en el Sector Transportista',
+      text3: 'Más de 15 años de experiencia.',
+    },
+    links: {
+      link1: {
+        href: 'aboutus',
+        title: 'Servicio Integral',
+      },
+      link2: {
+        href: 'permisos',
+        title: 'permisos',
+      },
+      link3: {
+        href: 'permisos',
+        title: 'permisos',
+      },
+      link4: {
+        href: 'tramites',
+        title: 'trámites',
+      },
+      link5: {
+        href: 'seguros',
+        title: 'seguros',
+      },
+>>>>>>> 88fe3e4c6a7e7113258df84ca3aa78a940562226
     },
   },
 
   // **** 2 Cartas: Servicio Integral - img ****
   block2: {
     texts: {
-      text1: 'Servicio Integral',
+      text1: 'Servicio',
+      text1b: 'Integral ',
       text2: '360',
       text3: 'Te ayudamos a llegar más lejos.',
       text4: 'Entendemos tus necesidades, para ofrecerte una solución integral.',
@@ -37,7 +66,10 @@ export default {
   // **** 2 Cartas: texto - Nuevo entrante ****
   block3: {
     texts: {
-      text1: 'Impulsemos el crecimiento de tu empresa transportista.',
+      text1: 'Impulsemos el',
+      text12: 'crecimiento',
+      text13: 'de tu empresa',
+      text14: 'transportista.',
       text2: 'Nuevo Entrante',
       text3: 'Conoce todo lo que necesitas para operar tu compañía transportista en Estados Unidos.',
     },
@@ -64,7 +96,9 @@ export default {
     texts: {
       text1: 'Seguros para Vehiculos Comerciales',
       text2: 'Contamos con seguros para vehículos comerciales con cobertura en México y en Estados Unidos, para que siempre estés protegido.',
-      text3: 'Solicita tu certificado de aseguranza',
+      text3: 'Solicita tu',
+      text32: 'certificado',
+      text33: 'de aseguranza',
     },
     links: {
       link1: {
@@ -87,9 +121,12 @@ export default {
   // **** Fondo morado ****
   block5: {
     texts: {
-      text1: 'Siente la libertad de Vivir tranquilo.',
+      text1: 'Siente la libertad de',
+      text1b: ' Vivir tranquilo.',
       text2: 'Seguros',
-      text3: 'A través de nuestra empresa hermana <b>IBK Agentes de Seguros</b>, te ofrecemos un amplio portafolio en seguros personales, autos, casa, salud, entre otros. Visita nuestro sitio y conoce como podemos ayudarte.',
+      text3: 'A través de nuestra empresa hermana ',
+      text32: 'IBK Agentes de Seguros',
+      text33: ', te ofrecemos un amplio portafolio en seguros personales, autos, casa, salud, entre otros. Visita nuestro sitio y conoce como podemos ayudarte.',
     },
     links: {
       link1: {

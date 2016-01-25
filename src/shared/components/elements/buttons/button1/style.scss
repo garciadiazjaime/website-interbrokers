@@ -1,0 +1,458 @@
+@import '../../../../constants';
+
+.a{
+  position: relative;
+  border: solid 1px $yellow;
+  width: 35px;
+  height: 20px;
+  margin-bottom: 15px;
+  @include border-radius(10px)
+  display: inline-block;
+  &:hover{
+  	background: $yellow;
+  }
+  &::before{
+    @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue);
+  	display: block;
+  	content: '';
+  }
+}
+.b{
+  position: relative;
+  background: $yellow;
+  width: 45px;
+  height: 30px;
+  margin-bottom: 20px;
+  @include border-radius(15px)
+  display: inline-block;
+  &:hover{
+  	background: $darkYellow;
+  }
+  &::before{
+    @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);
+  	display: block;
+  	content: '';
+  }
+}
+.b2{
+  @extend .b;
+  float: right;
+}
+.c{
+  position: relative;
+  background: $yellow;
+  width: 45px;
+  height: 30px;
+  margin-bottom: 20px;
+  @include border-radius(15px)
+  display: inline-block;
+  &:hover{
+  	background: $darkYellow;
+  }
+  &::before{
+    @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-left_arrow_blue_big);
+  	display: block;
+  	content: '';
+  }
+}
+.d{
+  position: relative;
+  background: $yellow;
+  width: 175px;
+  color: $blue;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkYellow;
+  	color: $blue;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);
+    right: 15px;
+  	display: block;
+  	content: '';
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.e{
+  position: relative;
+  background: $blue;
+  width: 225px;
+  font-size: 12px;
+  color: $yellow;
+  font-family: $fontABold;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkBlue;
+  	color: $yellow;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_yellow_big);
+    right: 15px;
+  	display: block;
+  	content: '';
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.f{
+  position: relative;
+  background: $red;
+  width: 225px;
+  color: $yellow;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover{
+  	background: $darkRed;
+  	color: $yellow;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_yellow_big);
+    right: 15px;
+  	display: block;
+  	content: '';
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.g{
+  position: relative;
+  background: $yellow;
+  width: 225px;
+  color: $blue;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover{
+    background: $darkYellow;
+    color: $blue;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);
+    right: 15px;
+    display: block;
+    content: '';
+  }
+  .title{
+    @extend .vCenter;
+  }
+}
+.h{
+  position: relative;
+  background: $lightGray;
+  width: 185px;
+  color: $red;
+  font-family: $fontABold;
+  height: 55px;
+  margin-bottom: 20px;
+  padding-left: 65px;
+  @include border-radius(30px)
+  display: inline-block;
+  &:hover{
+  	background: $white;
+  	color: $red;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+  	display: block;
+  	content: '';
+    left: 20px;
+  }
+  .title{
+  	@extend .vCenter;
+  }
+}
+.h1{
+  @extend .h;
+  &::before{
+    @include sprite($elements-tramit);
+  }
+}
+.h2{
+  @extend .h;
+  &::before{
+    @include sprite($elements-permit);
+  }
+}
+.h3{
+  @extend .h;
+  &::before{
+    @include sprite($elements-insurance);
+  }
+}
+.h4{
+  @extend .h;
+  &::before{
+    @include sprite($elements-consultoria);
+  }
+}
+.i{
+  position: relative;
+  background: $white;
+  width: 175px;
+  color: $purple;
+  font-family: $fontABold;
+  font-size: 12px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  padding-left: 25px;
+  @include border-radius(15px)
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover{
+    background: $lightGray;
+    color: $purple;
+  }
+  &::before{
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-purple_arrow);
+    right: 15px;
+    display: block;
+    content: '';
+  }
+  .title{
+    @extend .vCenter;
+  }
+}
+.j{
+  display: inline-block;
+  margin-right: 20px;
+  color: $white;
+  font-family: $fontABold;
+  font-size: 8px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  &:hover{
+    color: $white;
+  }
+  &::before{
+    content: "";
+    margin-bottom: 8px;
+  }
+  &:last-child{
+  margin-right: 0;
+  }
+}
+.j1{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_car);
+  }
+}
+.j2{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_bike);
+  }
+}
+.j3{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_house);
+  }
+}
+.j4{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_briefcase);
+  }
+}
+.j5{
+  @extend .j;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-home_purple_heart);
+  }
+}
+.k{
+  position: relative;
+  height: 512px;
+  display: block;
+  padding-top: 178px;
+  &::before{
+    content: "";
+    margin: 0 auto 20px;
+    @extend .icon-home-banner;
+    @include sprite($home-banner-truck);
+  }
+  &::after  {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    @extend .icon-home-banner;
+    @include sprite($home-banner-plecks);
+    margin: 0 auto;
+  }
+}
+.l{
+  position: relative;
+  display: block;
+  font-family: $fontABold;
+  padding: 0 0 0 44px;
+  color: $white;
+  font-size: 25px;
+  height: 256px;
+  text-transform: uppercase;
+  p{
+    @extend .vCenter;
+  }
+  &:hover{
+    color: $white;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    @extend .icon-home-banner;
+    right: 15px;
+    bottom: 15px;
+  }
+  &::after{
+    content: "";
+    right: 40px;
+    @extend .vCenter;
+    @extend .icon-elements;
+    @include sprite($elements-go);
+  }
+}
+.l1{
+  @extend .l;
+  &::before{
+    @include sprite($home-banner-check);
+  }
+}
+.l2{
+  @extend .l;
+  &::before{
+    @include sprite($home-banner-sheet);
+  }
+}
+.l3{
+  @extend .l;
+  &::before{
+    @include sprite($home-banner-umbrella);
+  }
+}
+.m{
+  font-family: $fontABold;
+  font-size: 16px;
+  color: $gray;
+  display: block;
+
+  &:hover{
+    color: $red;
+  }
+}
+.n{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $white;
+}
+.o{
+  display: block;
+  font-family: $fontABold; 
+  font-size: 14px;
+  color: $gray;
+  margin-bottom: 20px;
+  &:hover{
+    color: $lightGray;
+  }
+  &:last-child{
+    margin-bottom: 70px;
+  }
+}
+.p{
+  font-family: $fontABold;
+  font-size: 14px;
+  color: $white;
+  position: relative;
+  display: block;
+  text-align: right;
+  padding-right: 60px;
+  &:hover{
+    color: $white;
+  }
+  &::after{
+    @extend .icon-layout;
+    @extend .vCenter;
+    content: "";
+    right: 0;
+    @include sprite($layout-sm_facebook);
+
+  }
+}
+@media#{$headerAdjuster}{
+  .l{
+    &::after{
+      display: none;
+    }
+  }
+}
+
+@media #{$isPhone}{
+  .l{
+    height: 85px;
+    padding-left: 20px;
+    font-size: 18px;
+    &::before{
+      display: none;
+    }
+    &::after{
+      display: bock;
+      right: 10px;
+    }
+  }
+  .k{
+    &::after{
+      display: none;
+    }
+  }
+}

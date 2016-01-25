@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
-// import Sprites from '../../../../sprite';
 
 
 export default class MainMenu extends React.Component {
@@ -19,39 +18,37 @@ export default class MainMenu extends React.Component {
 
   getIcons(data) {
     return data.map((item, index) => {
-      return (<a key={index} style={item.style} href={item.url}>&nbsp;</a>);
+      return (<li key={index}>
+          <a href={item.url} className={style[item.title]} id={item.url} />
+        </li>
+      );
     });
   }
 
   render() {
     /*eslint-disable */
-    // Sprites.General.Logo
-    const logo = null;
-    return (<div className="container-fluid">
-        <nav className={style.navbarDefault + ' navbar navbar-default'}>
-          
-            <div className={style.navbarHeader + ' navbar-header'}>
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
-              <Link className="navbar-brand" to="inicio" style={logo}></Link>
-            </div>
+    return (<nav className={style.navbarDefault + ' navbar navbar-default'}>
+            <div className="container-fluid">
+              <div className={style.navbarHeader + ' navbar-header'}>
+                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
+                  <span className="sr-only">Toggle navigation</span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                </button>
+                <Link className={style.navbarBrand + ' navbar-brand'} to="inicio">01.800.788.04.08</Link>
+              </div>
 
-            <div className={style.navbarCollapse + ' collapse navbar-collapse'} id='mainmenu'>
-              <ul className={style.navbarNav + ' nav navbar-nav'}>
-                {this.getItems(this.props.items)}
-              </ul>
-              <div className={style.socialNetwork}>
-                {this.getIcons(this.props.icons)}
+              <div className={style.navbarCollapse + ' collapse navbar-collapse'} id='mainmenu'>
+                <ul className={style.socialNetwork}>
+                  {this.getIcons(this.props.icons)}
+                </ul>
+                <ul className={style.navbarNav + ' nav navbar-nav'}>
+                  {this.getItems(this.props.items)}
+                </ul>
               </div>
             </div>
-
-        </nav>
-      </div>
-    );
+        </nav>);
     /*eslint-enable */
   }
 }

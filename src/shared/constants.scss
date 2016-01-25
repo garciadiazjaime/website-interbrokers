@@ -1,26 +1,30 @@
+@import './sprite';
+
 $blue: #4f7584;
+$darkBlue: #3E5E68;
 $red: #F7323F;
+$darkRed: #B20B24;
 $yellow: #FFDE24;
+$darkYellow: #F7CD00;
 $purple: #662D91;
 
-$gray: #B5B5B5;
-$grayDarkest: #2B2B2B;
-$grayDark: #383939;
-$grayMedium: #b7b7b7;
-$grayLight: #FAFAFA;
-$white: #FFFFFF;
-$black: #000000;
-
+$darkGray: #383939;
+$gray: #b7b7b7;
+$lightGray: #fafafa;
+$darkestGray: #2b2b2b;
 
 $fontA: 'noto-sans-regular';
 $fontABold: 'noto-sans-bold';
 
+$black: #000;
+$white: #fff;
 
-$isTablet: "only screen and (min-width : 768px) and (max-width: 1023px)";
-$isPhone: "only screen and (max-width : 320px)";
+$isTablet: "only screen and (max-width: 1023px)";
+$isPhone: "only screen and (max-width: 767px)";
 
+$headerAdjuster: "only screen and (max-width: 969px) and (min-width: 767px)";
 
-// ****************** mixins *********************
+// ****************** MIXINS *********************
 
 // generic transform
 @mixin transform($transforms) {
@@ -62,7 +66,7 @@ $isPhone: "only screen and (max-width : 320px)";
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
-// **************** GRADIENTS ********************
+// Gradients
 @function convert-angle($value, $unit) {
   $convertable-units: deg grad turn rad;
   $conversion-factors: 1 (10grad/9deg) (1turn/360deg) (3.1415926rad/180deg);
@@ -132,26 +136,20 @@ $isPhone: "only screen and (max-width : 320px)";
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
 }
-
+// **************** CENTERS ************************************
+.fCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translateX(-50%) translateY(-50%));
+}
+.vCenter{
+  position: absolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+.inheritHeight{
+  height: inherit;
+}
 // **************** PADDINGS & MARGINS *************************
-.colNopad{
-  padding-left: 0;
-  padding-right: 0;
-}
 
-.sidePadded50{
-  padding-left: 50px;
-  padding-right: 50px;
-
-	@media screen and (max-width: 400px){
-	    padding-left: 20px;
-	    padding-right: 20px;
-	}
-}
-
-.bottom20{
-  margin-bottom: 20px;
-}
-.bottom46{
-  margin-bottom: 46px;
-}

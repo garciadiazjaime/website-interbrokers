@@ -1,0 +1,18 @@
+@import '../../../../constants';
+
+.a{ 
+  position: absolute;
+  @extend .fCenter;
+  @extend .icon-elements;
+  @include sprite($elements-yellow_corner);
+  top: -12px;
+  right: 0;  
+}
+.b{
+  position: absolute;
+  @extend .fCenter;
+  @extend .icon-elements;
+  @include sprite($elements-yellow_corner);
+  top: 15px;
+  right: 15px;
+}

@@ -1,0 +1,74 @@
+@import '../../../../constants';
+
+.a{
+  background: $lightGray;
+  margin-bottom: 100px;
+}
+.b{
+  background: $black;
+}
+.c{
+  background: $red;
+  min-height: 500px;
+  padding: 50px;
+  margin-right: -5px!important;
+  margin-bottom: 20px;
+}
+.c2{
+  @extend .c;
+  padding-top: 80px;
+  margin-right: -15px!important;
+  margin-left: -5px!important;
+  margin-bottom: 100px;
+}
+.d{
+  background: $yellow;
+}
+.e{
+  background-image: url("/images/aboutus/banner.jpg");
+  height: 512px;
+  position: relative;
+  margin-bottom: 100px;
+  &::after{
+    @extend .icon-elements;
+    @include sprite($elements-yellow_corner); 
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: -12px;
+  }
+  &::before{
+    content: "";
+    @extend .icon-elements;
+    @include sprite($elements-banner_decoration); 
+    position: absolute;
+    right: 132px;
+    bottom: 140px;
+  }
+}
+.f{
+  margin-left: -5px!important;
+  margin-bottom: 20px
+}
+.f2{
+  margin-right: -5px!important;
+  margin-bottom: 20px
+}
+.g{
+  padding-bottom: 30px;
+  border-bottom: 4px solid $white;
+}
+@media #{$isPhone}{
+  .a{
+  	margin-bottom: 0;
+  }
+  .e{
+    &::before{
+      display: none!important; 
+    }
+  }
+  .c, .c2, .f, .f2{
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+}

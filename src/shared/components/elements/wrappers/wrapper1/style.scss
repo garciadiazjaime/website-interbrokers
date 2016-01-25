@@ -1,0 +1,269 @@
+@import '../../../../constants';
+
+.a{
+  margin: 130px 35px;
+}
+.b{
+  position: relative;
+  background: $red;
+  margin: 0 -15px 100px;
+  padding: 30px 25px 0 225px;
+  &::before{
+	content: '';
+	display: block;
+	background-image: url('/images/home_nuevoEntrante.png');
+	position: absolute;
+  	height: 391px;
+  	width: 584px;
+  	background-size: 100% 100%;
+  	left: -24px;
+  	bottom: -71px;
+  }
+  &::after{
+  	content: '';
+  	position: absolute;
+  	@extend .icon-elements;
+    @include sprite($elements-yellow_corner);
+    top: -13px;
+    right: -12px;
+  }
+}
+.c{
+	margin: 0 35px;
+}
+.d{
+  background: $red;
+  padding: 50px 50px 25px 190px;
+  margin: 0 -15px 50px;
+  @include border-radius(0 0 0 40px);
+  &::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  	@extend .icon-elements;
+    @include sprite($elements-red_truck_small);
+  }
+  &::after{
+  	content: '';
+  	position: absolute;
+  	@extend .icon-elements;
+    @include sprite($elements-yellow_corner);
+    top: -13px;
+    right: -12px;
+  }
+}
+.e{
+	margin: 100px 0 0 190px;
+	&::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 80px;
+  	@extend .icon-elements;
+    @include sprite($elements-red_exclamation_bubble);
+  }
+}
+.f{
+  background: $purple;
+  padding: 70px 0 100px;
+}
+.g{
+  @extend .icon-elements;
+  @include sprite($elements-ibk);
+  margin-bottom: 35px;
+}
+.h{
+  height: 256px;
+  margin: 0 -15px;
+  &:hover{
+    &::before{
+      opacity: 0.6;
+    }
+  }
+  &::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.h1{
+  @extend .h;
+  height: 512px;
+  margin: 0 -15px;
+  &::before{
+    background-image: url('/images/banner_servicio.jpg');
+  }
+
+}
+.h2{
+  @extend .h;
+  &::before{
+    background-image: url('/images/banner_permisos.jpg');
+  }
+}
+.h3{
+  @extend .h;
+  &::before{
+    background-image: url('/images/banner_tramites.jpg');
+  }
+}
+.h4{
+  @extend .h;
+  &::before{
+    background-image: url('/images/banner_seguros.jpg');
+  }
+}
+.i{
+  background: $red;
+  margin: 0 -15px 0 -75px;
+  @include border-radius(0 0 0 40px);
+  padding: 50px 30px 0 85px;
+  height: 256px;
+  &::before{
+    content: "";
+    @extend .icon-elements;
+    @include sprite($elements-yellow_corner);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+.j{
+  height: 160px;
+}
+.k{
+  background-color: $darkGray;
+  color: $lightGray;
+  padding-top: 50px;
+}
+.l{
+  padding-right: 30px;
+}
+.m{
+  background-color: $darkestGray;
+  padding: 15px;
+  font-size: 10px;
+  font-family: $fontA;
+  color: $white;
+  a{
+    color: $white;
+    &:hover{
+      color: $gray;
+    }
+  }
+}
+.n{
+  text-align: right;
+}
+.o{
+  @extend .vCenter;
+  margin-left: 35px;
+}
+.p{
+  height: 512px;
+}
+.q{
+  margin-bottom: 90px;
+  position: relative;
+  &::before{
+    content: "";
+    @extend .icon-aboutus;
+    @include sprite($aboutus-big_ass_yellow_decoration);
+    position: absolute;
+    left: 55%;
+    top: -450px;
+  }
+}
+.r{
+  background: $blue;
+  padding: 50px 0 80px;
+  margin-bottom: 20px;
+}
+.s{
+  background-image: url('/images/aboutus/golden_shower.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -230px;
+  padding-top: 230px;
+  padding-bottom: 160px;
+}
+.t{
+  background-color: $red;
+  padding: 100px 0 40px;
+}
+.u{
+  background-color: $yellow;
+  padding: 100px 0;
+}
+.v{
+  background-color: $white;
+  padding: 35px 10% 50px;
+  margin: 0 -13px 4px -13px;
+}
+@media #{$isTablet}{
+  .a{
+  	margin: 40px 20px 40px 35px;
+  }
+}
+@media #{$isPhone}{
+  .b{
+    margin: 0 -15px;
+    padding-left: 50px;
+    &::before{
+      display: none;
+    }
+    &::after{
+      display: none;
+    }
+  }
+  .d{
+    @include border-radius(0);
+    padding-left: 50px;
+    &::before{
+      display: none;
+    }
+    &::after{
+      display: none;
+    }
+  }
+  .e{
+    margin-left: 120px;
+    margin-top: 0;
+    &::before{
+      left: 40px;
+      top: 0;
+    }
+  }
+  .g{
+    margin-top: 60px;
+  }
+  .h{
+    height: 85px;
+    &::before{
+      opacity: 0.6;
+    }
+  }
+  .h1{
+    height: 511px;
+  }
+  .i{
+    padding: 50px 20px 0 20px;
+    margin: 0 -15px;
+    @include border-radius(0);
+    &::before{
+      display: none;
+    }
+  }
+  .q{
+    margin-bottom: 50px;
+    &::before{
+      display: none;
+    }
+  }
+}

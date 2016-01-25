@@ -12,6 +12,7 @@ export default class Block3 extends React.Component {
     </div>
 
     </div>);
+
   }
 }
 

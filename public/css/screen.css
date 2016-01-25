@@ -10,9 +10,19 @@
 a:hover {
   text-decoration: none;
 }
+#app{
+	overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+}
 
 *:focus {outline:0px none transparent;}
 
 div{
   /*border: 1px solid black;*/
+}
+.container-fluid{
+	max-width: 1024px;
 }

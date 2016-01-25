@@ -1,0 +1,100 @@
+@import '../../../../constants';
+
+.a{
+  font-family: $fontA;
+  color: $darkGray;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.b{
+  font-family: $fontABold;
+  color: $darkGray;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.c{
+  font-family: $fontA;
+  color: $white;
+  font-size: 16px;
+  margin-bottom: 25px;
+  b{
+    font-family: $fontABold;
+  }
+}
+.c2{
+  @extend .c;
+  text-align: center;
+}
+.d{
+  font-family: $fontA;
+  color: $white;
+  font-size: 16px;
+  margin-bottom: 0;
+  text-align: left;
+}
+.d2{
+  @extend .d;
+  font-family: $fontABold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.d3{
+  font-family: $fontABold;
+  margin-bottom: 20px;
+  color: $white;
+}
+.d4{
+  @extend .d;
+  margin-bottom: 50px;
+}
+.e{
+  position: relative;
+  font-family: $fontA;
+  color: $gray;
+  font-size: 12px;
+  padding-left: 35px;
+  height: 110px;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-location_big);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.f{
+  font-family: $fontA;
+  font-size: 12px;
+  color: $darkGray;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.f2{
+  @extend .f;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $darkGray;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media #{$isPhone}{
+  .e{
+    height: 70px;
+  }
+}
+
+.f{
+  font-family: $fontA;
+  font-size: 16px;
+  color: $darkGray;
+}
+.f1{
+  @extend .f;
+  font-size: 21px;
+  font-family: $fontABold;
+}
+.g{
+  font-family: $fontABold;
+  font-size: 25px;
+  color: $white;
+}

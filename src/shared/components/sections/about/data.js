@@ -1,4 +1,5 @@
-/* eslint max-len: [2, 500, 4] */
+/* eslint max-len: [2, 600, 4] */
+import dataTeam from './dataTeam';
 
 export default {
   // **** Banner con slider ****

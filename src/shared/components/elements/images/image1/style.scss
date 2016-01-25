@@ -1,0 +1,13 @@
+@import '../../../../constants';
+
+.a{
+  width: 100%;
+ }
+ .b{
+ 	@extend .vCenter;
+ 	max-width: 100%;
+ }
+ .c{
+ 	margin: 0 auto 20px;
+ 	display: block;
+ }

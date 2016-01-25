@@ -10,6 +10,7 @@ export default class Block6 extends React.Component {
       <p>{texts.text2}</p>
     </div>
     </div>);
+
   }
 }
 
