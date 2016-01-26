@@ -10,9 +10,7 @@ export default class Block3 extends React.Component {
       <p><b>{texts.text2}</b></p>
       <p>{texts.text3}</p>
     </div>
-
     </div>);
-
   }
 }
 

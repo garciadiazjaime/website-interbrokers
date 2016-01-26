@@ -4,13 +4,6 @@ export default {
   // **** Banner con slider ****
   block1: {
     texts: {
-<<<<<<< HEAD
-      text1: 'Expertos en el sector transportista',
-      text2: 'mas de 15 anos de experiencia',
-      text3: 'PERMISOS',
-      text4: 'TRÁMITES',
-      text5: 'SEGUROS',
-=======
       text1: 'Servicio Integral',
       text2: 'Expertos en el Sector Transportista',
       text3: 'Más de 15 años de experiencia.',
@@ -36,7 +29,6 @@ export default {
         href: 'seguros',
         title: 'seguros',
       },
->>>>>>> 88fe3e4c6a7e7113258df84ca3aa78a940562226
     },
   },
 
