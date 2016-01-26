@@ -51,7 +51,7 @@ export default {
     title: 'Trámites en México',
     href: 'tramites-mx',
     children: [{
-      title: 'CAAT- Código Alfanumerico Armonizado para <br />Transportista',
+      title: 'CAAT- Código Alfanumerico Armonizado para Transportista',
       href: 'caat-codigo-alfanumerico-armonizado-transportista',
     }, {
       title: 'Gafete para Transportista Aduana',
@@ -65,7 +65,7 @@ export default {
     className: 'clase_logo_dmv',
     title: 'DMV',
     subtitle: '(Commercial Registrations)',
-    href: 'placas/dmv',
+    href: 'placas-dmv',
     children: [{
       title: 'California',
       href: 'california',
@@ -81,7 +81,7 @@ export default {
     className: 'clase_logo_sct',
     title: 'SCT',
     subtitle: '(Transfers, Estatales, Federales)',
-    href: 'placas/sct',
+    href: 'placas-sct',
     children: [{
       title: 'Registro Nuevo',
       href: 'registro-nuevo',

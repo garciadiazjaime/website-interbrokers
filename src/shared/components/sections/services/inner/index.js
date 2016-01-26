@@ -14,7 +14,7 @@ export default class ServiceInner extends React.Component {
   getData(category, subcategory, service) {
     try {
       return {
-        header: require('../db/' + category + '/header_common'),
+        header: require('../db/' + category + '/' + subcategory + '/header_common'),
         content: require('../db/' + category + '/' + subcategory + '/' + service),
       };
     } catch (err) {

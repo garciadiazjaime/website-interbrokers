@@ -22,11 +22,12 @@ export default class List extends React.Component {
 
   render() {
     const { data, href } = this.props;
+    const blockUrl = [href, data.href, data.children[0].href].join('/');
     return (<div className="row">
         <div className="col-sm-6">
           [img]
           <Image1 src="" alt="" className="" />
-          <Button1 className="b" href={data.href} title={data.title} />
+          <Button1 className="b" href={blockUrl} title={data.title} />
           <Title1 className="" data={data.title} />
         </div>
 
