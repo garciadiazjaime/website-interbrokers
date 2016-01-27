@@ -37,6 +37,10 @@
   font-size: 35px;
   margin-bottom: 25px;
   margin-top: 0;
+  b
+    {
+      color: $yellow;
+    }
 }
 .c2{
   @extend .c;
@@ -88,6 +92,7 @@
 }
 .h{
   font-family: $fontABold;
+  margin-top: 0;
   font-size: 50px;
   margin-bottom: 50px;
   color: $white;
@@ -96,6 +101,11 @@
   font-family: $fontABold;
   font-size: 25px;
   color: $white;
+}
+.i2{
+  @extend .i;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 .k{
   font-family: $fontABold;
@@ -171,6 +181,58 @@
   max-width: 100%;
   b{
     font-family: $fontABold;
+  }
+}
+.q{
+    
+}
+// Service Titles
+.st{
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 50px;
+  width: 180;
+  color: $red;
+  padding-left: 50px;
+  &::before{
+    content: "";
+    @extend .icon-services;
+    display: inline-block;
+    left: 0;
+    @extend .vCenter;
+  }
+  &::after{
+    content: "";
+    @extend .icon-services;
+    display: inline-block;
+    margin-left: 20px;
+    @extend .vCenter;
+    right: -80px;
+  }
+}
+.st1{
+  @extend .st;
+  &::before{
+    @include sprite($services-tramits_red);
+  }
+  &::after{
+    @include sprite($services-usflag);
+  }
+}
+.stm{
+  color: $gray;
+  font-family: $fontABold;
+  padding-left: 45px;
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 50px;
+  &::before{
+    content: "";
+    @extend .icon-services;
+    @include sprite($services-menu_icon);
+    position: absolute;
+    @extend .vCenter;
+    left: 0;
   }
 }
 @media#{$headerAdjuster}{

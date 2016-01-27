@@ -2,9 +2,9 @@
 
 export default {
   title: 'Seguros',
-  description: 'Portafolio de seguros para <br /> <b>Vehiculos Comerciales.</b> <br /> Cobertura en México y USA.',
+  description: 'Portafolio de seguros para <b>Vehiculos Comerciales.</b> Cobertura en México y USA.',
   href: 'servicios/seguros',
-  className: 'clase_logo_submenu',
+  className: 'w3',
   children: [{
     type: 'title',
     title: 'Seguros para Vehículos Comerciales',

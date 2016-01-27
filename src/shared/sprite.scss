@@ -1,4 +1,8 @@
-$aboutus-big_ass_yellow_decoration: -0px -0px 1092px 1330px;
+$home-banner-check: -364px -155px 52px 52px;
+$home-banner-plecks: -0px -0px 364px 368px;
+$home-banner-sheet: -416px -155px 52px 52px;
+$home-banner-truck: -364px -0px 155px 155px;
+$home-banner-umbrella: -364px -207px 52px 52px;
 $elements-banner_decoration: -0px -0px 354px 274px;
 $elements-consulting_white: -269px -274px 23px 34px;
 $elements-consultoria: -292px -274px 23px 34px;
@@ -26,15 +30,26 @@ $elements-right_arrow_yellow_big: -447px -243px 7px 13px;
 $elements-tramit: -315px -274px 22px 28px;
 $elements-tramit_white: -337px -274px 22px 28px;
 $elements-yellow_corner: -424px -112px 40px 40px;
+$aboutus-big_ass_yellow_decoration: -0px -0px 1092px 1330px;
 $layout-phone_icon: -0px -30px 25px 16px;
 $layout-sm_facebook: -0px -0px 30px 30px;
 $layout-sm_portfolio: -30px -0px 30px 30px;
 $layout-yellowFleck_small: -25px -30px 10px 10px;
-$home-banner-check: -364px -155px 52px 52px;
-$home-banner-plecks: -0px -0px 364px 368px;
-$home-banner-sheet: -416px -155px 52px 52px;
-$home-banner-truck: -364px -0px 155px 155px;
-$home-banner-umbrella: -364px -207px 52px 52px;
+$services-consulting_red: -145px -60px 23px 34px;
+$services-consulting_white: -145px -94px 23px 34px;
+$services-insurance_red: -145px -0px 37px 30px;
+$services-insurance_white: -145px -30px 37px 30px;
+$services-list_button: -35px -128px 35px 20px;
+$services-list_button_hover: -0px -128px 35px 20px;
+$services-list_style: -168px -60px 10px 10px;
+$services-menu_icon: -70px -128px 30px 17px;
+$services-mexflag: -0px -71px 56px 57px;
+$services-permits_red: -112px -71px 28px 27px;
+$services-permits_white: -112px -98px 28px 27px;
+$services-tramits_red: -0px -148px 22px 28px;
+$services-tramits_white: -22px -148px 22px 28px;
+$services-usflag: -56px -71px 56px 55px;
+$services-white_truck: -0px -0px 145px 71px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -60,15 +75,18 @@ $home-banner-umbrella: -364px -207px 52px 52px;
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
-.icon-aboutus {
-  background-image: url(/images/sprites/sprite-aboutus.png);
+.icon-home-banner {
+  background-image: url(/images/sprites/sprite-home-banner.png);
 }
 .icon-elements {
   background-image: url(/images/sprites/sprite-elements.png);
 }
+.icon-aboutus {
+  background-image: url(/images/sprites/sprite-aboutus.png);
+}
 .icon-layout {
   background-image: url(/images/sprites/sprite-layout.png);
 }
-.icon-home-banner {
-  background-image: url(/images/sprites/sprite-home-banner.png);
+.icon-services {
+  background-image: url(/images/sprites/sprite-services.png);
 }

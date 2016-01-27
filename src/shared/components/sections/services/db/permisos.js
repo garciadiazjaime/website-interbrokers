@@ -2,9 +2,9 @@
 
 export default {
   title: 'Permisos',
-  description: 'Permisos para Vehículos <br /> Comerciales en USA y <br /><strong>Nuevos Entrantes</strong>',
+  description: 'Permisos para Vehículos Comerciales en USA y <strong>Nuevos Entrantes</strong>',
   href: 'servicios/permisos',
-  className: 'clase_logo_submenu',
+  className: 'w2',
   children: [{
     type: 'title',
     title: 'Permisos',

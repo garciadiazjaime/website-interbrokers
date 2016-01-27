@@ -31,6 +31,18 @@
 .c{
 	margin: 0 35px;
 }
+.c2{
+  @extend .vCenter;
+  margin: 0 35px;
+}
+.c3{
+  @extend .c;
+  margin-top: 30px;
+}
+.c4{
+  @extend .c;
+  margin-right: 0;
+}
 .d{
   background: $red;
   padding: 50px 50px 25px 190px;
@@ -178,6 +190,7 @@
     position: absolute;
     left: 55%;
     top: -450px;
+    z-index: -1000;
   }
 }
 .r{
@@ -205,6 +218,94 @@
   background-color: $white;
   padding: 35px 10% 50px;
   margin: 0 -13px 4px -13px;
+}
+.w{
+  background-color: $white;
+  padding: 30px 30px 20px;
+  min-height: 252px;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  h2{
+    color: $red;
+    font-size: 25px;
+  }
+  p{
+    fontSize: 12px;
+  }
+  &:hover{
+    background-color: $darkGray;
+    h2{
+      color: $white;
+    }
+    p{
+      color: $white;
+    }
+  }
+  &::before{
+    content: "";
+    margin: 0 auto 20px;
+    position: relative;
+    @extend .icon-services;
+  }
+}
+.w1{
+  @extend .w;
+  &:hover{
+    &::before{
+      @include sprite($services-tramits_white);
+    }
+  }
+  &::before{
+    @include sprite($services-tramits_red);
+  }
+}
+.w2{
+  @extend .w;
+  &:hover{
+    &::before{
+      @include sprite($services-permits_white);
+    }
+  }
+  &::before{
+    @include sprite($services-permits_red);
+  }
+}
+.w3{
+  @extend .w;
+  &:hover{
+    &::before{
+      @include sprite($services-insurance_white);
+    }
+  }
+  &::before{
+    @include sprite($services-insurance_red);
+  }
+}
+.w4{
+  @extend .w;
+  &:hover{
+    &::before{
+      @include sprite($services-consulting_white);
+    }
+  }
+  &::before{
+    @include sprite($services-consulting_red);
+  }
+}
+// Clases engine servicios
+.sr1{
+  margin: 0 -15px;
+  padding: 50px;
+  background-color: $red;
+  color: $white;
+  margin-bottom: 60px;
+  &::before {
+    content: "";
+    @extend .icon-services;
+    @include sprite($services-white_truck);
+    margin-bottom: 50px;
+  }
 }
 @media #{$isTablet}{
   .a{
@@ -270,3 +371,4 @@
     padding-bottom: 80px;
   }
 }
+
