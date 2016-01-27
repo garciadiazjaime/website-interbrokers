@@ -1,6 +1,7 @@
 /* eslint max-len: [2, 500, 4] */
 
 export default {
+  isRoot: true,
   title: 'Consultoría',
   description: 'Programa de Servicio de Auditorias<br /> (México y USA)',
   href: 'servicios/consultoria',
@@ -13,7 +14,7 @@ export default {
     type: 'list',
     className: 'class_logo',
     title: 'Consultoría y <br /> Servicio de <br />Auditorías <br /> (México y USA)',
-    href: 'consultoria',
+    href: 'auditorias',
     children: [{
       title: 'Apoyo para pre-auditorias',
       href: 'apoyo-preaudotirias',

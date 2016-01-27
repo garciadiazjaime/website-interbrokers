@@ -58,6 +58,20 @@ export default class Body extends React.Component {
     const { data, menuItems, rootUrl } = this.props;
     return (<div className="container-fluid">
         <div className="col-sm-6">
+          <Button1 className="" href="servicios" title="servicios">
+            Menú de Servicios
+          </Button1>
+        </div>
+        <div className="col-sm-6">
+          <Button1 className="" href="servicios" title="servicios anterior">
+            Anterior
+          </Button1>
+
+          <Button1 className="" href="servicios" title="servicios siguiente">
+            Siguiente
+          </Button1>
+        </div>
+        <div className="col-sm-6">
           {this.renderMenu(menuItems, rootUrl)}
         </div>
         <div className="col-sm-6">

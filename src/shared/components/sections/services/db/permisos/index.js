@@ -1,6 +1,7 @@
 /* eslint max-len: [2, 500, 4] */
 
 export default {
+  isRoot: true,
   title: 'Permisos',
   description: 'Permisos para Vehículos <br /> Comerciales en USA y <br /><strong>Nuevos Entrantes</strong>',
   href: 'servicios/permisos',
@@ -31,7 +32,7 @@ export default {
     type: 'list',
     className: 'clase_logo_truck_mx',
     title: 'Nuevo <br />entrante',
-    href: 'tramites-mx',
+    href: 'permisos-mx',
     children: [{
       title: 'MC Enterprise',
       href: 'mc-enterprise',
