@@ -1,6 +1,7 @@
 /* eslint max-len: [2, 500, 4] */
 
 export default {
+  isRoot: true,
   title: 'Seguros',
   description: 'Portafolio de seguros para <br /> <b>Vehiculos Comerciales.</b> <br /> Cobertura en México y USA.',
   href: 'servicios/seguros',

@@ -1,6 +1,7 @@
 /* eslint max-len: [2, 500, 4] */
 
 export default {
+  isRoot: true,
   title: 'Consultoría',
   description: 'Programa de Servicio de Auditorias<br /> (México y USA)',
   href: 'servicios/consultoria',

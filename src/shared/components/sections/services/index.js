@@ -10,16 +10,20 @@ import dbData from './data';
 export default class ServicesSection extends React.Component {
 
   getMenuData(data) {
+    const items = [];
     if (_.isArray(data) && data.length) {
-      return data.map((item) => {
-        return {
-          title: item.title,
-          description: item.description,
-          href: item.href,
-          className: item.className,
-        };
+      data.map((item) => {
+        if (item.isRoot) {
+          items.push({
+            title: item.title,
+            description: item.description,
+            href: item.href,
+            className: item.className,
+          });
+        }
       });
     }
+    return items;
   }
 
   render() {
