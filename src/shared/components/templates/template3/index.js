@@ -22,17 +22,23 @@ export default class Template3 extends React.Component {
             {data.title}
           </Title1>);
       case 'LIST':
+        const categoryUrl = [href, data.href].join('/');
+        const children = data.children.map((item) => {
+          return {
+            title: item.title,
+            href: [href, data.href, item.href].join('/'),
+          };
+        });
         return (
           <div className="row">
               <div className="col-sm-6">
-                [img]
                 <Image1 src="" alt="" className="" />
-                <Button1 className="b" href={'fix-link' + href} title={data.title} />
+                <Button1 className="b" href={categoryUrl} title={data.title} />
                 <Title1 className="" data={data.title} />
               </div>
 
               <div className="col-sm-6">
-                <Engine1 data={data.children} Template={Template4} />
+                <Engine1 data={children} Template={Template4} />
               </div>
             </div>
         );

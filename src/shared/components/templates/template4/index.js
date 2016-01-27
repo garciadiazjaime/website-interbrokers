@@ -8,7 +8,7 @@ export default class Template4 extends React.Component {
   render() {
     const { data } = this.props;
     return (<div>
-        <Button1 href="unlink" className="m" title={data.title}>
+        <Button1 href={data.href} className="m" title={data.title}>
           {data.title}
         </Button1>
       </div>);
