@@ -9,10 +9,12 @@ import Paragraph1 from '../../../elements/paragraphs/paragraph1';
 export default class Intro extends React.Component {
 
   render() {
-    const { texts, links } = this.props.data;
+    const { texts, links, sprites } = this.props.data;
     return (<div className="container-fluid">
       <div className="col-sm-6">
         <Row1 className="c">
+
+          <span className={sprites.sprite1}>[sprite]</span>
 
           <Title1 className="o" data={texts.text1} />
 
