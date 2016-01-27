@@ -26,12 +26,26 @@ export default class ServicesSection extends React.Component {
     return items;
   }
 
+  getServicesData(data) {
+    if (_.isArray(data) && data.length) {
+      return data.map((item) => {
+        return {
+          href: item.href,
+          children: item.children,
+        };
+      });
+    }
+    return null;
+  }
+
   render() {
     const menuData = this.getMenuData(dbData.services);
+    const servicesData = this.getServicesData(dbData.services);
+
     return (<div>
       <Block1 data={dbData.block1} />
       <Block2 data={menuData} />
-      <Block3 data={dbData.services} />
+      <Block3 data={servicesData} />
     </div>);
   }
 }

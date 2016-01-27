@@ -1,13 +1,16 @@
 import React from 'react';
 
-import Engine2 from '../../widgets/engine/engine2';
+import Engine1 from '../../engines/engine1';
+import Template3 from '../../templates/template3';
 
 
 export default class Block3 extends React.Component {
 
+
   render() {
+    const { data } = this.props;
     return (<div className="container-fluid">
-        <Engine2 data={this.props.data} />
+        <Engine1 data={data} Template={Template3} />
       </div>);
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 
 
-export default class Engine3 extends React.Component {
+export default class Engine1 extends React.Component {
 
   renderElement(data, Template) {
     if (_.isArray(data) && data.length) {
@@ -20,7 +20,7 @@ export default class Engine3 extends React.Component {
   }
 }
 
-Engine3.propTypes = {
+Engine1.propTypes = {
   data: React.PropTypes.array.isRequired,
   Template: React.PropTypes.any,
 };
