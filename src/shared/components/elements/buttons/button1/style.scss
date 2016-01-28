@@ -417,6 +417,7 @@
   display: block;
   text-align: right;
   padding-right: 60px;
+  margin-top: 22px;
   &:hover{
     color: $white;
   }
@@ -427,6 +428,42 @@
     right: 0;
     @include sprite($layout-sm_facebook);
 
+  }
+}
+//Servicios
+.sb{
+  font-family: $fontABold;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  color: $gray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  border-bottom: 1px solid $gray;
+  padding-right: 40px;
+  &:hover{
+    color: $red;
+    &::after{
+      @include sprite($services-list_button_hover);
+    }
+  }
+  &::before{
+    content: "";
+    @extend .icon-services;
+    @include sprite($services-list_style);
+    position: absolute;
+    @extend .vCenter;
+    left: -20px;
+  }
+  &::after{
+    @extend .icon-services;
+    @include sprite($services-list_button);
+    position: absolute;
+    right: 0px;
+    @extend .vCenter;
+    content: "";
+    z-index: -10;
   }
 }
 @media#{$headerAdjuster}{

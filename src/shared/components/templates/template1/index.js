@@ -5,7 +5,7 @@ import Title1 from '../../elements/titles/title1';
 import Paragraph1 from '../../elements/paragraphs/paragraph1';
 import Wrapper1 from '../../elements/wrappers/wrapper1';
 
-
+// **************** About Us > Our Team ******************************
 export default class Template1 extends React.Component {
 
   render() {
