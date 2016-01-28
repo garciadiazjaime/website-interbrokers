@@ -41,46 +41,31 @@ export default class Body extends React.Component {
       </div>);
   }
 
-  renderMenu(data, rootUrl) {
-    let itemsEl;
-    if (_.isArray(data) && data.length) {
-      itemsEl = data.map((item, index) => {
-        return (<li key={index}>
-            <Button1 href={[rootUrl, item.href].join('/')} title={item.title}>
-              {item.title}
-            </Button1>
-          </li>);
-      });
-    }
-    return (<ul>
-        {itemsEl}
-      </ul>);
-  }
-
   renderControls() {
     return (<div>
-      <Button1 className="" href="servicios" title="servicios anterior">
-        Anterior
-      </Button1>
+      <div className="col-sm-6">
+        <Button1 className="" href="servicios" title="servicios">
+          Menú de Servicios
+        </Button1>
+      </div>
 
-      <Button1 className="" href="servicios" title="servicios siguiente">
-        Siguiente
-      </Button1>
+      <div className="col-sm-6">
+        <Button1 className="" href="servicios" title="servicios anterior">
+          Anterior
+        </Button1>
+        <Button1 className="" href="servicios" title="servicios siguiente">
+          Siguiente
+        </Button1>
+      </div>
     </div>);
   }
 
   render() {
-    const { data, menuItems, rootUrl } = this.props;
-    console.log('rootUrl', rootUrl);
+    const { data, menuItems } = this.props;
     return (<div className="container-fluid">
-        <div className="col-sm-6">
-          <Button1 className="" href="servicios" title="servicios">
-            Menú de Servicios
-          </Button1>
-        </div>
-        <div className="col-sm-6">
-          {this.renderControls()}
-        </div>
+
+        {this.renderControls()}
+
         <div className="col-sm-6">
           <Engine1 data={menuItems} Template={Template4} />
         </div>
@@ -94,5 +79,4 @@ export default class Body extends React.Component {
 Body.propTypes = {
   data: React.PropTypes.object.isRequired,
   menuItems: React.PropTypes.array.isRequired,
-  rootUrl: React.PropTypes.string.isRequired,
 };
