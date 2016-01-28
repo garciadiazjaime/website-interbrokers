@@ -16,6 +16,8 @@ export default(
       <IndexRoute component={items.default} />
       {routes}
 
+      <Route path="servicios/:category" component={ServicesInnerSection} />
+      <Route path="servicios/:category/:subcategory" component={ServicesInnerSection} />
       <Route path="servicios/:category/:subcategory/:service" component={ServicesInnerSection} />
 
     </Route>

@@ -1,7 +1,7 @@
 /* eslint max-len: [2, 500, 4] */
 
 export default {
-  // banner principal
+  // red block above the footer
   block1: {
     links: {
       link1: {
