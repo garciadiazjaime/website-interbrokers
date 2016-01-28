@@ -1,17 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
 
-<<<<<<< HEAD
-import Block1 from './template1/block1';
-import Block2 from './template1/block2';
-import Block3 from './template1/block3';
-import data from './data2';
-=======
 import Block1 from './block1';
 import Block2 from './block2';
 import Block3 from './block3';
 import dbData from './data';
->>>>>>> c7780dcc87db66c38a12aa82c65675d4a93d19ee
 
 
 export default class ServicesSection extends React.Component {
