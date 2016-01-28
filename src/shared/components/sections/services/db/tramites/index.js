@@ -2,18 +2,18 @@
 
 export default {
   isRoot: true,
-  title: 'Trámites',
-  description: 'Trámites en USA y México, <br />Placas DMV y SCT en México.',
+  title: 'Trámites',
+  description: 'Trámites en USA y México, Placas DMV y SCT en México.',
   href: 'servicios/tramites',
-  className: 'clase_logo_submenu',
+  className: 'w1',
   children: [{
     type: 'title',
-    title: 'Trámites',
-    className: 'class_logo',
+    title: 'Trámites',
+    className: 'sc1',
   }, {
     type: 'list',
-    className: 'class_logo',
-    title: 'Trámites en USA',
+    className: 'sl1',
+    title: 'Trámites en USA',
     href: 'tramites-usa',
     children: [{
       title: 'PNP- Pull Notice Programa',
@@ -48,7 +48,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'clase_logo_truck_mx',
+    className: 'sl2',
     title: 'Trámites en México',
     href: 'tramites-mx',
     children: [{
