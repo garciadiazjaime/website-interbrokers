@@ -5,6 +5,9 @@ import Title1 from '../../../elements/titles/title1';
 import Paragraph1 from '../../../elements/paragraphs/paragraph1';
 import Button1 from '../../../elements/buttons/button1';
 
+import Engine1 from '../../../engines/engine1';
+import Template4 from '../../../templates/template4';
+
 export default class Body extends React.Component {
 
   renderContent(data) {
@@ -54,8 +57,21 @@ export default class Body extends React.Component {
       </ul>);
   }
 
+  renderControls() {
+    return (<div>
+      <Button1 className="" href="servicios" title="servicios anterior">
+        Anterior
+      </Button1>
+
+      <Button1 className="" href="servicios" title="servicios siguiente">
+        Siguiente
+      </Button1>
+    </div>);
+  }
+
   render() {
     const { data, menuItems, rootUrl } = this.props;
+    console.log('rootUrl', rootUrl);
     return (<div className="container-fluid">
         <div className="col-sm-6">
           <Button1 className="" href="servicios" title="servicios">
@@ -63,16 +79,10 @@ export default class Body extends React.Component {
           </Button1>
         </div>
         <div className="col-sm-6">
-          <Button1 className="" href="servicios" title="servicios anterior">
-            Anterior
-          </Button1>
-
-          <Button1 className="" href="servicios" title="servicios siguiente">
-            Siguiente
-          </Button1>
+          {this.renderControls()}
         </div>
         <div className="col-sm-6">
-          {this.renderMenu(menuItems, rootUrl)}
+          <Engine1 data={menuItems} Template={Template4} />
         </div>
         <div className="col-sm-6">
           {this.renderContent(data)}
