@@ -3,16 +3,16 @@
 export default {
   isRoot: true,
   title: 'Permisos',
-  description: 'Permisos para Vehículos <br /> Comerciales en USA y <br /><strong>Nuevos Entrantes</strong>',
+  description: 'Permisos para Vehículos Comerciales en USA y <strong>Nuevos Entrantes</strong>',
   href: 'servicios/permisos',
-  className: 'clase_logo_submenu',
+  className: 'w2',
   children: [{
     type: 'title',
     title: 'Permisos',
-    className: 'class_logo',
+    className: 'sc2',
   }, {
     type: 'list',
-    className: 'class_logo',
+    className: 'sl3',
     title: 'Permisos <br />en USA',
     href: 'permisos-usa',
     children: [{
@@ -30,7 +30,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'clase_logo_truck_mx',
+    className: 'sl4',
     title: 'Nuevo <br />entrante',
     href: 'permisos-mx',
     children: [{

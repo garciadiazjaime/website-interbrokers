@@ -74,9 +74,9 @@ export default class FooterAAA extends React.Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-xs-12 col-sm-8">
-                  <Image1 className="b" src="/images/logoWhite.png" alt="InterBrokers"/>
+                  <Image1 className="d" src="/images/logoWhite.png" alt="InterBrokers"/>
               </div>
-              <div className="col-sm-4 col-xs-4">
+              <div className="col-xs-12 col-sm-4">
                 <Button1 className="p" href="https://www.facebook.com/InterbrokersSeguros/" title="InterBrokers en Facebook">
                   Síguenos en Facebook
                 </Button1>

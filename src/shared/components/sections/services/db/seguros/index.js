@@ -3,16 +3,16 @@
 export default {
   isRoot: true,
   title: 'Seguros',
-  description: 'Portafolio de seguros para <br /> <b>Vehiculos Comerciales.</b> <br /> Cobertura en México y USA.',
+  description: 'Portafolio de seguros para <b>Vehiculos Comerciales.</b> Cobertura en México y USA.',
   href: 'servicios/seguros',
-  className: 'clase_logo_submenu',
+  className: 'w3',
   children: [{
     type: 'title',
     title: 'Seguros para Vehículos Comerciales',
-    className: 'class_logo',
+    className: 'sc3',
   }, {
     type: 'list',
-    className: 'class_logo',
+    className: 'sl7',
     title: 'Seguros con <br />cobertura en <br />USA',
     href: 'seguros-usa',
     children: [{
@@ -33,7 +33,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'clase_logo_truck_mx',
+    className: 'sl8',
     title: 'Seguros con <br /> cobertura en <br />México',
     href: 'seguros-mx',
     children: [{

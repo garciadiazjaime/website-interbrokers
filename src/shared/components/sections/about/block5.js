@@ -17,6 +17,8 @@ export default class Block5 extends React.Component {
           <Image1 className="a" src={images.image1.src} alt={images.image1.alt} />
           <Title1 className="p">
             {texts.text1}
+            <b>{texts.text1b}</b>
+            {texts.text1c}
           </Title1>
         </Row1>
       </div>

@@ -12,14 +12,14 @@ export default class Block8 extends React.Component {
     return (<Wrapper1 className="t">
       <div className="container-fluid">
         <Row1 className="g">
-          <div className="col-sm-10">
+          <div className="col-xs-9">
             <Wrapper1 className="c">
               <Title1 className="e4">
                 {texts.text1}
               </Title1>
             </Wrapper1>
           </div>
-          <div className="col-sm-2">
+          <div className="col-xs-2">
             <Button1 className="b" href={links.link1.href} title={links.link1.title} />
           </div>
         </Row1>
