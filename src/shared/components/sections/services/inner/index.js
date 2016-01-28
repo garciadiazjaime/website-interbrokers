@@ -7,31 +7,22 @@ import Footer from './footer';
 
 import servicesData from '../db';
 import dataBlocks from './data';
+import Utils from './utils';
 
 
 export default class ServiceInner extends React.Component {
 
   getDefaultService(data, categoryUrl, subcategoryUrl) {
-    let category;
     if (_.isArray(data) && data.length) {
-      category = data.filter((item) => {
-        return item.isRoot && item.href === categoryUrl;
-      })[0];
+      const categoryItems = Utils.setCategoryItems(data, categoryUrl);
 
-      if (category && _.isArray(category.children) && category.children.length) {
-        if (!subcategoryUrl) {
-          for (let i = 0, len = category.children.length; i < len; i++) {
-            if (category.children[i].type.toUpperCase() === 'LIST') {
-              return category.children[i];
-            }
-          }
-        } else {
-          for (let i = 0, len = category.children.length; i < len; i++) {
-            const href = category.children[i].href ? category.children[i].href : null;
-            if (href && href.toUpperCase() === subcategoryUrl.toUpperCase()) {
-              return category.children[i];
-            }
-          }
+      for (let i = 0, len = categoryItems.length; i < len; i++) {
+        const { type, href } = categoryItems[i];
+
+        if (!subcategoryUrl && type.toUpperCase() === 'LIST') {
+          return categoryItems[i];
+        } else if (href && href.toUpperCase() === subcategoryUrl.toUpperCase()) {
+          return categoryItems[i];
         }
       }
     }
