@@ -9,10 +9,10 @@ export default {
   children: [{
     type: 'title',
     title: 'Seguros para Vehículos Comerciales',
-    className: 'class_logo',
+    className: 'sc3',
   }, {
     type: 'list',
-    className: 'class_logo',
+    className: 'sl7',
     title: 'Seguros con <br />cobertura en <br />USA',
     href: 'seguros-usa',
     children: [{
@@ -33,7 +33,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'clase_logo_truck_mx',
+    className: 'sl8',
     title: 'Seguros con <br /> cobertura en <br />México',
     href: 'seguros-mx',
     children: [{

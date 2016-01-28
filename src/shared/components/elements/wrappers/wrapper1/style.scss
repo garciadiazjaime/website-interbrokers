@@ -307,6 +307,81 @@
     margin-bottom: 50px;
   }
 }
+.sl{
+  padding: 0 50px 0 113px;
+  position: relative;
+  a{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-right: 50px;
+  }
+  h2{
+    color: $darkGray;
+    font-family: $fontABold; 
+    font-size: 30px;
+  }
+  &::before{
+    content: "";
+    @extend .icon-services;
+    @include sprite($services-white_truck);
+    margin-bottom: 30px;
+  }
+}
+.sl1{
+  @extend .sl;
+  &::before{
+    @include sprite($services-big_truck_usa);
+  }
+}
+.sl2{
+@extend .sl;
+  &::before{
+    @include sprite($services-big_truck_mx);
+  }
+}
+.sl3{
+@extend .sl;
+  &::before{
+    @include sprite($services-placas_usa);
+  }
+}
+.sl4{
+@extend .sl;
+  &::before{
+    @include sprite($services-placas_mx);
+  }
+}
+.sl5{
+@extend .sl;
+  &::before{
+    @include sprite($services-permisos_usa);
+  }
+}
+.sl6{
+  @extend .sl;
+  &::before{
+    @include sprite($services-nuevo_entrante);
+  }
+}
+.sl7{
+  @extend .sl;
+  &::before{
+    @include sprite($services-seguros_usa);
+  }
+}
+.sl8{
+  @extend .sl;
+  &::before{
+    @include sprite($services-seguros_mx);
+  }
+}
+.sl9{
+  @extend .sl;
+  &::before{
+    @include sprite($services-consultoria_y);
+  }
+}
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px 40px 35px;
@@ -369,6 +444,16 @@
   }
   .s{
     padding-bottom: 80px;
+  }
+  .w{
+    margin-bottom: 100px;
+  }
+  .sl{
+    padding-top: 50px;
+    padding-left: 50px;
+    a{
+      top: 80px;
+    }
   }
 }
 

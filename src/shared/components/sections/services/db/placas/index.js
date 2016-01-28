@@ -9,9 +9,10 @@ export default {
   children: [{
     type: 'subtitle',
     title: 'Placas',
+    className: 'sc',
   }, {
     type: 'list',
-    className: 'clase_logo_dmv',
+    className: 'sl5',
     title: 'DMV',
     subtitle: '(Commercial Registrations)',
     href: 'placas-dmv',
@@ -27,7 +28,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'clase_logo_sct',
+    className: 'sl6',
     title: 'SCT',
     subtitle: '(Transfers, Estatales, Federales)',
     href: 'placas-sct',

@@ -9,10 +9,10 @@ export default {
   children: [{
     type: 'title',
     title: 'Consultoría',
-    className: 'class_logo',
+    className: 'sc4',
   }, {
     type: 'list',
-    className: 'class_logo',
+    className: 'sl9',
     title: 'Consultoriía y <br /> Servicio de <br />Auditorías <br /> (México y USA)',
     href: 'consultoria',
     children: [{

@@ -235,6 +235,48 @@
     left: 0;
   }
 }
+.sc{
+  color: $red;
+  font-family: $fontABold;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  border-bottom: 5px solid $red;
+  margin-left: 112px;
+  margin-top: 100px;
+  position: relative;
+  &::before{
+    content: "";
+    @extend .icon-services;
+    position: absolute;
+    bottom: -56px;
+    left: -112px;
+  }
+}
+.sc1{
+  @extend .sc;
+  &::before{
+    @include sprite($services-tramits_lg);
+  }
+}
+.sc2{
+  @extend .sc;
+  &::before{
+    @include sprite($services-permits_lg);
+  }
+}
+.sc3{
+  @extend .sc;
+  &::before{
+    @include sprite($services-insurance_lg);
+  }
+}
+.sc4{
+  @extend .sc;
+  &::before{
+    @include sprite($services-consulting_lg);
+  }
+}
 @media#{$headerAdjuster}{
   .e4{
     font-size: 20px;
@@ -268,5 +310,11 @@
   .p{
     padding: 30px 30px 30px 50px;
     margin-top: -80px;
+  }
+  .sc{
+    margin-left: 0;
+    &::before{
+      display: none!important;
+    }
   }
 }

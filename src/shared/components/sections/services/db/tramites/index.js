@@ -8,11 +8,11 @@ export default {
   className: 'w1',
   children: [{
     type: 'title',
-    title: 'Trámites',
-    className: 'class_logo',
+    title: 'Trámites',
+    className: 'sc1',
   }, {
     type: 'list',
-    className: 'class_logo',
+    className: 'sl1',
     title: 'Trámites en USA',
     href: 'tramites-usa',
     children: [{
@@ -48,7 +48,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'clase_logo_truck_mx',
+    className: 'sl2',
     title: 'Trámites en México',
     href: 'tramites-mx',
     children: [{

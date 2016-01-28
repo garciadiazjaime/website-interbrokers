@@ -81,6 +81,9 @@
   padding-bottom: 30px;
   border-bottom: 4px solid $white;
 }
+.h{
+  margin-bottom: 100px;
+}
 // Wrappers Servicios
 .sw{
   margin: 0 -15px;
@@ -106,6 +109,11 @@
 @media #{$isPhone}{
   .a{
   	margin-bottom: 0;
+  }
+  .c3{
+    &::before{
+      display: none!important;
+    }
   }
   .e{
     &::before{
