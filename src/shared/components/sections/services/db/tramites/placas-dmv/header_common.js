@@ -2,9 +2,13 @@
 
 module.exports = [{
   type: 'banner',
+  classes: {
+    className: 'st1',
+  },
   texts: {
-    text1: 'Evita largas filas, te ayudamos a gestionar todos tus trámites.',
-    text2: 'Con más de 15 años de experiencia, somos expertos en el sector transportista binacional.',
+    text1: 'Trámites',
+    text2: 'Evita largas filas, te ayudamos a gestionar todos tus trámites.',
+    text3: 'Con más de 15 años de experiencia, somos expertos en el sector transportista binacional.',
   },
   images: {
     image1: {
@@ -14,6 +18,9 @@ module.exports = [{
   },
 }, {
   type: 'intro',
+  classes: {
+    className: 'sr1c',
+  },
   titles: {
     title1: 'Placas DMV-<span>USA</span>',
   },
@@ -30,11 +37,5 @@ module.exports = [{
   },
   sprites: {
     sprite1: '',
-  },
-  classes: {
-    class1: '',
-    class2: '',
-    class3: '',
-    class4: '',
   },
 }];

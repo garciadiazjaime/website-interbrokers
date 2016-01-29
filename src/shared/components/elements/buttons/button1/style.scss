@@ -502,7 +502,7 @@
   font-family: $fontABold;
   position: absolute;
   @extend .vCenter;
-  &:hover, &:active{
+  &:hover, &:focus{
     color: $black;
   }
 }
@@ -526,6 +526,32 @@
     @include sprite($elements-right_arrow_blue_big);
     @extend .vCenter;
     right: -20px;
+  }
+}
+.snb1d{
+  @extend .snb1;
+  pointer-events: none;
+  cursor: default;
+  color: $gray;
+  &:hover, &:focus{
+    color: $gray;
+    text-decoration: none;
+  }
+  &::before{
+    display: none!important;
+  }
+}
+.snb2d{
+  @extend .snb2;
+  pointer-events: none;
+  cursor: default;
+  color: $gray;
+  &:hover, &:focus{
+    color: $gray;
+    text-decoration: none;
+  }
+  &::before{
+    display: none!important;
   }
 }
 @media#{$headerAdjuster}{

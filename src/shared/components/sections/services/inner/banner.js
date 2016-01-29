@@ -9,13 +9,13 @@ import Wrapper1 from '../../../elements/wrappers/wrapper1';
 export default class Banner extends React.Component {
 
   render() {
-    const { texts } = this.props.data;
+    const { texts, classes } = this.props.data;
     return (
       <div className="container-fluid">
         <Row1 className="sw1">
           <div className="col-xs-12 col-sm-8">
             <Wrapper1 className="c2">
-              <Title1 className="st1">
+              <Title1 className={classes.className}>
                 {texts.text1}
               </Title1>
               <Title1 className="h">

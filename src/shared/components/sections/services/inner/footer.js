@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
         <div className="container-fluid">
           <Row1 className="srf">
             <div className="col-xs-2 col-sm-1">
-               <Button1 className="b" href={links.link1.href} title={links.link1.title} />
+               <Button1 className="c" href={links.link1.href} title={links.link1.title} />
             </div>
             <div className="col-xs-10 col-sm-7">
               <Paragraph1 className="g2">
