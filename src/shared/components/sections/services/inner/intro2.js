@@ -25,7 +25,9 @@ export default class Intro2 extends React.Component {
           <Paragraph1 className="">
             {texts.text3}
           </Paragraph1>
-          <Button1 className="" title={links.link1.title} href={links.link1.href} />
+          <Button1 className="" title={links.link1.title} href={links.link1.href}>
+            [borrar text]
+          </Button1>
         </div>
       </Row1>
     </div>);
