@@ -184,7 +184,10 @@
   }
 }
 .q{
-    
+   font-family: $fontABold; 
+   font-size: 25px;
+   color: $red; 
+   margin-bottom: 30px; 
 }
 // Service Titles
 .st{
@@ -290,6 +293,9 @@
   }
   .d{
     font-size: 25px;
+  }
+  .h{
+    font-size: 30px;
   }
   .p{
     padding: 30px 30px 30px 50px;

@@ -119,6 +119,10 @@
   	@extend .vCenter;
   }
 }
+.e2{
+  @extend .e;
+  margin-bottom: 100px;
+}
 .f{
   position: relative;
   background: $red;
@@ -176,6 +180,14 @@
   .title{
     @extend .vCenter;
   }
+}
+.g2{
+  @extend .g;
+  margin-top: 50px;
+}
+.g3{
+  @extend .g;
+  float: right;
 }
 .h{
   position: relative;
@@ -484,6 +496,38 @@
     left: 0;
   }
 }
+.snb{
+  color: $darkGray;
+  font-size: 12px;
+  font-family: $fontABold;
+  position: absolute;
+  @extend .vCenter;
+  &:hover, &:active{
+    color: $black;
+  }
+}
+.snb1{
+  @extend .snb;
+  left: 40px;
+  &::before{
+    content: "";
+    @extend .icon-elements;
+    @include sprite($elements-left_arrow_blue_big);
+    @extend .vCenter;
+    left: -20px;
+  }
+}
+.snb2{
+  @extend .snb;
+  right: 40px;
+  &::before{
+    content: "";
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);
+    @extend .vCenter;
+    right: -20px;
+  }
+}
 @media#{$headerAdjuster}{
   .l{
     &::after{
@@ -509,5 +553,9 @@
     &::after{
       display: none;
     }
+  }
+  .g3{
+    float: none!important;
+    margin-top: 50px;
   }
 }

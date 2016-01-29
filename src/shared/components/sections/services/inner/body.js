@@ -20,10 +20,10 @@ export default class Body extends React.Component {
     if (_.isArray(texts) && texts.length) {
       textsEl = texts.map((item, index) => {
         return index === 0 ?
-        (<Title1 className="" key={index}>
+        (<Title1 className="q" key={index}>
           {item}
         </Title1>) :
-        (<Paragraph1 className="" key={index}>
+        (<Paragraph1 className="i" key={index}>
           {item}
         </Paragraph1>);
       });
@@ -31,9 +31,11 @@ export default class Body extends React.Component {
 
     if (_.isArray(links) && links.length) {
       linksEl = links.map((item, index) => {
-        return (<Button1 className="" href={item.href} title={item.title} key={index}>
+        return (<div>
+          <Button1 className={item.className} href={item.href} title={item.title} key={index}>
           {item.title}
-        </Button1>);
+        </Button1>
+      </div>);
       });
     }
 
@@ -64,13 +66,13 @@ export default class Body extends React.Component {
     return (<div>
       {
         controls.prev ?
-        (<Button1 className="" href={controls.prev} title="servicios anterior">
+        (<Button1 className="snb1" href={controls.prev} title="servicios anterior">
           Anterior
         </Button1>) : (<span>Anterior</span>)
       }
       {
         controls.next ?
-        (<Button1 className="" href={controls.next} title="servicios siguiente">
+        (<Button1 className="snb2" href={controls.next} title="servicios siguiente">
           Siguiente
         </Button1>) : (<span>Siguiente</span>)
       }
@@ -89,7 +91,9 @@ export default class Body extends React.Component {
           </Wrapper1>
         </div>
         <div className="col-xs-12 col-sm-6">
-          {this.renderControls(menuItems, service)}
+          <Wrapper1 className="cb">
+            {this.renderControls(menuItems, service)}
+          </Wrapper1>
           {this.renderContent(data)}
         </div>
       </div>);

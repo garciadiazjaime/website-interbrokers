@@ -43,6 +43,9 @@
   @extend .c;
   margin-right: 0;
 }
+.c5{
+  margin: 50px 0 100px;
+}
 .d{
   background: $red;
   padding: 50px 50px 25px 190px;
@@ -307,6 +310,11 @@
     margin-bottom: 50px;
   }
 }
+.sr2{
+  background-color: $red;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
 .sl{
   padding: 0 50px 0 113px;
   position: relative;
@@ -382,6 +390,19 @@
     @include sprite($services-consultoria_y);
   }
 }
+.cb{
+  background-color: $mediumLightGray;
+  @include border-radius(22px);
+  height: 45px;
+  position: relative;
+  margin-bottom: 50px;
+  span {
+    color: $gray;
+    @extend .vCenter;
+    font-family: $fontABold;
+    left: 40px;
+  }
+}
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px 40px 35px;
@@ -397,6 +418,9 @@
     &::after{
       display: none;
     }
+  }
+  .cb{
+  margin-top: 100px;
   }
   .d{
     @include border-radius(0);
