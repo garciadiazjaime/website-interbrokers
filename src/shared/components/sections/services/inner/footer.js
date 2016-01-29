@@ -35,4 +35,5 @@ export default class Footer extends React.Component {
 
 Footer.propTypes = {
   data: React.PropTypes.object.isRequired,
+  children: React.PropTypes.any,
 };

@@ -8,6 +8,7 @@ import Wrapper1 from '../../../elements/wrappers/wrapper1';
 
 import Engine1 from '../../../engines/engine1';
 import Template4 from '../../../templates/template4';
+import Utils from './utils';
 
 export default class Body extends React.Component {
 
@@ -73,8 +74,7 @@ export default class Body extends React.Component {
   }
 
   render() {
-    const { data, menuItems, rootUrl } = this.props;
-    console.log('rootUrl', rootUrl);
+    const { data, menuItems, service } = this.props;
     return (<div className="container-fluid">
         <div className="col-xs-12 col-sm-6">
           <Wrapper1 className="c">
@@ -85,7 +85,7 @@ export default class Body extends React.Component {
           </Wrapper1>
         </div>
         <div className="col-xs-12 col-sm-6">
-          {this.renderControls()}
+          {this.renderControls(menuItems, service)}
           {this.renderContent(data)}
         </div>
       </div>);
@@ -95,5 +95,5 @@ export default class Body extends React.Component {
 Body.propTypes = {
   data: React.PropTypes.object.isRequired,
   menuItems: React.PropTypes.array.isRequired,
-  rootUrl: React.PropTypes.string.isRequired,
+  service: React.PropTypes.string,
 };
