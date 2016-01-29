@@ -21,9 +21,7 @@ export default class Body extends React.Component {
         (<Title1 className="" key={index}>
           {item}
         </Title1>) :
-        (<Paragraph1 className="" key={index}>
-          {item}
-        </Paragraph1>);
+        (<Paragraph1 className="" key={index} data={item} />);
       });
     }
 

@@ -32,7 +32,7 @@ export default {
     type: 'list',
     className: 'sl4',
     title: 'Nuevo <br />entrante',
-    href: 'permisos-mx',
+    href: 'permisos-otros',
     children: [{
       title: 'MC Enterprise',
       href: 'mc-enterprise',

@@ -4,9 +4,11 @@ import _ from 'lodash';
 import Header from './header';
 import Body from './body';
 import Footer from './footer';
+import Block5 from './../../home/block5';
 
 import servicesData from '../db';
 import dataBlocks from './data';
+import dataBlocksHome from '../../home/data';
 import Utils from './utils';
 
 
@@ -33,9 +35,9 @@ export default class ServiceInner extends React.Component {
     let serviceUrl = service;
     try {
       if (!service) {
-        const defaultService = this.getServiceData(data, categoryUrl, subcategory);
-        subcategoryUrl = defaultService.href;
-        serviceUrl = defaultService.children[0].href;
+        const serviceData = this.getServiceData(data, categoryUrl, subcategory);
+        subcategoryUrl = serviceData.href;
+        serviceUrl = serviceData.children[0].href;
       }
       return {
         header: require('../db/' + category + '/' + subcategoryUrl + '/header_common'),
@@ -48,18 +50,17 @@ export default class ServiceInner extends React.Component {
   }
 
   getMenuItems(data, categoryUrl, subcategory) {
-    let serviceData;
     if (_.isArray(data) && data.length) {
-      serviceData = this.getServiceData(data, categoryUrl, subcategory);
-    }
+      const serviceData = this.getServiceData(data, categoryUrl, subcategory);
 
-    if (_.isArray(serviceData.children) && serviceData.children.length) {
-      return serviceData.children.map((item) => {
-        return {
-          title: item.title,
-          href: [categoryUrl, serviceData.href, item.href].join('/'),
-        };
-      });
+      if (_.isArray(serviceData.children) && serviceData.children.length) {
+        return serviceData.children.map((item) => {
+          return {
+            title: item.title,
+            href: [categoryUrl, serviceData.href, item.href].join('/'),
+          };
+        });
+      }
     }
     return null;
   }
@@ -69,11 +70,12 @@ export default class ServiceInner extends React.Component {
     const categoryUrl = ['servicios', category].join('/');
     const serviceData = this.getData(servicesData, category, categoryUrl, subcategory, service);
     const menuItems = this.getMenuItems(servicesData, categoryUrl, subcategory);
-
     return (<div>
       <Header data={serviceData.header} />
       <Body data={serviceData.content} menuItems={menuItems} />
-      <Footer data={dataBlocks.block1} />
+      <Footer data={dataBlocks.block1}>
+        { category.toUpperCase() === 'SEGUROS' ? <Block5 data={dataBlocksHome.block5} /> : null }
+      </Footer>
     </div>);
   }
 }

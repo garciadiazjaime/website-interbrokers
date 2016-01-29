@@ -14,10 +14,10 @@ export default {
     type: 'list',
     className: 'sl9',
     title: 'Consultoriía y <br /> Servicio de <br />Auditorías <br /> (México y USA)',
-    href: 'consultoria',
+    href: 'mx-usa',
     children: [{
       title: 'Apoyo para pre-auditorias',
-      href: 'apoyo-preaudotirias',
+      href: 'apoyo-preauditorias',
     }, {
       title: 'Apoyo durante la Auditoría',
       href: 'apoyo-durante-auditoria',
