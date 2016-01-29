@@ -21,11 +21,11 @@ export default class Intro extends React.Component {
   }
 
   render() {
-    const { titles, texts, links } = this.props.data;
+    const { titles, texts, links, classes } = this.props.data;
     return (<div className="container-fluid">
       <div className="row">
         <div className="col-xs-12 col-sm-6">
-          <Wrapper1 className="sr1">
+          <Wrapper1 className={classes.class1}>
             <Title1 className="c2" data={titles.title1} />
             <Button1 className="d" href={links.link1.href} title={links.link1.title}>
               {links.link1.title}
