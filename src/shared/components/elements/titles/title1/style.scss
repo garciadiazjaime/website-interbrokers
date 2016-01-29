@@ -53,6 +53,22 @@
     color: $yellow;
   }
 }
+.c3{
+  @extend .c2;
+  color: $blue;
+  span{
+    color: $red;
+  }
+  small{
+    font-size: 21px;
+    display: block;
+    color: $red;
+  }
+}
+.c4{
+  @extend .c;
+  margin-top: 50px;
+}
 .d{
   font-family: $fontABold;
   color: $white;
@@ -196,6 +212,13 @@
    color: $red; 
    margin-bottom: 30px; 
 }
+.r{
+    font-family: $fontABold;
+    color: $white;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 // Service Titles
 .st{
   position: relative;
@@ -260,8 +283,15 @@
     @include sprite($services-mexflag);
   }
 }
-.si1{
-  
+.st5{
+  @extend .st;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-permit);
+  }
+  &::after{
+    @include sprite($services-usflag);
+  }
 }
 .sc{
   color: $red;

@@ -21,6 +21,8 @@ module.exports = [{
   type: 'intro',
   classes: {
     class1: 'sr1d',
+    class2: 'c2',
+    class3: 'd',
   },
   titles: {
     title1: 'Placas SCT-<span>México</span>',

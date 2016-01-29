@@ -26,8 +26,8 @@ export default class Intro extends React.Component {
       <div className="row">
         <div className="col-xs-12 col-sm-6">
           <Wrapper1 className={classes.class1}>
-            <Title1 className="c2" data={titles.title1} />
-            <Button1 className="d" href={links.link1.href} title={links.link1.title}>
+            <Title1 className={classes.class2} data={titles.title1} />
+            <Button1 className={classes.class3} href={links.link1.href} title={links.link1.title}>
               {links.link1.title}
             </Button1>
           </Wrapper1>

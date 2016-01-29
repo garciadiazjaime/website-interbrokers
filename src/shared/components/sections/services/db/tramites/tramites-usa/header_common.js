@@ -15,6 +15,8 @@ module.exports = [{
   type: 'intro',
   classes: {
     class1: 'sr1a',
+    class2: 'c2',
+    class3: 'd',
   },
   titles: {
     title1: 'Trámites en <span>USA</span>',

@@ -15,6 +15,8 @@ module.exports = [{
   type: 'intro',
   classes: {
     class1: 'sia',
+    class2: 'c2',
+    class3: 'd',
   },
   titles: {
     title1: 'Seguros con Cobertura en <span>USA</span> <small>Vehículos Comerciales</small>',
