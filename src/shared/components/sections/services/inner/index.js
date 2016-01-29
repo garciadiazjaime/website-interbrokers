@@ -36,8 +36,10 @@ export default class ServiceInner extends React.Component {
     try {
       if (!service) {
         const serviceData = this.getServiceData(data, categoryUrl, subcategory);
-        subcategoryUrl = serviceData.href;
-        serviceUrl = serviceData.children[0].href;
+        if (serviceData && _.isArray(serviceData.children) && serviceData.children.length) {
+          subcategoryUrl = serviceData.href;
+          serviceUrl = serviceData.children[0].href;
+        }
       }
       return {
         header: require('../db/' + category + '/' + subcategoryUrl + '/header_common'),
@@ -72,7 +74,10 @@ export default class ServiceInner extends React.Component {
     const menuItems = this.getMenuItems(servicesData, categoryUrl, subcategory);
     return (<div>
       <Header data={serviceData.header} />
-      <Body data={serviceData.content} menuItems={menuItems} service={service} />
+      {
+        category.toUpperCase() !== 'CONSULTORIA' && category.toUpperCase() !== 'NUEVO-ENTRANTE' ?
+        <Body data={serviceData.content} menuItems={menuItems} service={service} /> : null
+      }
       <Footer data={dataBlocks.block1}>
         { category.toUpperCase() === 'SEGUROS' ? <Block5 data={dataBlocksHome.block5} /> : null }
       </Footer>

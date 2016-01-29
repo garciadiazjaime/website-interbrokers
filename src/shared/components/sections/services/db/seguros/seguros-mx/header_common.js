@@ -3,8 +3,9 @@
 module.exports = [{
   type: 'banner',
   texts: {
-    text1: 'Tu tranquilidad en el camino.',
-    text2: 'El seguro para vehiculos comerciales es mucho más que solo un requisito, es tu tranquilidad en el camino.',
+    text1: 'Seguros',
+    text2: 'Tu tranquilidad en el camino.',
+    text3: 'El seguro para vehiculos comerciales es mucho más que solo un requisito, es tu tranquilidad en el camino.',
   },
   images: {
     image1: {

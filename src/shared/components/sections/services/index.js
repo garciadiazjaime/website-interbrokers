@@ -28,7 +28,7 @@ export default class ServicesSection extends React.Component {
 
   getServicesData(data) {
     if (_.isArray(data) && data.length) {
-      return data.map((item) => {
+      return data.slice(0, 5).map((item) => {
         return {
           href: item.href,
           children: item.children,

@@ -7,17 +7,17 @@ module.exports = [{
       images: {
         image1: {
           src: '/images/servicios/consultoria/banner-consultoria.png',
-          alt: 'Consultoria',
+          alt: 'Nuevo Entrante',
         },
       },
       texts: {
-        text1: 'Consultoría',
+        text1: 'Nuevo Entrante',
       },
     },
 
     block2: {
       texts: {
-        text1: 'Permite que nuestros expertos te ayuden en procesos de auditoría del DOT',
+        text1: 'Permite que nuestros expertos te ayuden a poner tu negocio en marcha.',
         text2: 'La protección necesaria para cubrir los daños a terceros, a sus bienes y personas, causados por accidentes en México.',
         text3: 'Desde mantener actualizados los datos y actividades de tus em- pleados, tener al día las revisiones de tus terminales de carga y cubrir oportunamente las cuotas por los servicios aduanales, así como por los derechos de tránsito en territorio norteamericano, InterBrokers se encarga de todo.',
       },
@@ -25,6 +25,10 @@ module.exports = [{
         link1: {
           href: 'contacto',
           title: 'CONTÁCTANOS',
+        },
+        link2: {
+          href: 'nosotros',
+          title: 'CONÓCENOS',
         },
       },
       sprites: {
@@ -34,24 +38,27 @@ module.exports = [{
 
     block3: {
       texts: {
-        text1: '¿En que consiste nuestro',
-        text2: 'Programa de Servicios de Auditoría?',
+        text1: '¿Qué necesitas para operar tu compañía transportista en Estados Unidos?',
+        text2: '',
       },
     },
 
     block4: {
       classes: {
         class1: '',
-        class2: 'col-sm-4',
+        class2: 'col-sm-6',
       },
       items: [{
-        title: 'Apoyo Pre-Auditoria',
+        title: 'Obtener Registro y 2 Licencia de Operación',
         description: 'Existe toda una serie de per- misos, cuotas y registros nece- sarios para el ingreso y la circu- lación de vehículos comerciales dentro de la Unión Americana.',
       }, {
-        title: 'Apoyo Durante Auditoría',
+        title: 'DOT Compliance',
         description: 'Existe toda una serie de per- misos, cuotas y registros nece- sarios para el ingreso y la circu- lación de vehículos comerciales dentro de la Unión Americana.',
       }, {
-        title: 'Apoyo Post-Auditoria',
+        title: 'Aseguranza',
+        description: 'Existe toda una serie de per- misos, cuotas y registros nece- sarios para el ingreso y la circu- lación de vehículos comerciales dentro de la Unión Americana.',
+      }, {
+        title: 'Auditoría de seguridad para Nuevo Entrante',
         description: 'Existe toda una serie de per- misos, cuotas y registros nece- sarios para el ingreso y la circu- lación de vehículos comerciales dentro de la Unión Americana.',
       }],
     },

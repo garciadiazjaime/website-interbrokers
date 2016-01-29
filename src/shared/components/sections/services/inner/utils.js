@@ -16,7 +16,7 @@ export default class Utils {
   static getPrevNext(data, service) {
     let prev = '';
     let next = '';
-    if (_.isArray(data) && data.length) {
+    if (_.isArray(data) && data.length > 1) {
       if (!service) {
         next = data[1].href;
       } else {
