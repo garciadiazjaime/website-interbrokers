@@ -99,12 +99,14 @@
     right: 83px;
     bottom: 50px;
   }
-  &::after{
-  }
 }
 .sw1{
   @extend .sw;
   background-image: url('/images/servicios/tramites/banner-tramites-usa.jpg');
+}
+.srf{
+  padding-top: 50px;
+  border-top: 4px solid $white;
 }
 @media #{$isPhone}{
   .a{
@@ -118,6 +120,11 @@
   .e{
     &::before{
       display: none!important; 
+    }
+  }
+  .sw1{
+    &::before{
+      display: none!important;
     }
   }
   .c, .c2, .f, .f2{
