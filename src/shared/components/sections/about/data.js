@@ -31,10 +31,11 @@ export default {
   },
   block5: {
     texts: {
-      text1: '¿Qué vas a hacer cuando seas grande?',
-      text2: 'Nuestra misión: Ayudarte a crecer.',
-      text3: 'En interBrokers creemos en la importancia de la seguridad y tranquilidad de nuestros clientes, es por eso que promovemos una cultura enfocada en la prevención para impulsar su crecimiento, desarrollo y transformación. A través de un servicio cálido, efectivo y personalizado nos ocupamos de entender sus necesidades y ofrecerle una solución integral. Interbrokers ofrece servicios de consultoría, trámites, permisos y seguros, siendo expertos en el sector transportista binacional.',
-      text4: 'CONTÁCTANOS',
+      text1: '¿Qué vas a ',
+      text1b: 'hacer ',
+      text1c: 'cuando seas grande?',
+      text2: 'Nuestra misión: Ayudarte a crecer.',
+      text3: 'En interBrokers creemos en la importancia de la seguridad y tranquilidad de nuestros clientes, es por eso que promovemos una cultura enfocada en la prevención para impulsar su crecimiento, desarrollo y transformación. <br />A través de un servicio cálido, efectivo y personalizado nos ocupamos de entender sus necesidades y ofrecerle una solución integral. <br />Interbrokers ofrece servicios de consultoría, trámites, permisos y seguros, siendo expertos en el sector transportista binacional.',
     },
     links: {
       link1: {
@@ -51,7 +52,8 @@ export default {
   },
   block7: {
     texts: {
-      text1: 'Conoce nuestros servicios',
+      text1: 'NUESTRO EQUIPO',
+      text2: 'Nuestro Equipo de profesionales, estan capacitados para atenderte de forma rápida y eficiente, contacta a uno de nuestros asesores:',
     },
   },
 };

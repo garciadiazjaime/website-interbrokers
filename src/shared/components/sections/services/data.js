@@ -12,6 +12,6 @@ export default {
     },
   },
 
-  block2: servicesData,
+  services: servicesData,
 
 };

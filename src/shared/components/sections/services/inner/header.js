@@ -3,6 +3,8 @@ import _ from 'lodash';
 
 import Banner from './banner';
 import Intro from './intro';
+import Intro2 from './intro2';
+import Template2 from './template2';
 
 
 export default class Header extends React.Component {
@@ -15,6 +17,10 @@ export default class Header extends React.Component {
             return (<Banner data={item} key={index} />);
           case 'INTRO':
             return (<Intro data={item} key={index} />);
+          case 'INTRO2':
+            return (<Intro2 data={item} key={index} />);
+          case 'CONSULTORIA':
+            return (<Template2 data={item} key={index} />);
           default:
             return null;
         }

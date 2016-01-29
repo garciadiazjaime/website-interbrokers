@@ -4,18 +4,46 @@ import _ from 'lodash';
 import Header from './header';
 import Body from './body';
 import Footer from './footer';
+import Block5 from './../../home/block5';
 
 import servicesData from '../db';
 import dataBlocks from './data';
+import dataBlocksHome from '../../home/data';
+import Utils from './utils';
 
 
 export default class ServiceInner extends React.Component {
 
-  getData(category, subcategory, service) {
+  getServiceData(data, categoryUrl, subcategoryUrl) {
+    if (_.isArray(data) && data.length) {
+      const categoryItems = Utils.setCategoryItems(data, categoryUrl);
+      for (let i = 0, len = categoryItems.length; i < len; i++) {
+        const { type, href } = categoryItems[i];
+
+        if (!subcategoryUrl && type.toUpperCase() === 'LIST') {
+          return categoryItems[i];
+        } else if (href && href.toUpperCase() === subcategoryUrl.toUpperCase()) {
+          return categoryItems[i];
+        }
+      }
+    }
+    return null;
+  }
+
+  getData(data, category, categoryUrl, subcategory, service) {
+    let subcategoryUrl = subcategory;
+    let serviceUrl = service;
     try {
+      if (!service) {
+        const serviceData = this.getServiceData(data, categoryUrl, subcategory);
+        if (serviceData && _.isArray(serviceData.children) && serviceData.children.length) {
+          subcategoryUrl = serviceData.href;
+          serviceUrl = serviceData.children[0].href;
+        }
+      }
       return {
-        header: require('../db/' + category + '/header_common'),
-        content: require('../db/' + category + '/' + subcategory + '/' + service),
+        header: require('../db/' + category + '/' + subcategoryUrl + '/header_common'),
+        content: require('../db/' + category + '/' + subcategoryUrl + '/' + serviceUrl),
       };
     } catch (err) {
       console.error(err.message);
@@ -23,37 +51,36 @@ export default class ServiceInner extends React.Component {
     }
   }
 
-  getMenuItems(data, baseUrl, category, subcategory) {
+  getMenuItems(data, categoryUrl, subcategory) {
     if (_.isArray(data) && data.length) {
-      const seccionUrl = [baseUrl, category].join('/');
-      const categoryData = data.filter((item) => {
-        return item.href && item.href.toUpperCase() === seccionUrl.toUpperCase();
-      }).pop();
+      const serviceData = this.getServiceData(data, categoryUrl, subcategory);
 
-      if (_.isArray(categoryData.children) && categoryData.children.length) {
-        const subcategoryData = categoryData.children.filter((item) => {
-          return item.href && item.href.toUpperCase() === subcategory.toUpperCase();
-        }).pop();
-
-        if (_.isArray(subcategoryData.children) && subcategoryData.children.length) {
-          return subcategoryData.children;
-        }
+      if (_.isArray(serviceData.children) && serviceData.children.length) {
+        return serviceData.children.map((item) => {
+          return {
+            title: item.title,
+            href: [categoryUrl, serviceData.href, item.href].join('/'),
+          };
+        });
       }
     }
     return null;
   }
 
   render() {
-    const baseUrl = 'servicios';
     const { category, subcategory, service } = this.props.params;
-    const serviceData = this.getData(category, subcategory, service);
-    const menuItems = this.getMenuItems(servicesData, baseUrl, category, subcategory);
-    const rootUrl = [baseUrl, category, subcategory].join('/');
-
+    const categoryUrl = ['servicios', category].join('/');
+    const serviceData = this.getData(servicesData, category, categoryUrl, subcategory, service);
+    const menuItems = this.getMenuItems(servicesData, categoryUrl, subcategory);
     return (<div>
       <Header data={serviceData.header} />
-      <Body data={serviceData.content} menuItems={menuItems} rootUrl={rootUrl} />
-      <Footer data={dataBlocks.block1} />
+      {
+        category.toUpperCase() !== 'CONSULTORIA' && category.toUpperCase() !== 'NUEVO-ENTRANTE' ?
+        <Body data={serviceData.content} menuItems={menuItems} service={service} /> : null
+      }
+      <Footer data={dataBlocks.block1}>
+        { category.toUpperCase() === 'SEGUROS' ? <Block5 data={dataBlocksHome.block5} /> : null }
+      </Footer>
     </div>);
   }
 }

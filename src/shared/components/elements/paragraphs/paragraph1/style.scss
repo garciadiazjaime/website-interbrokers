@@ -77,17 +77,6 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-@media #{$isPhone}{
-  .e{
-    height: 70px;
-  }
-}
-
-.f{
-  font-family: $fontA;
-  font-size: 16px;
-  color: $darkGray;
-}
 .f1{
   @extend .f;
   font-size: 21px;
@@ -97,4 +86,28 @@
   font-family: $fontABold;
   font-size: 25px;
   color: $white;
+}
+.g2{
+  @extend .g;
+  display: inline-block;
+}
+.h{
+  font-family: $fontA;
+  font-size: 16px;
+  color: $darkGray;
+  margin-bottom: 25px;
+  b{
+    font-family: $fontABold;
+    font-size: 21px;
+  } 
+}
+.i{
+  font-family: $fontA;
+  font-size: 14px;
+  color: $darkGray;
+}
+@media #{$isPhone}{
+  .e{
+    height: 70px;
+  }
 }
