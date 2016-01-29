@@ -4,6 +4,7 @@ import _ from 'lodash';
 import Title1 from '../../../elements/titles/title1';
 import Paragraph1 from '../../../elements/paragraphs/paragraph1';
 import Button1 from '../../../elements/buttons/button1';
+import Wrapper1 from '../../../elements/wrappers/wrapper1';
 
 import Engine1 from '../../../engines/engine1';
 import Template4 from '../../../templates/template4';
@@ -73,18 +74,16 @@ export default class Body extends React.Component {
     const { data, menuItems, rootUrl } = this.props;
     console.log('rootUrl', rootUrl);
     return (<div className="container-fluid">
-        <div className="col-sm-6">
-          <Button1 className="" href="servicios" title="servicios">
-            Menú de Servicios
-          </Button1>
+        <div className="col-xs-12 col-sm-6">
+          <Wrapper1 className="c">
+            <Button1 className="stm" href="servicios" title="servicios">
+              Menú de Servicios
+            </Button1>
+            <Engine1 data={menuItems} Template={Template4} />
+          </Wrapper1>
         </div>
-        <div className="col-sm-6">
+        <div className="col-xs-12 col-sm-6">
           {this.renderControls()}
-        </div>
-        <div className="col-sm-6">
-          <Engine1 data={menuItems} Template={Template4} />
-        </div>
-        <div className="col-sm-6">
           {this.renderContent(data)}
         </div>
       </div>);

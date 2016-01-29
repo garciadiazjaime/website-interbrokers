@@ -442,8 +442,9 @@
   margin-bottom: 0;
   border-bottom: 1px solid $gray;
   padding-right: 40px;
-  &:hover{
+  &:hover, &:focus{
     color: $red;
+    text-decoration: none;
     &::after{
       @include sprite($services-list_button_hover);
     }
@@ -464,6 +465,23 @@
     @extend .vCenter;
     content: "";
     z-index: -10;
+  }
+}
+.stm{
+  color: $gray;
+  font-family: $fontABold;
+  padding-left: 45px;
+  display: block;
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 50px;
+  &::before{
+    content: "";
+    @extend .icon-services;
+    @include sprite($services-menu_icon);
+    position: absolute;
+    @extend .vCenter;
+    left: 0;
   }
 }
 @media#{$headerAdjuster}{
