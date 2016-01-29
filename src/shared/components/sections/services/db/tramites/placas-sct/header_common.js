@@ -3,7 +3,7 @@
 module.exports = [{
   type: 'banner',
   classes: {
-    className: 'st2',
+    class1: 'st2',
   },
   texts: {
     text1: 'Trámites',
@@ -19,7 +19,7 @@ module.exports = [{
 }, {
   type: 'intro',
   classes: {
-    className: 'sr1d',
+    class1: 'sr1d',
   },
   titles: {
     title1: 'Placas SCT-<span>México</span>',

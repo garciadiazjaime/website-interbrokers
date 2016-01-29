@@ -3,7 +3,7 @@
 module.exports = [{
   type: 'banner',
   classes: {
-    className: 'st1',
+    class1: 'st1',
   },
   texts: {
     text1: 'Trámites',
@@ -13,7 +13,7 @@ module.exports = [{
 }, {
   type: 'intro',
   classes: {
-    className: 'sr1a',
+    class1: 'sr1a',
   },
   titles: {
     title1: 'Trámites en <span>USA</span>',
