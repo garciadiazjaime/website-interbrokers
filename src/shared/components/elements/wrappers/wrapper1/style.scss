@@ -396,6 +396,12 @@
   height: 45px;
   position: relative;
   margin-bottom: 50px;
+  span {
+    color: $gray;
+    @extend .vCenter;
+    font-family: $fontABold;
+    left: 40px;
+  }
 }
 @media #{$isTablet}{
   .a{

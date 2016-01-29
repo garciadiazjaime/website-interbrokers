@@ -61,16 +61,22 @@ export default class Body extends React.Component {
       </ul>);
   }
 
-  renderControls() {
-    return (<Wrapper1 className="cb">
-      <Button1 className="snb1" href="servicios" title="servicios anterior">
-        Anterior
-      </Button1>
-
-      <Button1 className="snb2" href="servicios" title="servicios siguiente">
-        Siguiente
-      </Button1>
-    </Wrapper1>);
+  renderControls(data, service) {
+    const controls = Utils.getPrevNext(data, service);
+    return (<div>
+      {
+        controls.prev ?
+        (<Button1 className="snb1" href={controls.prev} title="servicios anterior">
+          Anterior
+        </Button1>) : (<span>Anterior</span>)
+      }
+      {
+        controls.next ?
+        (<Button1 className="snb2" href={controls.next} title="servicios siguiente">
+          Siguiente
+        </Button1>) : (<span>Siguiente</span>)
+      }
+    </div>);
   }
 
   render() {
@@ -85,7 +91,9 @@ export default class Body extends React.Component {
           </Wrapper1>
         </div>
         <div className="col-xs-12 col-sm-6">
-          {this.renderControls(menuItems, service)}
+          <Wrapper1 className="cb">
+            {this.renderControls(menuItems, service)}
+          </Wrapper1>
           {this.renderContent(data)}
         </div>
       </div>);

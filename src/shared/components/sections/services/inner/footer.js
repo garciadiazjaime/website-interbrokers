@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
 
   render() {
     const { links } = this.props.data;
-    return (<Wrapper1 className="sr2">
+    return (<div><Wrapper1 className="sr2">
       <div className="container-fluid">
         <div className="container-fluid">
           <Row1 className="srf">
@@ -29,7 +29,9 @@ export default class Footer extends React.Component {
           </Row1>
         </div>
       </div>
-    </Wrapper1>);
+    </Wrapper1>
+    {this.props.children ? this.props.children : null}
+    </div>);
   }
 }
 
