@@ -19,7 +19,7 @@ export default class MainMenu extends React.Component {
   getIcons(data) {
     return data.map((item, index) => {
       return (<li key={index}>
-          <a href={item.url} className={style[item.title]} id={item.url} />
+          <a href={item.url} className={style[item.title]} id={item.url} target="_blank" />
         </li>
       );
     });

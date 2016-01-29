@@ -29,7 +29,7 @@ export default class Body extends React.Component {
 
     if (_.isArray(links) && links.length) {
       linksEl = links.map((item, index) => {
-        return (<div>
+        return (<div key={index}>
           <Button1 className={item.className} href={item.href} title={item.title} key={index}>
           {item.title}
         </Button1>

@@ -10,24 +10,24 @@ export default {
     },
     links: {
       link1: {
-        href: 'aboutus',
+        href: 'nosotros',
         title: 'Servicio Integral',
       },
       link2: {
-        href: 'permisos',
-        title: 'permisos',
+        href: 'servicios',
+        title: 'servicios',
       },
       link3: {
-        href: 'permisos',
-        title: 'permisos',
+        href: 'servicios/permisos',
+        title: 'servicios permisos',
       },
       link4: {
-        href: 'tramites',
-        title: 'trámites',
+        href: 'servicios/tramites',
+        title: 'servicios trámites',
       },
       link5: {
-        href: 'seguros',
-        title: 'seguros',
+        href: 'servicios/seguros',
+        title: 'servicios seguros',
       },
     },
   },
@@ -71,7 +71,7 @@ export default {
         title: 'Contáctanos',
       },
       link2: {
-        href: 'servicios',
+        href: 'servicios/nuevo-entrante',
         title: 'Nuevo Entrante',
       },
     },
@@ -94,11 +94,11 @@ export default {
     },
     links: {
       link1: {
-        href: 'servicios',
+        href: 'servicios/seguros',
         title: 'seguro',
       },
       link2: {
-        href: 'contacto',
+        href: 'servicios/tramites',
         title: 'Certificado',
       },
     },
@@ -122,23 +122,23 @@ export default {
     },
     links: {
       link1: {
-        href: 'services',
+        href: 'servicios/seguros',
         title: 'Autos',
       },
       link2: {
-        href: 'services',
+        href: 'servicios/seguros',
         title: 'Motos',
       },
       link3: {
-        href: 'services',
+        href: 'servicios/seguros',
         title: 'Casa',
       },
       link4: {
-        href: 'services',
+        href: 'servicios/seguros',
         title: 'Empresas',
       },
       link5: {
-        href: 'services',
+        href: 'servicios/seguros',
         title: 'Personas',
       },
       link6: {

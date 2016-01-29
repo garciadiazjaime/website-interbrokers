@@ -34,7 +34,7 @@ export default {
   },
   icons: [{
     title: 'facebook',
-    url: '#',
+    url: 'https://www.facebook.com/InterbrokersSeguros/',
   }, {
     title: 'portfolio',
     url: '#',
