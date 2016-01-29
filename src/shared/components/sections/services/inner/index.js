@@ -72,7 +72,7 @@ export default class ServiceInner extends React.Component {
     const menuItems = this.getMenuItems(servicesData, categoryUrl, subcategory);
     return (<div>
       <Header data={serviceData.header} />
-      <Body data={serviceData.content} menuItems={menuItems} />
+      <Body data={serviceData.content} menuItems={menuItems} service={service} />
       <Footer data={dataBlocks.block1}>
         { category.toUpperCase() === 'SEGUROS' ? <Block5 data={dataBlocksHome.block5} /> : null }
       </Footer>
