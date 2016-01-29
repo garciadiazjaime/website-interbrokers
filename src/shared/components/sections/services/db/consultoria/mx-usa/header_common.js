@@ -3,19 +3,19 @@
 module.exports = [{
   type: 'banner',
   texts: {
-    text1: 'Evita largas filas, te ayudamos a gestionar todos tus trámites.',
+    text1: 'Consultoría',
     text2: 'Con más de 15 años de experiencia, somos expertos en el sector transportista binacional.',
   },
   images: {
     image1: {
-      src: '/images/servicios/tramites/banner-tramites-usa.png',
-      alt: 'Trámites en USA',
+      src: '/images/servicios/consultoria/banner-consultoria.png',
+      alt: 'Consultoria',
     },
   },
 }, {
   type: 'intro',
   titles: {
-    title1: 'Placas SCT-<span>México</span>',
+    title1: 'Trámites en <span>USA</span>',
   },
   texts: [
     'Trámites, cuotas y registros necesarios para el ingreso y la circulación de vehículos comerciales dentro de la Unión Americana.',

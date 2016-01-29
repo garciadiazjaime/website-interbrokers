@@ -4,39 +4,40 @@ import _ from 'lodash';
 import Header from './header';
 import Body from './body';
 import Footer from './footer';
+import Block5 from './../../home/block5';
 
 import servicesData from '../db';
 import dataBlocks from './data';
+import dataBlocksHome from '../../home/data';
+import Utils from './utils';
 
 
 export default class ServiceInner extends React.Component {
 
-  getDefaultService(data, categoryUrl) {
-    let subcategory;
+  getServiceData(data, categoryUrl, subcategoryUrl) {
     if (_.isArray(data) && data.length) {
-      subcategory = data.filter((item) => {
-        return item.isRoot && item.href === categoryUrl;
-      })[0];
+      const categoryItems = Utils.setCategoryItems(data, categoryUrl);
+      for (let i = 0, len = categoryItems.length; i < len; i++) {
+        const { type, href } = categoryItems[i];
 
-      if (subcategory && _.isArray(subcategory.children) && subcategory.children.length) {
-        for (let i = 0, len = subcategory.children.length; i < len; i++) {
-          if (subcategory.children[i].type.toUpperCase() === 'LIST') {
-            return subcategory.children[i];
-          }
+        if (!subcategoryUrl && type.toUpperCase() === 'LIST') {
+          return categoryItems[i];
+        } else if (href && href.toUpperCase() === subcategoryUrl.toUpperCase()) {
+          return categoryItems[i];
         }
       }
     }
     return null;
   }
 
-  getData(data, baseUrl, category, subcategory, service) {
+  getData(data, category, categoryUrl, subcategory, service) {
     let subcategoryUrl = subcategory;
     let serviceUrl = service;
     try {
-      if (!subcategory) {
-        const defaultService = this.getDefaultService(data, [baseUrl, category].join('/'));
-        subcategoryUrl = defaultService.href;
-        serviceUrl = defaultService.children[0].href;
+      if (!service) {
+        const serviceData = this.getServiceData(data, categoryUrl, subcategory);
+        subcategoryUrl = serviceData.href;
+        serviceUrl = serviceData.children[0].href;
       }
       return {
         header: require('../db/' + category + '/' + subcategoryUrl + '/header_common'),
@@ -48,48 +49,33 @@ export default class ServiceInner extends React.Component {
     }
   }
 
-  getMenuItems(data, baseUrl, category, subcategory) {
-    let serviceData;
-
+  getMenuItems(data, categoryUrl, subcategory) {
     if (_.isArray(data) && data.length) {
-      if (!subcategory) {
-        serviceData = this.getDefaultService(data, [baseUrl, category].join('/'));
-      } else {
-        const seccionUrl = [baseUrl, category].join('/');
-        const categoryData = data.filter((item) => {
-          return item.href && item.href.toUpperCase() === seccionUrl.toUpperCase();
-        })[0];
+      const serviceData = this.getServiceData(data, categoryUrl, subcategory);
 
-        if (_.isArray(categoryData.children) && categoryData.children.length) {
-          serviceData = categoryData.children.filter((item) => {
-            return item.href && item.href.toUpperCase() === subcategory.toUpperCase();
-          })[0];
-        }
+      if (_.isArray(serviceData.children) && serviceData.children.length) {
+        return serviceData.children.map((item) => {
+          return {
+            title: item.title,
+            href: [categoryUrl, serviceData.href, item.href].join('/'),
+          };
+        });
       }
-    }
-    if (_.isArray(serviceData.children) && serviceData.children.length) {
-      return serviceData.children.map((item) => {
-        return {
-          title: item.title,
-          href: [baseUrl, category, serviceData.href, item.href].join('/'),
-        };
-      });
     }
     return null;
   }
 
   render() {
-    const baseUrl = 'servicios';
     const { category, subcategory, service } = this.props.params;
-    const serviceData = this.getData(servicesData, baseUrl, category, subcategory, service);
-    console.log(serviceData);
-    const menuItems = this.getMenuItems(servicesData, baseUrl, category, subcategory);
-    const rootUrl = [baseUrl, category, subcategory].join('/');
-
+    const categoryUrl = ['servicios', category].join('/');
+    const serviceData = this.getData(servicesData, category, categoryUrl, subcategory, service);
+    const menuItems = this.getMenuItems(servicesData, categoryUrl, subcategory);
     return (<div>
       <Header data={serviceData.header} />
-      <Body data={serviceData.content} menuItems={menuItems} rootUrl={rootUrl} />
-      <Footer data={dataBlocks.block1} />
+      <Body data={serviceData.content} menuItems={menuItems} />
+      <Footer data={dataBlocks.block1}>
+        { category.toUpperCase() === 'SEGUROS' ? <Block5 data={dataBlocksHome.block5} /> : null }
+      </Footer>
     </div>);
   }
 }
