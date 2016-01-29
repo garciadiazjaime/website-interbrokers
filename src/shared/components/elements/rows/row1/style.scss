@@ -102,7 +102,11 @@
 }
 .sw1{
   @extend .sw;
-  background-image: url('/images/servicios/tramites/banner-tramites-usa.jpg');
+  background-image: url('/images/servicios/banner_tramites.jpg');
+}
+.sw2{
+  @extend .sw;
+  background-image: url('/images/servicios/banner_seguros.jpg');
 }
 .srf{
   padding-top: 50px;
@@ -122,7 +126,7 @@
       display: none!important; 
     }
   }
-  .sw1{
+  .sw{
     &::before{
       display: none!important;
     }

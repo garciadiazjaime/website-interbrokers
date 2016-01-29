@@ -12,7 +12,7 @@ export default class Banner extends React.Component {
     const { texts, classes } = this.props.data;
     return (
       <div className="container-fluid">
-        <Row1 className="sw1">
+        <Row1 className={classes.class2}>
           <div className="col-xs-12 col-sm-8">
             <Wrapper1 className="c2">
               <Title1 className={classes.class1}>
