@@ -8,9 +8,11 @@ module.exports = {
 
   links: [{
     href: '',
-    title: 'COMPRAR EN LÍNEA',
+    title: 'Compra en línea',
+    className: 'g2',
   }, {
     href: 'contacto',
-    title: 'MÁS INFORMACIÓN',
+    title: 'Más información',
+    className: 'e2',
   }],
 };

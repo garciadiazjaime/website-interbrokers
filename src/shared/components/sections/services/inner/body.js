@@ -19,10 +19,10 @@ export default class Body extends React.Component {
     if (_.isArray(texts) && texts.length) {
       textsEl = texts.map((item, index) => {
         return index === 0 ?
-        (<Title1 className="" key={index}>
+        (<Title1 className="q" key={index}>
           {item}
         </Title1>) :
-        (<Paragraph1 className="" key={index}>
+        (<Paragraph1 className="i" key={index}>
           {item}
         </Paragraph1>);
       });
@@ -30,9 +30,11 @@ export default class Body extends React.Component {
 
     if (_.isArray(links) && links.length) {
       linksEl = links.map((item, index) => {
-        return (<Button1 className="" href={item.href} title={item.title} key={index}>
+        return (<div>
+          <Button1 className={item.className} href={item.href} title={item.title} key={index}>
           {item.title}
-        </Button1>);
+        </Button1>
+      </div>);
       });
     }
 
@@ -59,15 +61,15 @@ export default class Body extends React.Component {
   }
 
   renderControls() {
-    return (<div>
-      <Button1 className="" href="servicios" title="servicios anterior">
+    return (<Wrapper1 className="cb">
+      <Button1 className="snb1" href="servicios" title="servicios anterior">
         Anterior
       </Button1>
 
-      <Button1 className="" href="servicios" title="servicios siguiente">
+      <Button1 className="snb2" href="servicios" title="servicios siguiente">
         Siguiente
       </Button1>
-    </div>);
+    </Wrapper1>);
   }
 
   render() {

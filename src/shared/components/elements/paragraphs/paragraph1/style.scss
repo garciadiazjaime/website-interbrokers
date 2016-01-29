@@ -87,6 +87,10 @@
   font-size: 25px;
   color: $white;
 }
+.g2{
+  @extend .g;
+  display: inline-block;
+}
 .h{
   font-family: $fontA;
   font-size: 16px;
@@ -96,6 +100,11 @@
     font-family: $fontABold;
     font-size: 21px;
   } 
+}
+.i{
+  ont-family: $fontA;
+  font-size: 14px;
+  color: $darkGray;
 }
 @media #{$isPhone}{
   .e{
