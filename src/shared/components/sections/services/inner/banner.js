@@ -1,23 +1,38 @@
 import React from 'react';
 
-import Image1 from '../../../elements/images/image1';
 import Title1 from '../../../elements/titles/title1';
 import Paragraph1 from '../../../elements/paragraphs/paragraph1';
+import Row1 from '../../../elements/rows/row1';
+import Wrapper1 from '../../../elements/wrappers/wrapper1';
 
 
 export default class Banner extends React.Component {
 
   render() {
-    const { texts, images } = this.props.data;
-    return (<div className="container-fluid">
-        <Image1 src={images.image1.src} alt={images.image1.alt} />
-        <Title1>
-          {texts.text1}
-        </Title1>
-        <Paragraph1>
-          {texts.text2}
-        </Paragraph1>
-      </div>);
+    const { texts } = this.props.data;
+    return (
+      <div className="container-fluid">
+        <Row1 className="sw1">
+          <div className="col-xs-12 col-sm-8">
+            <Wrapper1 className="c2">
+              <Title1 className="st1">
+                {texts.text1}
+              </Title1>
+              <Title1 className="h">
+                {texts.text2}
+              </Title1>
+              <div className="row">
+                <div className="col-xs-12 col-sm-9">
+                  <Paragraph1 className="d">
+                    {texts.text3}
+                  </Paragraph1>
+                </div>
+              </div>
+            </Wrapper1>
+          </div>
+        </Row1>
+      </div>
+      );
   }
 }
 

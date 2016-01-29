@@ -82,6 +82,7 @@ export default class ServiceInner extends React.Component {
     const baseUrl = 'servicios';
     const { category, subcategory, service } = this.props.params;
     const serviceData = this.getData(servicesData, baseUrl, category, subcategory, service);
+    console.log(serviceData);
     const menuItems = this.getMenuItems(servicesData, baseUrl, category, subcategory);
     const rootUrl = [baseUrl, category, subcategory].join('/');
 
