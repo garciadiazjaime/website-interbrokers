@@ -2,6 +2,9 @@
 
 module.exports = [{
   type: 'banner',
+  classes: {
+    class1: 'st1',
+  },
   texts: {
     text1: 'Trámites',
     text2: 'Evita largas filas, te ayudamos a gestionar todos tus trámites.',
@@ -9,6 +12,9 @@ module.exports = [{
   },
 }, {
   type: 'intro',
+  classes: {
+    class1: 'sr1a',
+  },
   titles: {
     title1: 'Trámites en <span>USA</span>',
   },

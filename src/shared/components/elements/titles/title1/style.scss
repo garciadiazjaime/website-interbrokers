@@ -222,6 +222,15 @@
     @include sprite($services-usflag);
   }
 }
+.st2{
+  @extend .st;
+  &::before{
+    @include sprite($services-tramits_red);
+  }
+  &::after{
+    @include sprite($services-mexflag);
+  }
+}
 .sc{
   color: $red;
   font-family: $fontABold;
