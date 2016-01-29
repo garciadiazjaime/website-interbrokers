@@ -333,6 +333,22 @@
     @include sprite($services-white_placas_mx);
   }
 }
+.si{
+  @extend .sr1;
+  background-color: $blue;
+}
+.sia{
+  @extend .si;
+  &::before{
+    @include sprite($services-white_truck_insurance_us);
+  }
+}
+.sib{
+  @extend .si;
+  &::before{
+    @include sprite($services-white_truck_insurance_mx);
+  }
+}
 .sr2{
   background-color: $red;
   padding-top: 60px;

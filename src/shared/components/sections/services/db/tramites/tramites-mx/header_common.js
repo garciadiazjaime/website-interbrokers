@@ -4,6 +4,7 @@ module.exports = [{
   type: 'banner',
   classes: {
     class1: 'st2',
+    class2: 'sw1',
   },
   texts: {
     text1: 'Trámites',

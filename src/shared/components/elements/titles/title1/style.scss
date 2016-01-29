@@ -45,6 +45,13 @@
 .c2{
   @extend .c;
   margin-bottom: 50px;
+  small{
+    font-size: 21px;
+    color: $white;
+  }
+  span{
+    color: $yellow;
+  }
 }
 .d{
   font-family: $fontABold;
@@ -197,9 +204,9 @@
   width: 180;
   color: $red;
   padding-left: 50px;
+  font-size: 16px;
   &::before{
     content: "";
-    @extend .icon-services;
     display: inline-block;
     left: 0;
     @extend .vCenter;
@@ -216,6 +223,7 @@
 .st1{
   @extend .st;
   &::before{
+    @extend .icon-services;
     @include sprite($services-tramits_red);
   }
   &::after{
@@ -225,11 +233,35 @@
 .st2{
   @extend .st;
   &::before{
+    @extend .icon-services;
     @include sprite($services-tramits_red);
   }
   &::after{
     @include sprite($services-mexflag);
   }
+}
+.st3{
+  @extend .st;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-insurance);
+  }
+  &::after{
+    @include sprite($services-usflag);
+  }
+}
+.st4{
+  @extend .st;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-insurance);
+  }
+  &::after{
+    @include sprite($services-mexflag);
+  }
+}
+.si1{
+  
 }
 .sc{
   color: $red;
