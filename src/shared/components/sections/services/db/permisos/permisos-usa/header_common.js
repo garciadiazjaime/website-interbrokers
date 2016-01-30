@@ -2,16 +2,14 @@
 
 module.exports = [{
   type: 'banner',
+  classes: {
+    class1: 'st5',
+    class2: 'sw3',
+  },
   texts: {
     text1: 'Permisos',
     text2: 'Llevemos tu empresa transportista a Estados Unidos.',
     text3: 'Con más de 15 años de experiencia, somos expertos en el sector transportista binacional.',
-  },
-  images: {
-    image1: {
-      src: '/images/servicios/permisos/banner-permisos-usa.png',
-      alt: 'Permisos en USA',
-    },
   },
 }, {
   type: 'intro2',
@@ -29,20 +27,19 @@ module.exports = [{
   sprites: {
     sprite1: '',
   },
-  classes: {
-    class1: '',
-    class2: '',
-    class3: '',
-    class4: '',
-  },
 }, {
   type: 'intro',
+  classes: {
+    class1: 'sp',
+    class2: 'c3',
+    class3: 'f',
+  },
   titles: {
-    title1: 'Permisos en <span>USA</span>',
+    title1: 'Permisos en <span>USA</span><small>Nuevo Entrante</small>',
   },
   texts: [
-    'Todas aquellas compañías transportis- tas que operen en territorio norte- americano deben obtener los permisos correspondientes para hacerlo.',
-    'U.S. DEPARTMENT OF TRANSPORTATION',
+    '<b>Todas aquellas compañías transportistas que operen en territorio norte- americano deben obtener los permisos correspondientes para hacerlo.</b>',
+    '<span>U.S. DEPARTMENT OF TRANSPORTATION<span>',
     'También conocido como D.O.T. por sus siglas en inglés, es la dependencia federal dentro de los Estados Unidos encargada de regular al sector transporte.',
   ],
   links: {
@@ -53,11 +50,5 @@ module.exports = [{
   },
   sprites: {
     sprite1: '',
-  },
-  classes: {
-    class1: '',
-    class2: '',
-    class3: '',
-    class4: '',
   },
 }];

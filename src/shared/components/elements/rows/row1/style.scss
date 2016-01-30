@@ -108,9 +108,30 @@
   @extend .sw;
   background-image: url('/images/servicios/banner_seguros.jpg');
 }
+.sw3{
+  @extend .sw;
+  background-image: url('/images/servicios/banner_permisos.jpg');
+}
+.sw4{
+  @extend .sw;
+  background-image: url('/images/servicios/banner_consultoria.jpg');
+  margin-bottom: 100px;
+}
 .srf{
   padding-top: 50px;
   border-top: 4px solid $white;
+}
+.ne{
+  background-color: $red;
+  position: relative;
+  margin-bottom: 50px;
+  &::before{
+    content: "";
+    @extend .icon-services;
+    @include sprite($services-nuevo_entrante_dude);
+    @extend .hCenter;
+    bottom: 0;
+  }
 }
 @media #{$isPhone}{
   .a{
@@ -134,5 +155,10 @@
   .c, .c2, .f, .f2{
     margin-right: 0!important;
     margin-left: 0!important;
+  }
+  .ne{
+    &::before{
+      display: none!important;
+    }
   }
 }

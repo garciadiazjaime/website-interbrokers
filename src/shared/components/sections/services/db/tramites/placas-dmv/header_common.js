@@ -21,6 +21,8 @@ module.exports = [{
   type: 'intro',
   classes: {
     class1: 'sr1c',
+    class2: 'c2',
+    class3: 'd',
   },
   titles: {
     title1: 'Placas DMV-<span>USA</span>',

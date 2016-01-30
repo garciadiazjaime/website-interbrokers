@@ -18,9 +18,7 @@ export default class Block2 extends React.Component {
       </div>
 
       <div className="col-sm-6">
-        <Title1 className="a2">
-          {texts.text3}
-        </Title1>
+        <Title1 className="a2" data={texts.text3}/>
       </div>
     </div>);
   }

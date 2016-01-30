@@ -4,14 +4,11 @@ module.exports = [{
   type: 'consultoria',
   blocks: {
     block1: {
-      images: {
-        image1: {
-          src: '/images/servicios/consultoria/banner-consultoria.png',
-          alt: 'Consultoria',
-        },
-      },
       texts: {
         text1: 'Consultoría',
+      },
+      classes: {
+        class1: 'sw4',
       },
     },
 
