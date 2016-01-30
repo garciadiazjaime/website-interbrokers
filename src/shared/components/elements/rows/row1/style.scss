@@ -112,6 +112,11 @@
   @extend .sw;
   background-image: url('/images/servicios/banner_permisos.jpg');
 }
+.sw4{
+  @extend .sw;
+  background-image: url('/images/servicios/banner_consultoria.jpg');
+  margin-bottom: 100px;
+}
 .srf{
   padding-top: 50px;
   border-top: 4px solid $white;

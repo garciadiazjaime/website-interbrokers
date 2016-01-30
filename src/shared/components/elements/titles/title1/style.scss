@@ -18,9 +18,19 @@
   font-size: 25px;
   margin-top: 75px;
 }
-.a3{
+.a4{
   @extend .a;
   font-size: 30px;
+}
+.a5{
+  @extend .a;
+  margin-bottom: 0;
+}
+.a6{
+  @extend .a;
+  margin-top: 0;
+  color: $red;
+  margin-bottom: 100px;
 }
 .b{
   font-family: $fontABold;
@@ -218,6 +228,16 @@
     font-size: 21px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.s{
+  margin-top: 345px;
+  margin-bottom: -45px;
+  font-family: $fontABold;
+  color: $white;
+  font-size: 65px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: $red;
 }
 // Service Titles
 .st{
