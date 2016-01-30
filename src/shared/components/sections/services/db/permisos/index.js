@@ -12,7 +12,7 @@ export default {
     className: 'sc2',
   }, {
     type: 'list',
-    className: 'sl3',
+    className: 'sl5',
     title: 'Permisos <br />en USA',
     href: 'permisos-usa',
     children: [{
@@ -30,7 +30,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'sl4',
+    className: 'sl6',
     title: 'Nuevo <br />entrante',
     href: 'permisos-otros',
     children: [{

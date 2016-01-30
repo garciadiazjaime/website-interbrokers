@@ -1,13 +1,4 @@
-$home-banner-check: -364px -155px 52px 52px;
-$home-banner-plecks: -0px -0px 364px 368px;
-$home-banner-sheet: -416px -155px 52px 52px;
-$home-banner-truck: -364px -0px 155px 155px;
-$home-banner-umbrella: -364px -207px 52px 52px;
 $aboutus-big_ass_yellow_decoration: -0px -0px 1092px 1330px;
-$layout-phone_icon: -0px -30px 25px 16px;
-$layout-sm_facebook: -0px -0px 30px 30px;
-$layout-sm_portfolio: -30px -0px 30px 30px;
-$layout-yellowFleck_small: -25px -30px 10px 10px;
 $elements-banner_decoration: -0px -0px 354px 274px;
 $elements-consulting_white: -269px -274px 23px 34px;
 $elements-consultoria: -292px -274px 23px 34px;
@@ -35,34 +26,50 @@ $elements-right_arrow_yellow_big: -447px -243px 7px 13px;
 $elements-tramit: -315px -274px 22px 28px;
 $elements-tramit_white: -337px -274px 22px 28px;
 $elements-yellow_corner: -424px -112px 40px 40px;
-$services-big_truck_mx: -145px -224px 145px 71px;
-$services-big_truck_usa: -364px -71px 145px 71px;
-$services-consulting_lg: -0px -0px 112px 112px;
-$services-consulting_red: -336px -158px 23px 34px;
-$services-consulting_white: -313px -158px 23px 34px;
-$services-consultoria_y: -0px -295px 60px 88px;
-$services-insurance_lg: -0px -112px 112px 112px;
-$services-insurance_red: -453px -213px 37px 30px;
-$services-insurance_white: -364px -263px 37px 30px;
-$services-list_button: -453px -243px 35px 20px;
-$services-list_button_hover: -457px -263px 35px 20px;
-$services-list_style: -490px -213px 10px 10px;
-$services-menu_icon: -160px -295px 30px 17px;
-$services-mexflag: -290px -224px 56px 57px;
-$services-nuevo_entrante: -0px -224px 145px 71px;
-$services-permisos_usa: -364px -0px 145px 71px;
-$services-permits_lg: -112px -112px 112px 112px;
-$services-permits_red: -401px -263px 28px 27px;
-$services-permits_white: -429px -263px 28px 27px;
-$services-placas_mx: -364px -213px 89px 50px;
-$services-placas_usa: -224px -158px 89px 50px;
-$services-seguros_mx: -224px -79px 140px 79px;
-$services-seguros_usa: -224px -0px 140px 79px;
-$services-tramits_lg: -112px -0px 112px 112px;
-$services-tramits_red: -116px -295px 22px 28px;
-$services-tramits_white: -138px -295px 22px 28px;
-$services-usflag: -60px -295px 56px 55px;
-$services-white_truck: -364px -142px 145px 71px;
+$home-banner-check: -364px -155px 52px 52px;
+$home-banner-plecks: -0px -0px 364px 368px;
+$home-banner-sheet: -416px -155px 52px 52px;
+$home-banner-truck: -364px -0px 155px 155px;
+$home-banner-umbrella: -364px -207px 52px 52px;
+$layout-phone_icon: -0px -30px 25px 16px;
+$layout-sm_facebook: -0px -0px 30px 30px;
+$layout-sm_portfolio: -30px -0px 30px 30px;
+$layout-yellowFleck_small: -25px -30px 10px 10px;
+$services-big_truck_mx: -0px -399px 145px 71px;
+$services-big_truck_usa: -290px -399px 145px 71px;
+$services-consulting_lg: -190px -112px 112px 112px;
+$services-consulting_red: -670px -71px 23px 34px;
+$services-consulting_white: -643px -159px 23px 34px;
+$services-consultoria_y: -554px -71px 60px 88px;
+$services-insurance_lg: -302px -0px 112px 112px;
+$services-insurance_red: -651px -128px 37px 30px;
+$services-insurance_white: -614px -128px 37px 30px;
+$services-list_button: -643px -259px 35px 20px;
+$services-list_button_hover: -643px -236px 35px 20px;
+$services-list_style: -670px -105px 10px 10px;
+$services-menu_icon: -643px -309px 30px 18px;
+$services-mexflag: -614px -71px 56px 57px;
+$services-nuevo_entrante: -290px -470px 145px 71px;
+$services-nuevo_entrante_dude: -0px -0px 190px 320px;
+$services-permisos_usa: -0px -470px 145px 71px;
+$services-permits_lg: -190px -0px 112px 112px;
+$services-permits_red: -643px -209px 28px 27px;
+$services-permits_white: -666px -159px 28px 27px;
+$services-placas_mx: -554px -259px 89px 50px;
+$services-placas_usa: -554px -309px 89px 50px;
+$services-seguros_mx: -414px -79px 140px 79px;
+$services-seguros_usa: -414px -0px 140px 79px;
+$services-tramits_lg: -302px -112px 112px 112px;
+$services-tramits_red: -665px -279px 22px 28px;
+$services-tramits_white: -643px -279px 22px 28px;
+$services-usflag: -554px -359px 56px 55px;
+$services-white_placas_mx: -554px -209px 89px 50px;
+$services-white_placas_us: -554px -159px 89px 50px;
+$services-white_truck: -145px -399px 145px 71px;
+$services-white_truck_insurance_mx: -140px -320px 140px 79px;
+$services-white_truck_insurance_us: -0px -320px 140px 79px;
+$services-white_truck_mx: -145px -470px 145px 71px;
+$services-white_truck_usa: -554px -0px 145px 71px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
@@ -88,17 +95,17 @@ $services-white_truck: -364px -142px 145px 71px;
   @include sprite-width($sprite);
   @include sprite-height($sprite);
 }
-.icon-home-banner {
-  background-image: url(/images/sprites/sprite-home-banner.png);
-}
 .icon-aboutus {
   background-image: url(/images/sprites/sprite-aboutus.png);
 }
-.icon-layout {
-  background-image: url(/images/sprites/sprite-layout.png);
-}
 .icon-elements {
   background-image: url(/images/sprites/sprite-elements.png);
+}
+.icon-home-banner {
+  background-image: url(/images/sprites/sprite-home-banner.png);
+}
+.icon-layout {
+  background-image: url(/images/sprites/sprite-layout.png);
 }
 .icon-services {
   background-image: url(/images/sprites/sprite-services.png);

@@ -2,9 +2,14 @@
 
 module.exports = [{
   type: 'banner',
+  classes: {
+    class1: 'st2',
+    class2: 'sw1',
+  },
   texts: {
-    text1: 'Evita largas filas, te ayudamos a gestionar todos tus trámites.',
-    text2: 'Con más de 15 años de experiencia, somos expertos en el sector transportista binacional.',
+    text1: 'Trámites',
+    text2: 'Evita largas filas, te ayudamos a gestionar todos tus trámites.',
+    text3: 'Con más de 15 años de experiencia, somos expertos en el sector transportista binacional.',
   },
   images: {
     image1: {
@@ -14,6 +19,11 @@ module.exports = [{
   },
 }, {
   type: 'intro',
+  classes: {
+    class1: 'sr1d',
+    class2: 'c2',
+    class3: 'd',
+  },
   titles: {
     title1: 'Placas SCT-<span>México</span>',
   },
@@ -30,11 +40,5 @@ module.exports = [{
   },
   sprites: {
     sprite1: '',
-  },
-  classes: {
-    class1: '',
-    class2: '',
-    class3: '',
-    class4: '',
   },
 }];

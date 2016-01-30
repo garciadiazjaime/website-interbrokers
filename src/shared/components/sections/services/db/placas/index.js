@@ -12,7 +12,7 @@ export default {
     className: 'sc',
   }, {
     type: 'list',
-    className: 'sl5',
+    className: 'sl3',
     title: 'DMV',
     subtitle: '(Commercial Registrations)',
     href: 'placas-dmv',
@@ -28,7 +28,7 @@ export default {
     }],
   }, {
     type: 'list',
-    className: 'sl6',
+    className: 'sl4',
     title: 'SCT',
     subtitle: '(Transfers, Estatales, Federales)',
     href: 'placas-sct',

@@ -100,11 +100,21 @@
     font-family: $fontABold;
     font-size: 21px;
   } 
+  span{
+    text-transform: cappitalize;
+    font-family: $fontABold;
+  }
 }
 .i{
   font-family: $fontA;
   font-size: 14px;
   color: $darkGray;
+}
+.j{
+  font-family: $fontA;
+  font-size: 14px;
+  color: $white;
+  margin-bottom: 30px;
 }
 @media #{$isPhone}{
   .e{

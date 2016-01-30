@@ -66,13 +66,17 @@ export default class Body extends React.Component {
         controls.prev ?
         (<Button1 className="snb1" href={controls.prev} title="servicios anterior">
           Anterior
-        </Button1>) : (<span>Anterior</span>)
+        </Button1>) : (<Button1 className="snb1d" href={controls.prev} title="servicios anterior">
+          Anterior
+        </Button1>)
       }
       {
         controls.next ?
         (<Button1 className="snb2" href={controls.next} title="servicios siguiente">
           Siguiente
-        </Button1>) : (<span>Siguiente</span>)
+        </Button1>) : (<Button1 className="snb2d" href={controls.next} title="servicios siguiente">
+          Siguiente
+        </Button1>)
       }
     </div>);
   }

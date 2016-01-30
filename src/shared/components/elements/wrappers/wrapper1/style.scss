@@ -46,6 +46,9 @@
 .c5{
   margin: 50px 0 100px;
 }
+.c6 {
+  margin: 0 0 0 110px;
+}
 .d{
   background: $red;
   padding: 50px 50px 25px 190px;
@@ -296,6 +299,24 @@
     @include sprite($services-consulting_red);
   }
 }
+.x{
+  background-color: $blue;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  @include border-radius(45px);
+  left: 0;
+  top: 0;
+  span{
+    color: $yellow;
+    font-family: $fontABold;
+    font-size: 50px;
+    @extend .fCenter;
+  }
+}
+.y{
+  padding-left: 120px;
+}
 // Clases engine servicios
 .sr1{
   margin: 0 -15px;
@@ -306,8 +327,64 @@
   &::before {
     content: "";
     @extend .icon-services;
-    @include sprite($services-white_truck);
     margin-bottom: 50px;
+  }
+}
+.sr1a{
+  @extend .sr1;
+  &::before{
+    @include sprite($services-white_truck_usa);
+  }
+}
+.sr1b{
+  @extend .sr1;
+  &::before{
+    @include sprite($services-white_truck_mx);
+  }
+}
+.sr1c{
+  @extend .sr1;
+  &::before{
+    @include sprite($services-white_placas_us);
+  }
+}
+.sr1d{
+  @extend .sr1;
+  &::before{
+    @include sprite($services-white_placas_mx);
+  }
+}
+.sr1e{
+  @extend .sr1;
+  padding-top: 100px;
+  &::before{
+    display: none!important;
+  }
+  h2{
+    margin-bottom: 25px;
+  }
+}
+.si{
+  @extend .sr1;
+  background-color: $blue;
+}
+.sia{
+  @extend .si;
+  &::before{
+    @include sprite($services-white_truck_insurance_us);
+  }
+}
+.sp{
+  @extend .sr1;
+  background-color: $yellow;
+  &::before{
+    @include sprite($services-permisos_usa);
+  }
+}
+.sib{
+  @extend .si;
+  &::before{
+    @include sprite($services-white_truck_insurance_mx);
   }
 }
 .sr2{
@@ -396,12 +473,6 @@
   height: 45px;
   position: relative;
   margin-bottom: 50px;
-  span {
-    color: $gray;
-    @extend .vCenter;
-    font-family: $fontABold;
-    left: 40px;
-  }
 }
 @media #{$isTablet}{
   .a{
@@ -431,6 +502,9 @@
     &::after{
       display: none;
     }
+  }
+  .c6{
+    margin-left: 35px;
   }
   .e{
     margin-left: 120px;
