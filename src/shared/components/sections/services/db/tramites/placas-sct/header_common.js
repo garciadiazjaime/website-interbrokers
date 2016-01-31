@@ -4,6 +4,7 @@ module.exports = [{
   type: 'banner',
   classes: {
     class1: 'st2',
+    class2: 'sw1',
   },
   texts: {
     text1: 'Trámites',
@@ -20,6 +21,8 @@ module.exports = [{
   type: 'intro',
   classes: {
     class1: 'sr1d',
+    class2: 'c2',
+    class3: 'd',
   },
   titles: {
     title1: 'Placas SCT-<span>México</span>',

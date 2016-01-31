@@ -4,6 +4,7 @@ module.exports = [{
   type: 'banner',
   classes: {
     class1: 'st1',
+    class2: 'sw1',
   },
   texts: {
     text1: 'Trámites',
@@ -14,6 +15,8 @@ module.exports = [{
   type: 'intro',
   classes: {
     class1: 'sr1a',
+    class2: 'c2',
+    class3: 'd',
   },
   titles: {
     title1: 'Trámites en <span>USA</span>',

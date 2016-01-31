@@ -18,9 +18,19 @@
   font-size: 25px;
   margin-top: 75px;
 }
-.a3{
+.a4{
   @extend .a;
   font-size: 30px;
+}
+.a5{
+  @extend .a;
+  margin-bottom: 0;
+}
+.a6{
+  @extend .a;
+  margin-top: 0;
+  color: $red;
+  margin-bottom: 100px;
 }
 .b{
   font-family: $fontABold;
@@ -45,6 +55,29 @@
 .c2{
   @extend .c;
   margin-bottom: 50px;
+  small{
+    font-size: 21px;
+    color: $white;
+  }
+  span{
+    color: $yellow;
+  }
+}
+.c3{
+  @extend .c2;
+  color: $blue;
+  span{
+    color: $red;
+  }
+  small{
+    font-size: 21px;
+    display: block;
+    color: $red;
+  }
+}
+.c4{
+  @extend .c;
+  margin-top: 50px;
 }
 .d{
   font-family: $fontABold;
@@ -189,6 +222,23 @@
    color: $red; 
    margin-bottom: 30px; 
 }
+.r{
+    font-family: $fontABold;
+    color: $white;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.s{
+  margin-top: 345px;
+  margin-bottom: -45px;
+  font-family: $fontABold;
+  color: $white;
+  font-size: 65px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: $red;
+}
 // Service Titles
 .st{
   position: relative;
@@ -197,9 +247,9 @@
   width: 180;
   color: $red;
   padding-left: 50px;
+  font-size: 16px;
   &::before{
     content: "";
-    @extend .icon-services;
     display: inline-block;
     left: 0;
     @extend .vCenter;
@@ -216,6 +266,7 @@
 .st1{
   @extend .st;
   &::before{
+    @extend .icon-services;
     @include sprite($services-tramits_red);
   }
   &::after{
@@ -225,10 +276,41 @@
 .st2{
   @extend .st;
   &::before{
+    @extend .icon-services;
     @include sprite($services-tramits_red);
   }
   &::after{
     @include sprite($services-mexflag);
+  }
+}
+.st3{
+  @extend .st;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-insurance);
+  }
+  &::after{
+    @include sprite($services-usflag);
+  }
+}
+.st4{
+  @extend .st;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-insurance);
+  }
+  &::after{
+    @include sprite($services-mexflag);
+  }
+}
+.st5{
+  @extend .st;
+  &::before{
+    @extend .icon-elements;
+    @include sprite($elements-permit);
+  }
+  &::after{
+    @include sprite($services-usflag);
   }
 }
 .sc{

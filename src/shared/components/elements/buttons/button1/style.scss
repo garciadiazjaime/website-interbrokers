@@ -495,6 +495,9 @@
     @extend .vCenter;
     left: 0;
   }
+  &:hover, &:focus{
+    color: $black;
+  }
 }
 .snb{
   color: $darkGray;
