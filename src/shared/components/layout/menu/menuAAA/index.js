@@ -8,9 +8,11 @@ export default class MainMenu extends React.Component {
 
   getItems(data) {
     return data.map((item, index) => {
+      const { url, title } = item;
+      const className = style.navbarNavAnchor;
       return (
         <li key={index}>
-          <Link to={item.url} className={style.navbarNavAnchor} id={item.url}>{item.title}</Link>
+          <Link to={url} className={className} id={url} onClick={this.clickHandler}>{title}</Link>
         </li>
       );
     });
@@ -19,10 +21,14 @@ export default class MainMenu extends React.Component {
   getIcons(data) {
     return data.map((item, index) => {
       return (<li key={index}>
-          <a href={item.url} className={style[item.title]} id={item.url} />
+          <a href={item.url} className={style[item.title]} id={item.url} target="_blank" />
         </li>
       );
     });
+  }
+
+  clickHandler() {
+    $('#mainmenu_trigger').click();
   }
 
   render() {
@@ -30,7 +36,7 @@ export default class MainMenu extends React.Component {
     return (<nav className={style.navbarDefault + ' navbar navbar-default'}>
             <div className="container-fluid">
               <div className={style.navbarHeader + ' navbar-header'}>
-                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
+                <button id="mainmenu_trigger" type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
                   <span className="sr-only">Toggle navigation</span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>

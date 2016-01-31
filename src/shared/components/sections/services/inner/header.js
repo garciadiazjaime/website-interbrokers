@@ -29,8 +29,8 @@ export default class Header extends React.Component {
   }
 
   render() {
-    const { data } = this.props;
-    return (<div className="container-fluid">
+    const { data, subcategory } = this.props;
+    return (<div className="container-fluid" id={subcategory}>
         {this.renderElement(data)}
       </div>);
   }
@@ -38,4 +38,5 @@ export default class Header extends React.Component {
 
 Header.propTypes = {
   data: React.PropTypes.array.isRequired,
+  subcategory: React.PropTypes.string.isRequired,
 };

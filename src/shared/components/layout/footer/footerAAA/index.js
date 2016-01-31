@@ -58,6 +58,43 @@ export default class FooterAAA extends React.Component {
     return (<div>{items}</div>);
   }
 
+  renderServices() {
+    const data = [{
+      title: 'Trámites en Estados Unidos para Transportistas',
+      href: 'servicios/tramites/tramites-usa',
+    }, {
+      title: 'Trámites en México para Transportistas',
+      href: 'servicios/tramites/tramites-mx',
+    }, {
+      title: 'Trámite de Placas en DMV - Estados Unidos',
+      href: 'servicios/tramites/placas-dmv',
+    }, {
+      title: 'Trámite de Placas en  SCT - México',
+      href: 'servicios/tramites/placas-sct',
+    }, {
+      title: 'Permisos para Transportistas en Estados Unidos',
+      href: 'servicios/permisos/permisos-usa',
+    }, {
+      title: 'Permisos y Servicios para Nuevos Entrantes',
+      href: 'servicios/permisos/permisos-otros',
+    }, {
+      title: 'Seguros para Vehículos Comerciales en Estados Unidos',
+      href: 'servicios/seguros/seguros-usa',
+    }, {
+      title: 'Seguros para Vehículos Comerciales en México',
+      href: '/servicios/seguros/seguros-mx',
+    }, {
+      title: 'Consultoría y Servicio de Auditorias para Empresas Transportistas',
+      href: 'servicios/consultoria/mx-usa',
+    }];
+
+    return data.map((item, index) => {
+      return (<Button1 className="o" href={item.href} title={item.title} key={index}>
+        {item.title}
+      </Button1>);
+    });
+  }
+
   render() {
     const { addresses } = this.props;
     const data = [{
@@ -77,7 +114,7 @@ export default class FooterAAA extends React.Component {
                   <Image1 className="d" src="/images/logoWhite.png" alt="InterBrokers"/>
               </div>
               <div className="col-xs-12 col-sm-4">
-                <Button1 className="p" href="https://www.facebook.com/InterbrokersSeguros/" title="InterBrokers en Facebook">
+                <Button1 className="p" href="https://www.facebook.com/InterbrokersSeguros/" title="InterBrokers en Facebook" type="outter">
                   Síguenos en Facebook
                 </Button1>
               </div>
@@ -88,33 +125,7 @@ export default class FooterAAA extends React.Component {
                 <Title1 className="m">
                   Servicios
                 </Title1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Trámites en Estados Unidos para Transportistas
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Trámites en México para Transportistas
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Trámite de Placas en DMV - Estados Unidos
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Trámite de Placas en  SCT - México
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Permisos para Transportistas en Estados Unidos
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Permisos y Servicios para Nuevos Entrantes
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Seguros para Vehículos Comerciales en Estados Unidos
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Seguros para Vehículos Comerciales en México
-                </Button1>
-                <Button1 className="o" href="http://www.google.com" title="Servicios Integrales">
-                  Consultoría y Servicio de Auditorias para Empresas Transportistas
-                </Button1>
+                {this.renderServices()}
               </div>
             </div>
           </div>
