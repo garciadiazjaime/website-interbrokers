@@ -10,11 +10,14 @@ import scrollHelper from '../utils/scroll';
 export default class AppHandler extends React.Component {
 
   componentDidMount() {
-    const { location } = this.props;
-    scrollHelper(location);
+    this.scrollHandler();
   }
 
   componentDidUpdate() {
+    this.scrollHandler();
+  }
+
+  scrollHandler() {
     const { location } = this.props;
     scrollHelper(location);
   }
