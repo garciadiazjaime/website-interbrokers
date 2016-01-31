@@ -83,7 +83,7 @@ export default class Body extends React.Component {
 
   render() {
     const { data, menuItems, service } = this.props;
-    return (<div className="container-fluid">
+    return (<div className="container-fluid" id={service}>
         <div className="col-xs-12 col-sm-6">
           <Wrapper1 className="c">
             <Button1 className="stm" href="servicios" title="servicios">

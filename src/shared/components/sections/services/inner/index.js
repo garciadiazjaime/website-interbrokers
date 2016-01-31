@@ -51,15 +51,23 @@ export default class ServiceInner extends React.Component {
     }
   }
 
-  getMenuItems(data, categoryUrl, subcategory) {
+  getMenuItems(data, categoryUrl, subcategory, service) {
     if (_.isArray(data) && data.length) {
       const serviceData = this.getServiceData(data, categoryUrl, subcategory);
 
       if (_.isArray(serviceData.children) && serviceData.children.length) {
-        return serviceData.children.map((item) => {
+        return serviceData.children.map((item, index) => {
+          let className = '';
+          if (!service && index === 0) {
+            className = 'active';
+          } else if (service && !className) {
+            className = service.toUpperCase() === item.href.toUpperCase() ? 'active' : null;
+          }
+
           return {
             title: item.title,
             href: [categoryUrl, serviceData.href, item.href].join('/'),
+            className,
           };
         });
       }
@@ -71,9 +79,9 @@ export default class ServiceInner extends React.Component {
     const { category, subcategory, service } = this.props.params;
     const categoryUrl = ['servicios', category].join('/');
     const serviceData = this.getData(servicesData, category, categoryUrl, subcategory, service);
-    const menuItems = this.getMenuItems(servicesData, categoryUrl, subcategory);
-    return (<div>
-      <Header data={serviceData.header} />
+    const menuItems = this.getMenuItems(servicesData, categoryUrl, subcategory, service);
+    return (<div id={category}>
+      <Header data={serviceData.header} subcategory={subcategory} />
       {
         category.toUpperCase() !== 'CONSULTORIA' && category.toUpperCase() !== 'NUEVO-ENTRANTE' ?
         <Body data={serviceData.content} menuItems={menuItems} service={service} /> : null
