@@ -37,7 +37,7 @@ export default class Template2 extends React.Component {
     const { block1, block2, block3, block4 } = blocks;
     return (<div className="container-fluid">
         <Row1 className={block1.classes.class1}>
-          <div className="col-xs-10 col-xs-offset-1">
+          <div className="col-xs-12 col-sm-10 col-sm-offset-1">
             <Title1 className="s">
               {block1.texts.text1}
             </Title1>

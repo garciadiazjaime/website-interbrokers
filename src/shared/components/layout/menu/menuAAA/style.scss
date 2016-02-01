@@ -84,11 +84,10 @@ $height: 70px;
     position: relative;
     z-index: 1000;
   }
-  .navbarNav {
-    width: 100%;
-  }
-  .socialNetwork{
-    width: 100%;
+  .navbarNav, .socialNetwork {
+    float: none!important;
+    margin-left: 35px!important;
+    margin-right: 0!important;
   }
 }
 

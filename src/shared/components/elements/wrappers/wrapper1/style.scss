@@ -370,6 +370,9 @@
 .sr1ea{
   @extend .sr1;
   position: relative;
+  h2{
+    margin-bottom: 50px;
+  }
   &::before {
     content: "";
     display: block;
@@ -379,6 +382,9 @@
 }
 .sr1eb{
   @extend .sr1;
+  h2{
+    margin-bottom: 50px;
+  }
   &::before {
     content: "";
     display: block;
@@ -574,6 +580,22 @@
     a{
       top: 80px;
     }
+  }
+  .sr1ea, sr1eb{
+    h2{
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+  } 
+  .x{
+    width: 50px;
+    height: 50px;
+    span{
+      font-size: 20px;
+    }
+  }
+  .y{
+    padding-left: 50px;
   }
 }
 

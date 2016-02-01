@@ -8,7 +8,7 @@ module.exports = [{
         text1: 'Nuevo Entrante',
       },
       classes: {
-        class1: 'sw4',
+        class1: 'sw5',
       },
     },
 
