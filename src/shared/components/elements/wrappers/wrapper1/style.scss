@@ -317,6 +317,9 @@
 .y{
   padding-left: 120px;
 }
+.z{
+  margin-bottom: 100px;
+}
 // Clases engine servicios
 .sr1{
   margin: 0 -15px;
@@ -363,6 +366,25 @@
   h2{
     margin-bottom: 25px;
   }
+}
+.sr1ea{
+  @extend .sr1;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    @extend .icon-services;
+    @include sprite($services-consultoria_white);
+  } 
+}
+.sr1eb{
+  @extend .sr1;
+  &::before {
+    content: "";
+    display: block;
+    @extend .icon-services;
+    @include sprite($services-nuevo_entrante_white);
+  } 
 }
 .si{
   @extend .sr1;

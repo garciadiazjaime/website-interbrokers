@@ -27,6 +27,9 @@ module.exports = [{
       sprites: {
         sprite1: '',
       },
+      classes: {
+        class1: 'sr1ea',
+      },
     },
 
     block3: {

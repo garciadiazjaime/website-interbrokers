@@ -53,16 +53,16 @@ export default class Template2 extends React.Component {
                 {block2.texts.text3}
               </Paragraph1>
             {
-              block2.links.link2 ?
-              <Button1 className="" href={block2.links.link2.href} title={block2.links.link2.title}>
-                {block2.links.link2.title}
-              </Button1> : null
+            block2.links.link2 ?
+            <Button1 className="d" href={block2.links.link2.href} title={block2.links.link2.title}>
+              {block2.links.link2.title}
+            </Button1> : null
             }
             </Wrapper1>
           </div>
 
           <div className="col-sm-6">
-            <Wrapper1 className="sr1e">
+            <Wrapper1 className={block2.classes.class1}>
               <Title1 className="">
                 {block2.texts.text1}
               </Title1>
@@ -74,15 +74,17 @@ export default class Template2 extends React.Component {
         </div>
         <div className="row">
           <div className="col-sm-12">
-            <Title1 className="a5">
-              {block3.texts.text1}
-            </Title1>
-            {
-              block3.texts.text2 ?
-              <Title1 className="a6">
-                {block3.texts.text2}
-              </Title1> : null
-            }
+            <Wrapper1 className="z">
+              <Title1 className="a5">
+                {block3.texts.text1}
+              </Title1>
+              {
+                block3.texts.text2 ?
+                <Title1 className="a6">
+                  {block3.texts.text2}
+                </Title1> : null
+              }
+            </Wrapper1>
           </div>
           </div>
 
