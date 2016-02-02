@@ -12,7 +12,7 @@ export default class MainMenu extends React.Component {
       const className = style.navbarNavAnchor;
       return (
         <li key={index}>
-          <Link to={url} className={className} id={url} onClick={this.clickHandler}>{title}</Link>
+          <Link to={url} className={className} id={url}>{title}</Link>
         </li>
       );
     });
@@ -25,10 +25,6 @@ export default class MainMenu extends React.Component {
         </li>
       );
     });
-  }
-
-  clickHandler() {
-    $('#mainmenu_trigger').click();
   }
 
   render() {
@@ -62,4 +58,5 @@ export default class MainMenu extends React.Component {
 MainMenu.propTypes = {
   items: React.PropTypes.array.isRequired,
   icons: React.PropTypes.array,
+  location: React.PropTypes.any,
 };
