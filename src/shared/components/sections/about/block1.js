@@ -31,21 +31,23 @@ export default class Block1 extends React.Component {
         </Row1>
       </div>
       <div className="container-fluid">
-        <div className="col-xs-12 col-sm-6">
-          <Wrapper1 className="c">
-            <Title1 className="a2">
-              {texts.text3}
-            </Title1>
-            <Paragraph1 className="a">
-              {texts.text4}
-            </Paragraph1>
-          </Wrapper1>
-        </div>
+        <div className="row">
+          <div className="col-xs-12 col-sm-6">
+            <Wrapper1 className="c">
+              <Title1 className="a2">
+                {texts.text3}
+              </Title1>
+              <Paragraph1 className="a">
+                {texts.text4}
+              </Paragraph1>
+            </Wrapper1>
+          </div>
 
-        <div className="col-xs-12 col-sm-5 col-sm-offset-1">
-          <Title1 className="a3">
-            {texts.text5}<br />{texts.text6}
-          </Title1>
+          <div className="col-xs-12 col-sm-5 col-sm-offset-1">
+            <Title1 className="a3">
+              {texts.text5}<br />{texts.text6}
+            </Title1>
+          </div>
         </div>
       </div>
       </Wrapper1>);
