@@ -7,6 +7,7 @@ export default {
       text2: 'Blvd. Bellas Artes #285, Fracc. Nueva Tijuana, Tijuana, B.C. 22435',
       text3: 'Contáctanos',
       text4: 'Para cualquier pregunta o comentario por favor llene la siguiente forma o contáctenos a través del correo info@InterBrokers.mx',
+      text5: 'Contáctanos',
     },
     links: {
       link1: {

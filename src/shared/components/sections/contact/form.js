@@ -178,7 +178,7 @@ export default class Form extends React.Component {
           }
         </div>
         <div className="pull-right">
-          <a className={style.g} onClick={this.submitFormHandler}>
+          <a className={style.d} onClick={this.submitFormHandler}>
             <div className={style.title}>Enviar</div>
           </a>
         </div>

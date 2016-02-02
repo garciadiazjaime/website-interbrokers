@@ -116,6 +116,21 @@
   color: $white;
   margin-bottom: 30px;
 }
+// *********************** Párrafos Contacto ***********************
+.con{
+  position: relative;
+  color: $darkGray;
+  font-size: 16px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  &::before{
+    content: "";
+    @extend .icon-contactus;
+    @include sprite($contactus-location);
+    @extend .vCenter;
+    left: 15px;
+  }
+}
 @media #{$isPhone}{
   .e{
     height: 70px;

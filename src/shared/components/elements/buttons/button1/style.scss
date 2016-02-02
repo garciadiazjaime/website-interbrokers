@@ -64,6 +64,7 @@
 .d{
   position: relative;
   background: $yellow;
+  cursor: pointer;
   width: 175px;
   color: $blue;
   font-family: $fontABold;
@@ -442,7 +443,7 @@
 
   }
 }
-//Servicios
+// ***************** Servicios *****************
 .sb{
   font-family: $fontABold;
   font-size: 16px;
@@ -555,6 +556,57 @@
   }
   &::before{
     display: none!important;
+  }
+}
+
+// ************************* CONTACT US ************************
+.map{
+  color: $red;
+  display: block;
+  margin: 0 0 30px 50px;
+  &:hover, &:focus {
+    color: $darkRed;
+    text-decoration: underline;
+  }
+}
+.con{
+  display: block;
+  position: relative;
+  color: $darkGray;
+  font-size: 16px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  &:hover{
+    color: $black;
+    text-decoration: underline;
+  }
+  &::before{
+    content: "";
+    @extend .icon-contactus;
+    @include sprite($contactus-location);
+    @extend .vCenter;
+    left: 15px;
+  }
+}
+.con1{
+  @extend .con;
+  &::before{
+    @include sprite($contactus-phone);
+    left: 14px;
+  }
+}
+.con2{
+  @extend .con;
+  &::before{
+    @include sprite($contactus-email);
+    left: 10px;
+  }
+}
+.con3{
+  @extend .con;
+  &::before{
+    @include sprite($contactus-fb);
+    left: 13px;
   }
 }
 @media#{$headerAdjuster}{
