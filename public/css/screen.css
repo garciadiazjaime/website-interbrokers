@@ -29,3 +29,12 @@ div{
 [class*="col-"]{
     height: inherit;
 }
+.col-sm-6:nth-child(2n+1){
+  clear: left;
+}
+.active a{
+  color: #000;
+}
+.navbarNav>li>a.active{
+  color: #F7323F;
+}

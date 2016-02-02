@@ -4,14 +4,11 @@ module.exports = [{
   type: 'consultoria',
   blocks: {
     block1: {
-      images: {
-        image1: {
-          src: '/images/servicios/consultoria/banner-consultoria.png',
-          alt: 'Nuevo Entrante',
-        },
-      },
       texts: {
         text1: 'Nuevo Entrante',
+      },
+      classes: {
+        class1: 'sw5',
       },
     },
 
@@ -33,6 +30,9 @@ module.exports = [{
       },
       sprites: {
         sprite1: '',
+      },
+      classes: {
+        class1: 'sr1eb',
       },
     },
 

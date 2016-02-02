@@ -30,7 +30,6 @@
   @extend .a;
   margin-top: 0;
   color: $red;
-  margin-bottom: 100px;
 }
 .b{
   font-family: $fontABold;
@@ -370,6 +369,9 @@
     padding: 50px 30px 50px 35px;
     font-size: 25px;
   }
+  .a4{
+    font-size: 20px;
+  }
   .b{
     font-size: 26px;
   }
@@ -397,5 +399,14 @@
     &::before{
       display: none!important;
     }
+  }
+  .q{
+    font-size: 18px;
+  }
+  .s{
+    font-size: 25px;
+  }
+  .a5, .a6{
+    font-size: 20px;
   }
 }

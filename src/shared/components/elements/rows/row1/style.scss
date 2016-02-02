@@ -116,6 +116,15 @@
   @extend .sw;
   background-image: url('/images/servicios/banner_consultoria.jpg');
   margin-bottom: 100px;
+  background-size: cover;
+  background-position: center;
+}
+.sw5{
+  @extend .sw;
+  background-image: url('/images/servicios/banner_NE.jpg');
+  margin-bottom: 100px;
+  background-size: cover;
+  background-position: center;
 }
 .srf{
   padding-top: 50px;
