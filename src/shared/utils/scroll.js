@@ -4,7 +4,7 @@ export default (location) => {
   if ($('#' + elementID).length && !scropllInProgress) {
     scropllInProgress = true;
     const scrollTo = $('#' + elementID).offset().top - 43;
-    const srolltime = 400;
+    const srolltime = 100;
     const rootTag = typeof document.body.scrollTop !== 'undefined' ? 'body' : 'html, body';
     $(rootTag).animate({
       scrollTop: scrollTo,
