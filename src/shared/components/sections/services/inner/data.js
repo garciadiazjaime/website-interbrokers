@@ -6,11 +6,11 @@ export default {
     links: {
       link1: {
         title: 'Ir a Servicios',
-        href: 'servicios',
+        href: '/servicios',
       },
       link2: {
         title: 'CONTÁCTANOS',
-        href: 'contacto',
+        href: '/contacto',
       },
     },
   },

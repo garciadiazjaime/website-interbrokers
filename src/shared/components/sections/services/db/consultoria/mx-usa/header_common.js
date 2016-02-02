@@ -20,7 +20,7 @@ module.exports = [{
       },
       links: {
         link1: {
-          href: 'contacto',
+          href: '/contacto',
           title: 'CONTÁCTANOS',
         },
       },
@@ -47,12 +47,15 @@ module.exports = [{
       items: [{
         title: 'Apoyo Pre-Auditoria',
         description: 'Existe toda una serie de per- misos, cuotas y registros nece- sarios para el ingreso y la circu- lación de vehículos comerciales dentro de la Unión Americana.',
+        href: 'apoyo-preauditorias',
       }, {
         title: 'Apoyo Durante Auditoría',
         description: 'Existe toda una serie de per- misos, cuotas y registros nece- sarios para el ingreso y la circu- lación de vehículos comerciales dentro de la Unión Americana.',
+        href: 'apoyo-durante-auditoria',
       }, {
         title: 'Apoyo Post-Auditoria',
         description: 'Existe toda una serie de per- misos, cuotas y registros nece- sarios para el ingreso y la circu- lación de vehículos comerciales dentro de la Unión Americana.',
+        href: 'apoyo-posterior-auditoria',
       }],
     },
   },

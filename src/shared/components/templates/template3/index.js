@@ -23,7 +23,7 @@ export default class Template3 extends React.Component {
             {data.title}
           </Title1>);
       case 'LIST':
-        const categoryUrl = [href, data.href].join('/');
+        const categoryUrl = '/' + [href, data.href].join('/');
         const children = data.children.map((item) => {
           return {
             title: item.title,

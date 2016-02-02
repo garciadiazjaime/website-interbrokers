@@ -60,7 +60,7 @@ export default {
 
     links: {
       link1: {
-        href: 'contacto',
+        href: '/contacto',
         title: 'CONTÁCTANOS',
       },
     },
@@ -91,7 +91,7 @@ export default {
 
     links: {
       link1: {
-        href: 'servicios',
+        href: '/servicios',
         title: 'servicios',
       },
     },

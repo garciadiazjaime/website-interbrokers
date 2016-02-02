@@ -64,17 +64,17 @@ export default class Body extends React.Component {
     return (<div>
       {
         controls.prev ?
-        (<Button1 className="snb1" href={controls.prev} title="servicios anterior">
+        (<Button1 className="snb1" href={'/' + controls.prev} title="anterior">
           Anterior
-        </Button1>) : (<Button1 className="snb1d" href={controls.prev} title="servicios anterior">
+        </Button1>) : (<Button1 className="snb1d" href={'/' + controls.prev} title="anterior">
           Anterior
         </Button1>)
       }
       {
         controls.next ?
-        (<Button1 className="snb2" href={controls.next} title="servicios siguiente">
+        (<Button1 className="snb2" href={'/' + controls.next} title="siguiente">
           Siguiente
-        </Button1>) : (<Button1 className="snb2d" href={controls.next} title="servicios siguiente">
+        </Button1>) : (<Button1 className="snb2d" href={'/' + controls.next} title="siguiente">
           Siguiente
         </Button1>)
       }
@@ -86,7 +86,7 @@ export default class Body extends React.Component {
     return (<div className="container-fluid" id={service}>
         <div className="col-xs-12 col-sm-6">
           <Wrapper1 className="c">
-            <Button1 className="stm" href="servicios" title="servicios">
+            <Button1 className="stm" href="/servicios" title="servicios">
               Menú de Servicios
             </Button1>
             <Engine1 data={menuItems} Template={Template4} />

@@ -32,9 +32,6 @@ div{
 .col-sm-6:nth-child(2n+1){
   clear: left;
 }
-.active a{
-  color: #000;
-}
 .navbarNav>li.active>a{
   color: #F7323F;
 }

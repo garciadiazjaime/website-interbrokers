@@ -20,7 +20,7 @@ module.exports = [{
   },
   links: {
     link1: {
-      href: 'nuevo-entrante',
+      href: '/nuevo-entrante',
       title: 'Nuevo Entrante',
     },
   },
@@ -44,7 +44,7 @@ module.exports = [{
   ],
   links: {
     link1: {
-      href: 'contacto',
+      href: '/contacto',
       title: 'CONTÁCTANOS',
     },
   },

@@ -14,7 +14,7 @@ export default class Template2 extends React.Component {
     const { items, classes } = data;
     if (_.isArray(items) && items.length) {
       return items.map((item, index) => {
-        return (<div className={classes.class2} key={index}>
+        return (<div className={classes.class2} key={index} id={item.href}>
           <Wrapper1 className="y">
             <Wrapper1 className="x">
               <span className="">{index + 1}</span>

@@ -20,11 +20,11 @@ module.exports = [{
       },
       links: {
         link1: {
-          href: 'contacto',
+          href: '/contacto',
           title: 'CONTÁCTANOS',
         },
         link2: {
-          href: 'nosotros',
+          href: '/nosotros',
           title: 'CONÓCENOS',
         },
       },
