@@ -35,6 +35,6 @@ div{
 .active a{
   color: #000;
 }
-.navbarNav>li>a.active{
+.navbarNav>li.active>a{
   color: #F7323F;
 }
