@@ -15,7 +15,7 @@ export default class AppHandler extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.location.action.toUpperCase() && 'PUSH') {
+    if (prevProps.location.action.toUpperCase() === 'PUSH') {
       this.scrollHandler();
     }
   }
