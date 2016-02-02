@@ -406,6 +406,11 @@
       display: none!important;
     }
   }
+  .st{
+    &::after{
+      right: -45px;
+    }
+  }
   .q{
     font-size: 18px;
   }

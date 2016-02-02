@@ -35,6 +35,7 @@ div{
 .active a{
   color: #000;
 }
-.navbarNav>li.active>a{
-  color: #F7323F;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  color: #F7323F!important;
+  background-color: transparent!important;
 }

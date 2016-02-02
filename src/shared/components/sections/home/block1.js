@@ -10,7 +10,7 @@ export default class Block1 extends React.Component {
     const { texts, links } = this.props.data;
     return (<div className="container-fluid">
         <Row1 className="b">
-          <div className="col-xs-6">
+          <div className="col-xs-12 col-sm-6">
             <Wrapper1 className="h1">
               <Button1 className="k" href={links.link1.href} title={links.link1.title}>
                 <Title1 className="e2">
@@ -19,7 +19,7 @@ export default class Block1 extends React.Component {
               </Button1>
             </Wrapper1>
           </div>
-          <div className="col-xs-6">
+          <div className="col-xs-12 col-sm-6">
             <div className="row">
               <div className="col-xs-12 col-sm-6">
                 <Wrapper1 className="i">

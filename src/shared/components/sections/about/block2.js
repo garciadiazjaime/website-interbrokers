@@ -8,17 +8,18 @@ export default class Block2 extends React.Component {
   render() {
     const { texts } = this.props.data;
     return (<div className="container-fluid">
-      <div className="col-sm-6">
-        <Title1 className="a2">
-          {texts.text1}
-        </Title1>
-        <Paragraph1 className="a">
-          {texts.text2}
-        </Paragraph1>
-      </div>
-
-      <div className="col-sm-6">
-        <Title1 className="a2" data={texts.text3}/>
+      <div className="row">
+        <div className="col-sm-6">
+          <Title1 className="a2">
+            {texts.text1}
+          </Title1>
+          <Paragraph1 className="a">
+            {texts.text2}
+          </Paragraph1>
+        </div>
+        <div className="col-sm-6">
+          <Title1 className="a2" data={texts.text3}/>
+        </div>
       </div>
     </div>);
   }
