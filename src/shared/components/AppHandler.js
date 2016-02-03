@@ -12,18 +12,23 @@ export default class AppHandler extends React.Component {
 
   componentDidMount() {
     this.scrollHandler(true);
+    window.addEventListener('scroll', this.onScroll, false);
   }
 
   componentDidUpdate() {
     this.scrollHandler();
   }
 
-  setMenuActive(elementID) {
-    $('.navbar-nav li.active').removeClass('active');
-    $('.navbar-nav a#' + elementID).parent().addClass('active');
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll, false);
+  }
 
-    if ($('#mainmenu_trigger').is(':visible')) {
-      $('#mainmenu_trigger').click();
+  onScroll() {
+    const offset = window.pageYOffset;
+    if (offset > 186) {
+      $('#menu_wrapper').addClass('navbar-fixed-top');
+    } else {
+      $('#menu_wrapper').removeClass('navbar-fixed-top');
     }
   }
 
@@ -37,8 +42,8 @@ export default class AppHandler extends React.Component {
   }
 
   clickHandler() {
-    if ($('#mainmenu_trigger').is(':visible')) {
-      $('#mainmenu_trigger').click();
+    if ($('.menu_trigger').is(':visible')) {
+      $('.menu_trigger').click();
     }
   }
 
