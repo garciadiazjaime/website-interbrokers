@@ -2,6 +2,7 @@ import React from 'react';
 
 import menuData from '../menuData';
 import Menu from './layout/menu/menuAAA';
+import Menu2 from './layout/menu/menuB';
 import Intro from './layout/intro/introAAA';
 import FooterAAA from './layout/footer/footerAAA';
 import scrollUtil from '../utils/scroll';
@@ -38,6 +39,7 @@ export default class AppHandler extends React.Component {
     return (
       <div>
         <Menu items={menuData.items.children} icons={menuData.icons} />
+        <Menu2 items={menuData.items.children} icons={menuData.icons} />
         <Intro />
         {this.props.children}
         <FooterAAA items={menuData.items.children} addresses={menuData.addresses}/>
