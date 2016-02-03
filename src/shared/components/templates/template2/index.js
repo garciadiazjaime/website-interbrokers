@@ -15,7 +15,7 @@ export default class Template2 extends React.Component {
         <Title1 className="m">
           {data.title}
         </Title1>
-        <Button1 className="b" href={data.href} title={data.title} />
+        <Button1 className="b" href={'/' + data.href} title={data.title} />
         <Paragraph1 className="" data={data.description} />
       </Wrapper1>
     </div>);

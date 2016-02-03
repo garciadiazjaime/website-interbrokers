@@ -61,31 +61,31 @@ export default class FooterAAA extends React.Component {
   renderServices() {
     const data = [{
       title: 'Trámites en Estados Unidos para Transportistas',
-      href: 'servicios/tramites/tramites-usa',
+      href: '/servicios/tramites/tramites-usa',
     }, {
       title: 'Trámites en México para Transportistas',
-      href: 'servicios/tramites/tramites-mx',
+      href: '/servicios/tramites/tramites-mx',
     }, {
       title: 'Trámite de Placas en DMV - Estados Unidos',
-      href: 'servicios/tramites/placas-dmv',
+      href: '/servicios/tramites/placas-dmv',
     }, {
       title: 'Trámite de Placas en  SCT - México',
-      href: 'servicios/tramites/placas-sct',
+      href: '/servicios/tramites/placas-sct',
     }, {
       title: 'Permisos para Transportistas en Estados Unidos',
-      href: 'servicios/permisos/permisos-usa',
+      href: '/servicios/permisos/permisos-usa',
     }, {
       title: 'Permisos y Servicios para Nuevos Entrantes',
-      href: 'servicios/permisos/permisos-otros',
+      href: '/servicios/permisos/permisos-otros',
     }, {
       title: 'Seguros para Vehículos Comerciales en Estados Unidos',
-      href: 'servicios/seguros/seguros-usa',
+      href: '/servicios/seguros/seguros-usa',
     }, {
       title: 'Seguros para Vehículos Comerciales en México',
       href: '/servicios/seguros/seguros-mx',
     }, {
       title: 'Consultoría y Servicio de Auditorias para Empresas Transportistas',
-      href: 'servicios/consultoria/mx-usa',
+      href: '/servicios/consultoria/mx-usa',
     }];
 
     return data.map((item, index) => {

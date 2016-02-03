@@ -11,19 +11,19 @@ export default {
     },
     links: {
       link1: {
-        href: '',
+        href: '/',
         title: 'Ver en Google Maps',
       },
       link2: {
-        href: '',
+        href: '/',
         title: 'Tel. (664) 623.3035',
       },
       link3: {
-        href: '',
+        href: '/',
         title: 'info@interbrokers.mx',
       },
       link4: {
-        href: '',
+        href: '/',
         title: 'InterbrokersCarrierServices',
       },
     },
@@ -35,7 +35,7 @@ export default {
     },
     links: {
       link1: {
-        href: '#google',
+        href: '/#google',
         title: '',
       },
     },

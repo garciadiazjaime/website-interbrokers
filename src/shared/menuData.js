@@ -12,23 +12,23 @@ export default {
     default: HomeSection,
     children: [{
       title: 'Inicio',
-      url: 'inicio',
+      url: '/inicio',
       component: HomeSection,
     }, {
       title: 'Nosotros',
-      url: 'nosotros',
+      url: '/nosotros',
       component: AboutSection,
     }, {
       title: 'Servicios',
-      url: 'servicios',
+      url: '/servicios',
       component: ServicesSection,
     }, {
       title: 'Blog',
-      url: 'blog',
+      url: '/blog',
       component: BlogSection,
     }, {
       title: 'Contacto',
-      url: 'contacto',
+      url: '/contacto',
       component: ContactSection,
     }],
   },

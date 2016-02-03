@@ -28,7 +28,7 @@ module.exports = [{
   ],
   links: {
     link1: {
-      href: 'contacto',
+      href: '/contacto',
       title: 'Contáctanos',
     },
   },

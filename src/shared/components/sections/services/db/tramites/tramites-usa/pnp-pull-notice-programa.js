@@ -7,11 +7,11 @@ module.exports = {
   ],
 
   links: [{
-    href: '',
+    href: '/',
     title: 'Compra en línea',
     className: 'g2',
   }, {
-    href: 'contacto',
+    href: '/contacto',
     title: 'Más información',
     className: 'e2',
   }],
