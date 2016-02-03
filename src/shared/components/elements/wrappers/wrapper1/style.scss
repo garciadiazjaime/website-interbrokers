@@ -535,11 +535,10 @@
     margin-left: 35px;
   }
   .e{
-    margin-left: 120px;
+    margin-left: 35px;
     margin-top: 0;
     &::before{
-      left: 40px;
-      top: 0;
+      display: none!important;
     }
   }
   .g{
@@ -552,7 +551,7 @@
     }
   }
   .h1{
-    height: 511px;
+    height: 256px;
   }
   .i{
     padding: 50px 20px 0 20px;
@@ -576,9 +575,10 @@
   }
   .sl{
     padding-top: 50px;
-    padding-left: 50px;
+    padding-left: 25px;
     a{
       top: 80px;
+      margin-right: 25px;
     }
   }
   .sr1ea, .sr1eb{
@@ -587,6 +587,9 @@
       margin-bottom: 25px;
     }
   } 
+  .v{
+    margin: 0 0 15px;
+  }
   .x{
     width: 50px;
     height: 50px;

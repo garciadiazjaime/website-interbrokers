@@ -618,6 +618,11 @@
 }
 
 @media #{$isPhone}{
+  .b2{
+    float: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
   .l{
     height: 85px;
     padding-left: 20px;
@@ -627,10 +632,11 @@
     }
     &::after{
       display: bock;
-      right: 10px;
     }
   }
   .k{
+    height: 256px;
+    padding-top: 30px;
     &::after{
       display: none;
     }
