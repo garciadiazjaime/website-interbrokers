@@ -8,11 +8,12 @@ export default class MainMenu extends React.Component {
 
   getItems(data) {
     return data.map((item, index) => {
-      const { url, title } = item;
+      const { title, url } = item;
+      const elementID = url.replace('/', '');
       const className = style.navbarNavAnchor;
       return (
         <li key={index}>
-          <Link to={url} className={className} id={url}>{title}</Link>
+          <Link to={url} className={className} id={elementID}>{title}</Link>
         </li>
       );
     });

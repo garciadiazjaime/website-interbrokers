@@ -20,7 +20,7 @@ module.exports = [{
   },
   links: {
     link1: {
-      href: '/nuevo-entrante',
+      href: '/servicios/nuevo-entrante',
       title: 'Nuevo Entrante',
     },
   },

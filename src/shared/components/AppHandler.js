@@ -14,10 +14,8 @@ export default class AppHandler extends React.Component {
     this.scrollHandler();
   }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.location.action.toUpperCase() === 'PUSH') {
-      this.scrollHandler();
-    }
+  componentDidUpdate() {
+    this.scrollHandler();
   }
 
   setMenuActive(elementID) {
