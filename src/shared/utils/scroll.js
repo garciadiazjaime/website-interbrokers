@@ -1,6 +1,11 @@
 let scropllInProgress = false;
 export default (location) => {
-  const elementID = location.pathname ? location.pathname.split('/').pop() || 'inicio' : 'inicio';
+  const bits = location.pathname.split('/');
+  let elementID = location.pathname ? bits.pop() || 'inicio' : 'inicio';
+  if ($('#mainmenu_trigger').is(':visible') && bits.length === 1) {
+    elementID = 'inicio';
+  }
+
   if ($('#' + elementID).length && !scropllInProgress) {
     scropllInProgress = true;
     const scrollTo = $('#' + elementID).offset().top - 43;

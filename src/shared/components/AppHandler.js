@@ -2,7 +2,6 @@ import React from 'react';
 
 import menuData from '../menuData';
 import Menu from './layout/menu/menuAAA';
-import Menu2 from './layout/menu/menuB';
 import Intro from './layout/intro/introAAA';
 import FooterAAA from './layout/footer/footerAAA';
 import scrollUtil from '../utils/scroll';
@@ -12,34 +11,46 @@ import menuUtil from '../utils/menu';
 export default class AppHandler extends React.Component {
 
   componentDidMount() {
-    this.scrollHandler();
+    this.scrollHandler(true);
+    window.addEventListener('scroll', this.onScroll, false);
   }
 
   componentDidUpdate() {
     this.scrollHandler();
   }
 
-  setMenuActive(elementID) {
-    $('.navbar-nav li.active').removeClass('active');
-    $('.navbar-nav a#' + elementID).parent().addClass('active');
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll, false);
+  }
 
-    if ($('#mainmenu_trigger').is(':visible')) {
-      $('#mainmenu_trigger').click();
+  onScroll() {
+    const offset = window.pageYOffset;
+    if (offset > 186) {
+      $('#menu_wrapper').addClass('navbar-fixed-top');
+    } else {
+      $('#menu_wrapper').removeClass('navbar-fixed-top');
     }
   }
 
-  scrollHandler() {
+  scrollHandler(isFirstTime) {
     const { location } = this.props;
     scrollUtil(location);
-    const bits = location.pathname.split('/');
-    menuUtil(bits[1] || 'inicio');
+    if (!isFirstTime) {
+      const bits = location.pathname.split('/');
+      menuUtil(bits[1] || 'inicio');
+    }
+  }
+
+  clickHandler() {
+    if ($('.menu_trigger').is(':visible')) {
+      $('.menu_trigger').click();
+    }
   }
 
   render() {
     return (
       <div>
-        <Menu items={menuData.items.children} icons={menuData.icons} />
-        <Menu2 items={menuData.items.children} icons={menuData.icons} />
+        <Menu items={menuData.items.children} icons={menuData.icons} onClick={this.clickHandler} />
         <Intro />
         {this.props.children}
         <FooterAAA items={menuData.items.children} addresses={menuData.addresses}/>
