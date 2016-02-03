@@ -16,6 +16,7 @@ export default class Block1 extends React.Component {
                 <Title1 className="e2">
                   {links.link1.title}
                 </Title1>
+                <Wrapper1 className="btb" />
               </Button1>
             </Wrapper1>
           </div>

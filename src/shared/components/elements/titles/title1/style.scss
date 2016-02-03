@@ -208,7 +208,7 @@
   color: $blue;
   font-size: 35px;
   width: 320px;
-  margin-top: -120px;
+  margin-top: -113px;
   position: relative;
   max-width: 100%;
   b{
@@ -220,6 +220,7 @@
    font-size: 25px;
    color: $red; 
    margin-bottom: 30px; 
+   margin-top: 4px;
 }
 .r{
     font-family: $fontABold;
@@ -363,6 +364,23 @@
 @media#{$headerAdjuster}{
   .e4{
     font-size: 20px;
+  }
+}
+@media #{$isTablet}{
+  .h{
+    font-size: 40px;
+  }
+  .m{
+    font-size: 14px;
+  }
+  .b{
+    font-size: 22px;
+  }
+  .c{
+    font-size: 25px;
+  }
+  .d{
+    font-size: 25px;
   }
 }
 @media #{$isPhone}{

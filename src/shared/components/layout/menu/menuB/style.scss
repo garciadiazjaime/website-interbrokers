@@ -96,5 +96,10 @@ $height: 70px;
     margin-right: 0!important;
   }
 }
+@media #{$isTablet}{
+  .navbarNav{
+    margin-right: 22px!important;
+  }
+}
 
  
