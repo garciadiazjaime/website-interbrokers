@@ -39,3 +39,15 @@ div{
   color: #F7323F!important;
   background-color: transparent!important;
 }
+.navbar-fixed-top .navbar-brand{
+  display: none;
+}
+.navbar-fixed-top #mainmenu{
+  position: relative;
+}
+.navbar-fixed-top #mainmenu::before{
+  content: url('/images/IBicon.png');
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
