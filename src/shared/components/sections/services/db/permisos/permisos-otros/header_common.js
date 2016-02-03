@@ -32,7 +32,7 @@ module.exports = [{
   classes: {
     class1: 'sp',
     class2: 'c3',
-    class3: 'd',
+    class3: 'f',
   },
   titles: {
     title1: 'Permisos en <span>USA</span><small>Otros Permisos</small>',

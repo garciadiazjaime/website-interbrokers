@@ -19,15 +19,15 @@ export default {
       },
       link3: {
         href: '/servicios/permisos',
-        title: 'servicios permisos',
+        title: 'permisos',
       },
       link4: {
         href: '/servicios/tramites',
-        title: 'servicios trámites',
+        title: 'trámites',
       },
       link5: {
         href: '/servicios/seguros',
-        title: 'servicios seguros',
+        title: 'seguros',
       },
     },
   },
@@ -113,8 +113,7 @@ export default {
   // **** Fondo morado ****
   block5: {
     texts: {
-      text1: 'Siente la libertad de',
-      text1b: ' Vivir tranquilo.',
+      text1: 'Siente la libertad de Vivir tranquilo.',
       text2: 'Seguros',
       text3: 'A través de nuestra empresa hermana ',
       text32: 'IBK Agentes de Seguros',

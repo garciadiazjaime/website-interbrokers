@@ -302,20 +302,20 @@
 .x{
   background-color: $blue;
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   @include border-radius(45px);
   left: 0;
   top: 0;
   span{
     color: $yellow;
     font-family: $fontABold;
-    font-size: 50px;
+    font-size: 30px;
     @extend .fCenter;
   }
 }
 .y{
-  padding-left: 120px;
+  padding-left: 75px;
 }
 .z{
   margin-bottom: 100px;
@@ -365,6 +365,25 @@
   }
   h2{
     margin-bottom: 25px;
+  }
+}
+.btb{
+  position: relative;
+  background: $yellow;
+  width: 45px;
+  height: 30px;
+  margin: 0 auto 20px;
+  @include border-radius(15px)
+  display: block;
+  &:hover{
+    background: $darkYellow;
+  }
+  &::before{
+    @extend .fCenter;
+    @extend .icon-elements;
+    @include sprite($elements-right_arrow_blue_big);
+    display: block;
+    content: '';
   }
 }
 .sr1ea{
@@ -505,6 +524,20 @@
 @media #{$isTablet}{
   .a{
   	margin: 40px 20px 40px 35px;
+  }
+  .w{
+    h2{
+      font-size: 16px;
+    }
+  }
+  .e{
+    margin-left: 113px;
+    &::before{
+      left: 40px;
+    }
+  }
+  .i{
+    padding-left: 47px;
   }
 }
 @media #{$isPhone}{

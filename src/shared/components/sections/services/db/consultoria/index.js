@@ -13,7 +13,7 @@ export default {
   }, {
     type: 'list',
     className: 'sl9',
-    title: 'Consultoriía y <br /> Servicio de <br />Auditorías <br /> (México y USA)',
+    title: 'Consultoría y Servicio de Auditorías (México y USA)',
     href: 'mx-usa',
     children: [{
       title: 'Apoyo para pre-auditorias',

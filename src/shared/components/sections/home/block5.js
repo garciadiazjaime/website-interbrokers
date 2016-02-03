@@ -14,7 +14,7 @@ export default class Block5 extends React.Component {
         <div className="row">
           <div className="col-xs-12 col-sm-5">
             <Wrapper1 className="c">
-              <Title1 className="e">{texts.text1}<br />{texts.text1b}</Title1>
+              <Title1 className="e">{texts.text1}</Title1>
               <Title1 className="f">{texts.text2}</Title1>
               <Button1 className="j1" href={links.link1.href} title={links.link1.title}>
                 {links.link1.title}
