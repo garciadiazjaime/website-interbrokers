@@ -11,7 +11,7 @@ import menuUtil from '../utils/menu';
 export default class AppHandler extends React.Component {
 
   componentDidMount() {
-    this.scrollHandler();
+    this.scrollHandler(true);
   }
 
   componentDidUpdate() {
@@ -27,17 +27,25 @@ export default class AppHandler extends React.Component {
     }
   }
 
-  scrollHandler() {
+  scrollHandler(isFirstTime) {
     const { location } = this.props;
     scrollUtil(location);
-    const bits = location.pathname.split('/');
-    menuUtil(bits[1] || 'inicio');
+    if (!isFirstTime) {
+      const bits = location.pathname.split('/');
+      menuUtil(bits[1] || 'inicio');
+    }
+  }
+
+  clickHandler() {
+    if ($('#mainmenu_trigger').is(':visible')) {
+      $('#mainmenu_trigger').click();
+    }
   }
 
   render() {
     return (
       <div>
-        <Menu items={menuData.items.children} icons={menuData.icons} />
+        <Menu items={menuData.items.children} icons={menuData.icons} onClick={this.clickHandler} />
         <Intro />
         {this.props.children}
         <FooterAAA items={menuData.items.children} addresses={menuData.addresses}/>
