@@ -11,9 +11,10 @@ export default class MainMenu extends React.Component {
       const { title, url } = item;
       const elementID = url.replace('/', '');
       const className = style.navbarNavAnchor;
+      const { onClick } = this.props;
       return (
         <li key={index}>
-          <Link to={url} className={className} id={elementID}>{title}</Link>
+          <Link to={url} className={className} id={elementID} onClick={onClick}>{title}</Link>
         </li>
       );
     });
@@ -30,10 +31,10 @@ export default class MainMenu extends React.Component {
 
   render() {
     /*eslint-disable */
-    return (<nav className={style.navbarDefault + ' navbar navbar-default'}>
+    return (<nav className={style.navbarDefault + ' navbar navbar-default'} id="menu_wrapper">
             <div className="container-fluid">
               <div className={style.navbarHeader + ' navbar-header'}>
-                <button id="mainmenu_trigger" type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
+                <button type="button" className="navbar-toggle collapsed menu_trigger" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
                   <span className="sr-only">Toggle navigation</span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
@@ -60,4 +61,5 @@ MainMenu.propTypes = {
   items: React.PropTypes.array.isRequired,
   icons: React.PropTypes.array,
   location: React.PropTypes.any,
+  onClick: React.PropTypes.func.isRequired,
 };
